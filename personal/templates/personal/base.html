@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Mi App{% endblock %}</title>
+
+    <!-- Tailwind CSS (opción con CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <!-- 
+    Usamos flex y flex-col para que el contenido principal 
+    se expanda y el footer quede pegado al fondo.
+  -->
+  <body class="bg-gray-100 text-gray-800 min-h-screen flex flex-col">
+    <!-- Encabezado -->
+    <header class="bg-gray-900 text-white">
+      <div
+        class="container mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <!-- Sección Izquierda (Logo + Inicio) -->
+        <div class="flex items-center space-x-4">
+          <!-- LOGO: Actualiza la ruta de tu imagen -->
+          <img
+            src="{% static 'img/logo.png' %}"
+            alt="Logo"
+            class="h-100 w-100 object-contain"
+          />
+          <a
+            class="text-xl font-bold hover:underline"
+            href="{% url 'personal_list' %}"
+          >
+            Inicio
+          </a>
+        </div>
+
+        <!-- Sección Derecha (Menú) -->
+        <nav class="flex items-center space-x-4">
+          <a class="hover:underline" href="{% url 'personal_list' %}">
+            Personal
+          </a>
+          <a class="hover:underline" href="#"> Otra Página </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <!-- Agregamos flex-grow para que el main se expanda y empuje el footer hacia abajo -->
+    <main class="container mx-auto px-4 mt-6 flex-grow">
+      {% block content %} {% endblock %}
+    </main>
+
+    <!-- Footer fijo al final -->
+    <!-- bg-gray-900 y text-white para mantener coherencia con el encabezado -->
+    <footer class="bg-gray-900 text-white">
+      <div class="container mx-auto px-4 py-4 text-center">
+        <p>&copy; 2025 Mi Empresa</p>
+      </div>
+    </footer>
+  </body>
+</html>

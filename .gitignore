@@ -1,0 +1,11 @@
+# Ignorar el entorno virtual
+env/
+
+# Ignorar archivos compilados de Python
+*.pyc
+
+# Ignorar archivos de base de datos SQLite (si es que prefieres no versionarlos)
+db.sqlite3
+
+# Ignorar configuraciones locales
+*.env

@@ -1,0 +1,54 @@
+{% extends 'personal/base.html' %}
+
+{% block title %}Listado de Personal{% endblock %}
+
+{% block content %}
+
+<h1 class="text-2xl font-bold mb-4">Detalle del Personal</h1>
+
+<div class="overflow-x-auto">
+  <table class="min-w-full bg-white">
+    <thead class="bg-gray-200 text-gray-700">
+      <tr>
+        <th class="py-2 px-4 text-left">N°</th>
+        <th class="py-2 px-4 text-left">Código</th>
+        <th class="py-2 px-4 text-left">Nombre</th>
+        <th class="py-2 px-4 text-left">Ubicación</th>
+        <th class="py-2 px-4 text-left">Acciones</th>
+      </tr>
+    </thead>
+    <tbody class="text-gray-700">
+      {% for persona in personal %}
+      <tr class="border-b">
+        <td class="py-2 px-4">{{ persona.numero }}</td>
+        <td class="py-2 px-4">{{ persona.codigo }}</td>
+        <td class="py-2 px-4">{{ persona.nombre }}</td>
+        <td class="py-2 px-4">{{ persona.ubicacion }}</td>
+        <td class="py-2 px-4">
+          <a
+            href="{% url 'personal_update' persona.pk %}"
+            class="bg-blue-500 hover:bg-blue-600 text-white px-2 py-1 rounded"
+          >Editar</a>
+          <a
+            href="{% url 'personal_delete' persona.pk %}"
+            class="bg-red-500 hover:bg-red-600 text-white px-2 py-1 rounded"
+          >Eliminar</a>
+        </td>
+      </tr>
+      {% empty %}
+      <tr>
+        <td colspan="5" class="py-2 px-4 text-center">No hay registros</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<div class="mt-4">
+  <a
+    href="{% url 'personal_create' %}"
+    class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded"
+  >Agregar Nuevo</a>
+</div>
+{% endblock %}
+
