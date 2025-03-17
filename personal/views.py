@@ -93,3 +93,6 @@ def import_excel(request):
         
     # If not POST, redirect to list view
     return redirect('personal_list')  # Adjust this to your actual view name
+
+def home(request):
+    return render(request, 'personal/home.html')
