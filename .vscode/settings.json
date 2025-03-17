@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "*.html": "html"
+    },
+    "[html]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "html.format.wrapLineLength": 0,
+    "html.format.templating": true,
+    "html.format.extraLiners": "",
+    "html.format.preserveNewLines": true,
+    "html.format.wrapAttributes": "auto",
+    "files.eol": "\n",
+    "editor.formatOnSave": true
+} 

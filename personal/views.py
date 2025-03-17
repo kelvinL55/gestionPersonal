@@ -96,3 +96,7 @@ def import_excel(request):
 
 def home(request):
     return render(request, 'personal/home.html')
+
+def listado(request):
+    personal = Personal.objects.all()
+    return render(request, 'personal/listado.html', {'personal': personal})

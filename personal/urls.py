@@ -8,4 +8,5 @@ urlpatterns = [
     path('eliminar/<int:pk>/', views.personal_delete, name='personal_delete'),
     path('import-excel/', views.import_excel, name='import_excel'),
     path('home/', views.home, name='home'),
+    path('listado/', views.listado, name='listado'),
 ]
