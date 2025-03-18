@@ -10,4 +10,4 @@ urlpatterns = [
     path('import-excel/', views.import_excel, name='import_excel'),
     path('home/', views.home, name='home'),
     path('listado/', views.listado, name='listado'),
-]
+]   
