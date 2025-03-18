@@ -100,3 +100,10 @@ def home(request):
 def listado(request):
     personal = Personal.objects.all()
     return render(request, 'personal/listado.html', {'personal': personal})
+
+def personal_delete_all(request):
+    if request.method == 'POST':
+        Personal.objects.all().delete()
+        messages.success(request, 'Se han eliminado todos los registros correctamente')
+        return redirect('personal_list')
+    return render(request, 'personal/personal_delete_all.html')

@@ -4,7 +4,7 @@
 
 {% block content %}
 
-<div class="container mx-auto px-4 py-6 max-w-6xl">
+<div class="container mx-auto px-2 py-2 max-w-5xl">
   <!-- Header con título centrado -->
   <div class="flex items-center justify-center mb-6">
     <h1 class="text-2xl font-bold text-center">Listado del Personal</h1>
@@ -12,7 +12,7 @@
 
   <!-- Visualización de mensajes con estilo Tailwind -->
   {% if messages %}
-  <div class="mb-4">
+  <div class="mb-2">
     {% for message in messages %} {% if message.tags == 'success' %}
     <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
       <span class="block sm:inline">{{ message }}</span>
@@ -29,39 +29,52 @@
   </div>
   {% endif %}
 
-  <!-- Campo de búsqueda -->
-  <div class="mb-4">
-    <div class="relative">
-      <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-        <svg class="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-        </svg>
+  <!-- Filtros de búsqueda -->
+  <div class="mb-6 bg-white p-4 rounded-lg shadow-sm">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 relative">
+      <div class="relative">
+        <label class="block text-sm font-medium text-gray-700 mb-1">Código</label>
+        <input type="text" id="filterCodigo" class="block w-full p-2 text-sm text-gray-900 border border-gray-300 rounded focus:ring-blue-500 focus:border-blue-500" placeholder="Filtrar por código..." />
       </div>
-      <input type="text" id="tableSearch" class="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="Buscar en la tabla..." />
+      <div class="relative">
+        <label class="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
+        <input type="text" id="filterNombre" class="block w-full p-2 text-sm text-gray-900 border border-gray-300 rounded focus:ring-blue-500 focus:border-blue-500" placeholder="Filtrar por nombre..." />
+      </div>
+      <div class="relative">
+        <label class="block text-sm font-medium text-gray-700 mb-1">Ubicación</label>
+        <input type="text" id="filterUbicacion" class="block w-full p-2 text-sm text-gray-900 border border-gray-300 rounded focus:ring-blue-500 focus:border-blue-500" placeholder="Filtrar por ubicación..." />
+      </div>
+      <div class="absolute right-0 top-1 -translate-y-1/2">
+        <button id="clearFilters" class="w-10 h-10 text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 rounded border border-gray-300 hover:bg-gray-50 flex items-center justify-center" title="Limpiar filtros">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 
   <div class="overflow-x-auto">
-    <table id="personalTable" class="min-w-full bg-white shadow-sm rounded">
+    <table id="personalTable" class="min-w-full bg-white shadow-sm rounded text-sm">
       <thead class="bg-gray-100 text-gray-700">
         <tr>
-          <th class="py-2 px-4 text-left">N°</th>
-          <th class="py-2 px-4 text-left">Código</th>
-          <th class="py-2 px-4 text-left">Nombre</th>
-          <th class="py-2 px-4 text-left">Ubicación</th>
+          <th class="py-1.5 px-3 text-left font-medium">N°</th>
+          <th class="py-1.5 px-3 text-left font-medium">Código</th>
+          <th class="py-1.5 px-3 text-left font-medium">Nombre</th>
+          <th class="py-1.5 px-3 text-left font-medium">Ubicación</th>
         </tr>
       </thead>
-      <tbody class="text-gray-700">
+      <tbody class="text-gray-600">
         {% for persona in personal %}
         <tr class="border-b hover:bg-gray-50">
-          <td class="py-2 px-4">{{ persona.numero }}</td>
-          <td class="py-2 px-4">{{ persona.codigo }}</td>
-          <td class="py-2 px-4">{{ persona.nombre }}</td>
-          <td class="py-2 px-4">{{ persona.ubicacion }}</td>
+          <td class="py-1.5 px-3">{{ persona.numero }}</td>
+          <td class="py-1.5 px-3">{{ persona.codigo }}</td>
+          <td class="py-1.5 px-3">{{ persona.nombre }}</td>
+          <td class="py-1.5 px-3">{{ persona.ubicacion }}</td>
         </tr>
         {% empty %}
         <tr id="noRecordsRow">
-          <td colspan="4" class="py-2 px-4 text-center">No hay registros</td>
+          <td colspan="4" class="py-1.5 px-3 text-center">No hay registros</td>
         </tr>
         {% endfor %}
       </tbody>
@@ -69,45 +82,67 @@
   </div>
 </div>
 
-<!-- Script para implementar la búsqueda en la tabla -->
+<!-- Script para implementar los filtros en la tabla -->
 <script>
-  // Funcionalidad de búsqueda en la tabla
   document.addEventListener("DOMContentLoaded", function () {
-    const searchInput = document.getElementById("tableSearch");
     const table = document.getElementById("personalTable");
     const rows = table.getElementsByTagName("tr");
     const noRecordsRow = document.getElementById("noRecordsRow");
+    const filterInputs = {
+      codigo: document.getElementById("filterCodigo"),
+      nombre: document.getElementById("filterNombre"),
+      ubicacion: document.getElementById("filterUbicacion")
+    };
+    const clearFiltersBtn = document.getElementById("clearFilters");
 
-    searchInput.addEventListener("keyup", function () {
-      const searchText = searchInput.value.toLowerCase();
+    function filterTable() {
       let visibleRowCount = 0;
+      const filters = {
+        codigo: filterInputs.codigo.value.toLowerCase(),
+        nombre: filterInputs.nombre.value.toLowerCase(),
+        ubicacion: filterInputs.ubicacion.value.toLowerCase()
+      };
 
-      // Omitir la fila de encabezado (índice 0)
       for (let i = 1; i < rows.length; i++) {
-        // Omitir la fila "sin registros" si existe
         if (rows[i].id === "noRecordsRow") continue;
 
-        const rowContent = rows[i].textContent.toLowerCase();
-        if (rowContent.includes(searchText)) {
-          rows[i].style.display = "";
-          visibleRowCount++;
-        } else {
-          rows[i].style.display = "none";
-        }
+        const cells = rows[i].getElementsByTagName("td");
+        const codigo = cells[1].textContent.toLowerCase();
+        const nombre = cells[2].textContent.toLowerCase();
+        const ubicacion = cells[3].textContent.toLowerCase();
+
+        const matchesFilters =
+          codigo.includes(filters.codigo) &&
+          nombre.includes(filters.nombre) &&
+          ubicacion.includes(filters.ubicacion);
+
+        rows[i].style.display = matchesFilters ? "" : "none";
+        if (matchesFilters) visibleRowCount++;
       }
 
-      // Mostrar mensaje "no hay registros coincidentes" si ninguna fila coincide con la búsqueda
       if (noRecordsRow) {
         if (visibleRowCount === 0 && rows.length > 1) {
           noRecordsRow.style.display = "";
-          noRecordsRow.cells[0].textContent =
-            "No hay registros que coincidan con la búsqueda";
+          noRecordsRow.cells[0].textContent = "No hay registros que coincidan con los filtros";
         } else if (rows.length === 1) {
           noRecordsRow.style.display = "";
         } else {
           noRecordsRow.style.display = "none";
         }
       }
+    }
+
+    // Agregar event listeners para cada filtro
+    Object.values(filterInputs).forEach(input => {
+      input.addEventListener("keyup", filterTable);
+    });
+
+    // Limpiar filtros
+    clearFiltersBtn.addEventListener("click", function () {
+      Object.values(filterInputs).forEach(input => {
+        input.value = "";
+      });
+      filterTable();
     });
   });
 </script>
