@@ -3,7 +3,7 @@
 {% block content %}
 
 <div class="container mx-auto px-2 py-2 max-w-5xl">
-  <!-- Header row con alineación mejorada: botón verde a la izquierda, título al centro y botones a la derecha -->
+  <!-- Fila de encabezado con alineación mejorada: botón verde a la izquierda, título al centro y botones a la derecha -->
   <div class="flex items-center justify-between mb-4">
     <!-- Botón "Agregar Nuevo" y "Eliminar Todo" a la izquierda -->
     <div class="flex-shrink-0 flex gap-2">
@@ -36,6 +36,7 @@
             </svg>
             Seleccionar Excel
           </button>
+          <span id="file-chosen" class="ml-2 text-xs text-gray-500"></span>
         </div>
         <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white text-xs px-3 py-1 rounded flex items-center">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -88,6 +89,8 @@
           <th class="py-1.5 px-3 text-left font-medium">Código</th>
           <th class="py-1.5 px-3 text-left font-medium">Nombre</th>
           <th class="py-1.5 px-3 text-left font-medium">Ubicación</th>
+          <th class="py-1.5 px-3 text-left font-medium">G - GRUPO</th>
+          <th class="py-1.5 px-3 text-left font-medium">Categorías</th>
           <th class="py-1.5 px-3 text-center font-medium w-20">Acciones</th>
         </tr>
       </thead>
@@ -98,6 +101,8 @@
           <td class="py-1.5 px-3">{{ persona.codigo }}</td>
           <td class="py-1.5 px-3">{{ persona.nombre }}</td>
           <td class="py-1.5 px-3">{{ persona.ubicacion }}</td>
+          <td class="py-1.5 px-3">{{ persona.grupo }}</td>
+          <td class="py-1.5 px-3">{{ persona.categorias }}</td>
           <td class="py-1.5 px-3 flex justify-center space-x-1">
             <a href="{% url 'personal_update' persona.pk %}" class="bg-blue-500 hover:bg-blue-600 text-white p-1.5 rounded-full" title="Editar">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -113,7 +118,7 @@
         </tr>
         {% empty %}
         <tr id="noRecordsRow">
-          <td colspan="5" class="py-1.5 px-3 text-center">No hay registros</td>
+          <td colspan="7" class="py-1.5 px-3 text-center">No hay registros</td>
         </tr>
         {% endfor %}
       </tbody>
@@ -129,7 +134,7 @@
 
   if (fileInput && fileChosen) {
     fileInput.addEventListener('change', function () {
-      fileChosen.textContent = this.files[0] ? this.files[0].name : '';
+      fileChosen.textContent = this.files[0] ? this.files[0].name : 'No se ha seleccionado ningún archivo';
     });
   }
 

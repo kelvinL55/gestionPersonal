@@ -1,10 +1,12 @@
 from django.db import models
 
 class Personal(models.Model):
-    numero = models.PositiveIntegerField(unique=True)  # Este será tu campo "N°"
+    numero = models.PositiveIntegerField(unique=True)  # Campo para almacenar el número de registro
     codigo = models.CharField(max_length=20, unique=True)
     nombre = models.CharField(max_length=100)
     ubicacion = models.CharField(max_length=100)
+    grupo = models.CharField(max_length=100)
+    categorias = models.CharField(max_length=100)
 
     def __str__(self):
         return self.nombre

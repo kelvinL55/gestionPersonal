@@ -40,59 +40,75 @@ def personal_delete(request, pk):
 
 def import_excel(request):
     if request.method == 'POST':
-        # Check if a file was uploaded
+        # Verificar si se subió un archivo
         if 'excel_file' not in request.FILES:
             messages.error(request, 'Por favor seleccione un archivo Excel')
-            return redirect('personal_list')  # Adjust this to your actual view name
+            return redirect('personal_list')
             
         excel_file = request.FILES['excel_file']
         
-        # Check file extension
+        # Verificar la extensión del archivo
         if not excel_file.name.endswith(('.xlsx', '.xls')):
             messages.error(request, 'El archivo debe ser un Excel (.xlsx o .xls)')
-            return redirect('personal_list')  # Adjust this to your actual view name
+            return redirect('personal_list')
         
         try:
-            # Read the Excel file
+            # Leer el archivo Excel
             df = pd.read_excel(excel_file)
             
-            # Process each row
+            # Verificar que las columnas requeridas existan
+            required_columns = ['N°', 'Código', 'Nombre', 'Ubicación', 'G - GRUPO', 'Categorias']
+            missing_columns = [col for col in required_columns if col not in df.columns]
+            
+            if missing_columns:
+                messages.error(request, f'El archivo Excel no contiene las siguientes columnas requeridas: {", ".join(missing_columns)}')
+                return redirect('personal_list')
+            
+            # Procesar cada fila
             records_imported = 0
             for index, row in df.iterrows():
                 try:
-                    # Check if record with same code already exists
+                    # Verificar si existe un registro con el mismo código
                     existing_record = Personal.objects.filter(codigo=row['Código']).first()
                     
                     if existing_record:
-                        # Update existing record
+                        # Actualizar registro existente
                         existing_record.nombre = row['Nombre']
                         existing_record.ubicacion = row['Ubicación']
                         existing_record.numero = row['N°']
+                        existing_record.grupo = row['G - GRUPO']
+                        existing_record.categorias = row['Categorias']
                         existing_record.save()
                     else:
-                        # Create new record
+                        # Crear nuevo registro
                         Personal.objects.create(
                             numero=row['N°'],
                             codigo=row['Código'],
                             nombre=row['Nombre'],
-                            ubicacion=row['Ubicación']
+                            ubicacion=row['Ubicación'],
+                            grupo=row['G - GRUPO'],
+                            categorias=row['Categorias']
                         )
                     
                     records_imported += 1
                 except Exception as e:
-                    # Log individual row errors but continue processing
-                    print(f"Error importing row {index}: {str(e)}")
+                    # Registrar errores individuales de fila pero continuar procesando
+                    print(f"Error al importar la fila {index}: {str(e)}")
+                    messages.error(request, f'Error en la fila {index + 2}: {str(e)}')
                     continue
             
-            messages.success(request, f'Se importaron {records_imported} registros correctamente')
+            if records_imported > 0:
+                messages.success(request, f'Se importaron {records_imported} registros correctamente')
+            else:
+                messages.warning(request, 'No se importó ningún registro')
             
         except Exception as e:
             messages.error(request, f'Error al procesar el archivo: {str(e)}')
             
-        return redirect('personal_list')  # Adjust this to your actual view name
+        return redirect('personal_list')
         
-    # If not POST, redirect to list view
-    return redirect('personal_list')  # Adjust this to your actual view name
+    # Si no es POST, redirigir a la vista de lista
+    return redirect('personal_list')
 
 def home(request):
     return render(request, 'personal/home.html')

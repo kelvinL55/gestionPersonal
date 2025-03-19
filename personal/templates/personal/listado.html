@@ -5,7 +5,7 @@
 {% block content %}
 
 <div class="container mx-auto px-2 py-2 max-w-5xl">
-  <!-- Header con título centrado -->
+  <!-- Encabezado con título centrado -->
   <div class="flex items-center justify-center mb-6">
     <h1 class="text-2xl font-bold text-center">Listado del Personal</h1>
   </div>
@@ -31,7 +31,7 @@
 
   <!-- Filtros de búsqueda -->
   <div class="mb-6 bg-white p-4 rounded-lg shadow-sm">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 relative">
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-4 relative">
       <div class="relative">
         <label class="block text-sm font-medium text-gray-700 mb-1">Código</label>
         <input type="text" id="filterCodigo" class="block w-full p-2 text-sm text-gray-900 border border-gray-300 rounded focus:ring-blue-500 focus:border-blue-500" placeholder="Filtrar por código..." />
@@ -43,6 +43,14 @@
       <div class="relative">
         <label class="block text-sm font-medium text-gray-700 mb-1">Ubicación</label>
         <input type="text" id="filterUbicacion" class="block w-full p-2 text-sm text-gray-900 border border-gray-300 rounded focus:ring-blue-500 focus:border-blue-500" placeholder="Filtrar por ubicación..." />
+      </div>
+      <div class="relative">
+        <label class="block text-sm font-medium text-gray-700 mb-1">G - GRUPO</label>
+        <input type="text" id="filterGrupo" class="block w-full p-2 text-sm text-gray-900 border border-gray-300 rounded focus:ring-blue-500 focus:border-blue-500" placeholder="Filtrar por grupo..." />
+      </div>
+      <div class="relative">
+        <label class="block text-sm font-medium text-gray-700 mb-1">Categorías</label>
+        <input type="text" id="filterCategorias" class="block w-full p-2 text-sm text-gray-900 border border-gray-300 rounded focus:ring-blue-500 focus:border-blue-500" placeholder="Filtrar por categorías..." />
       </div>
       <div class="absolute right-0 top-1 -translate-y-1/2">
         <button id="clearFilters" class="w-10 h-10 text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 rounded border border-gray-300 hover:bg-gray-50 flex items-center justify-center" title="Limpiar filtros">
@@ -62,6 +70,8 @@
           <th class="py-1.5 px-3 text-left font-medium">Código</th>
           <th class="py-1.5 px-3 text-left font-medium">Nombre</th>
           <th class="py-1.5 px-3 text-left font-medium">Ubicación</th>
+          <th class="py-1.5 px-3 text-left font-medium">G - GRUPO</th>
+          <th class="py-1.5 px-3 text-left font-medium">Categorías</th>
         </tr>
       </thead>
       <tbody class="text-gray-600">
@@ -71,10 +81,12 @@
           <td class="py-1.5 px-3">{{ persona.codigo }}</td>
           <td class="py-1.5 px-3">{{ persona.nombre }}</td>
           <td class="py-1.5 px-3">{{ persona.ubicacion }}</td>
+          <td class="py-1.5 px-3">{{ persona.grupo }}</td>
+          <td class="py-1.5 px-3">{{ persona.categorias }}</td>
         </tr>
         {% empty %}
         <tr id="noRecordsRow">
-          <td colspan="4" class="py-1.5 px-3 text-center">No hay registros</td>
+          <td colspan="6" class="py-1.5 px-3 text-center">No hay registros</td>
         </tr>
         {% endfor %}
       </tbody>
@@ -91,7 +103,9 @@
     const filterInputs = {
       codigo: document.getElementById("filterCodigo"),
       nombre: document.getElementById("filterNombre"),
-      ubicacion: document.getElementById("filterUbicacion")
+      ubicacion: document.getElementById("filterUbicacion"),
+      grupo: document.getElementById("filterGrupo"),
+      categorias: document.getElementById("filterCategorias")
     };
     const clearFiltersBtn = document.getElementById("clearFilters");
 
@@ -100,7 +114,9 @@
       const filters = {
         codigo: filterInputs.codigo.value.toLowerCase(),
         nombre: filterInputs.nombre.value.toLowerCase(),
-        ubicacion: filterInputs.ubicacion.value.toLowerCase()
+        ubicacion: filterInputs.ubicacion.value.toLowerCase(),
+        grupo: filterInputs.grupo.value.toLowerCase(),
+        categorias: filterInputs.categorias.value.toLowerCase()
       };
 
       for (let i = 1; i < rows.length; i++) {
@@ -110,11 +126,15 @@
         const codigo = cells[1].textContent.toLowerCase();
         const nombre = cells[2].textContent.toLowerCase();
         const ubicacion = cells[3].textContent.toLowerCase();
+        const grupo = cells[4].textContent.toLowerCase();
+        const categorias = cells[5].textContent.toLowerCase();
 
         const matchesFilters =
           codigo.includes(filters.codigo) &&
           nombre.includes(filters.nombre) &&
-          ubicacion.includes(filters.ubicacion);
+          ubicacion.includes(filters.ubicacion) &&
+          grupo.includes(filters.grupo) &&
+          categorias.includes(filters.categorias);
 
         rows[i].style.display = matchesFilters ? "" : "none";
         if (matchesFilters) visibleRowCount++;
