@@ -10,16 +10,10 @@
 </p>
 <form method="post">
   {% csrf_token %}
-  <button
-    type="submit"
-    class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded"
-  >
+  <button type="submit" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded">
     Confirmar
   </button>
-  <a
-    href="{% url 'personal_list' %}"
-    class="ml-2 bg-gray-300 hover:bg-gray-400 text-gray-700 px-4 py-2 rounded"
-  >
+  <a href="{% url 'personal:personal_list' %}" class="ml-2 bg-gray-300 hover:bg-gray-400 text-gray-700 px-4 py-2 rounded">
     Cancelar
   </a>
 </form>

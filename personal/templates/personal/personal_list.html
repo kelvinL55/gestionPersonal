@@ -7,13 +7,13 @@
   <div class="flex items-center justify-between mb-4">
     <!-- Botón "Agregar Nuevo" y "Eliminar Todo" a la izquierda -->
     <div class="flex-shrink-0 flex gap-2">
-      <a href="{% url 'personal_create' %}" class="bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded flex items-center text-xs">
+      <a href="{% url 'personal:personal_create' %}" class="bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded flex items-center text-xs">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
         </svg>
         Agregar Nuevo
       </a>
-      <a href="{% url 'personal_delete_all' %}" class="border border-red-500 hover:bg-red-50 text-red-500 px-3 py-1 rounded flex items-center text-xs">
+      <a href="{% url 'personal:personal_delete_all' %}" class="border border-red-500 hover:bg-red-50 text-red-500 px-3 py-1 rounded flex items-center text-xs">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
         </svg>
@@ -26,7 +26,7 @@
 
     <!-- Formulario de importación de Excel a la derecha -->
     <div class="flex-shrink-0">
-      <form method="post" enctype="multipart/form-data" action="{% url 'import_excel' %}" class="flex items-center gap-2">
+      <form method="post" enctype="multipart/form-data" action="{% url 'personal:import_excel' %}" class="flex items-center gap-2">
         {% csrf_token %}
         <div class="relative">
           <input type="file" id="excel_file" name="excel_file" accept=".xlsx, .xls" required class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10" />
@@ -104,12 +104,12 @@
           <td class="py-1.5 px-3">{{ persona.grupo }}</td>
           <td class="py-1.5 px-3">{{ persona.categorias }}</td>
           <td class="py-1.5 px-3 flex justify-center space-x-1">
-            <a href="{% url 'personal_update' persona.pk %}" class="bg-blue-500 hover:bg-blue-600 text-white p-1.5 rounded-full" title="Editar">
+            <a href="{% url 'personal:personal_update' persona.pk %}" class="bg-blue-500 hover:bg-blue-600 text-white p-1.5 rounded-full" title="Editar">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
               </svg>
             </a>
-            <a href="{% url 'personal_delete' persona.pk %}" class="bg-red-500 hover:bg-red-600 text-white p-1.5 rounded-full" title="Eliminar">
+            <a href="{% url 'personal:personal_delete' persona.pk %}" class="bg-red-500 hover:bg-red-600 text-white p-1.5 rounded-full" title="Eliminar">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
               </svg>

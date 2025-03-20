@@ -8,6 +8,7 @@
 
   <!-- Tailwind CSS (opción con CDN) -->
   <script src="https://cdn.tailwindcss.com"></script>
+  {% block extra_css %}{% endblock %}
 </head>
 <!-- 
     Usamos flex y flex-col para que el contenido principal 
@@ -21,15 +22,28 @@
       <div class="flex items-center space-x-4">
         <!-- LOGO: Actualiza la ruta de tu imagen -->
         <img src="{% static 'img/logo.png' %}" alt="Logo" class="h-100 w-100 object-contain" />
-        <a class="hover:underline" href="{% url 'home' %}"> Home </a>
+        <a class="hover:underline" href="{% url 'personal:home' %}"> Home </a>
       </div>
 
       <!-- Sección Derecha (Menú) -->
       <nav class="flex items-center space-x-4">
-        <a class="hover:underline" href="{% url 'personal_list' %}">
+        {% if user.is_authenticated %}
+        <a class="hover:underline" href="{% url 'personal:personal_list' %}">
           Gestion Personal
         </a>
-        <a class="hover:underline" href="{% url 'listado' %}"> Listado </a>
+        <a class="hover:underline" href="{% url 'personal:listado' %}"> Listado </a>
+        {% endif %}
+
+        <!-- Opciones de autenticación -->
+        {% if user.is_authenticated %}
+        <span class="text-yellow-400">Hola, {{ user.username }}</span>
+        <form method="post" action="{% url 'usuarios:logout' %}" class="inline">
+          {% csrf_token %}
+          <button type="submit" class="hover:underline text-yellow-400 bg-transparent border-0 cursor-pointer">Cerrar Sesión</button>
+        </form>
+        {% else %}
+        <a class="hover:underline text-yellow-400" href="{% url 'usuarios:login' %}">Iniciar Sesión</a>
+        {% endif %}
       </nav>
     </div>
   </header>
