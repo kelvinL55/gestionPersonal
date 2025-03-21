@@ -26,4 +26,4 @@ class LoginUsuario(LoginView):
         next_url = self.request.GET.get('next')
         if next_url:
             return next_url
-        return reverse_lazy('personal:personal_list')
+        return reverse_lazy('personal:listado')
