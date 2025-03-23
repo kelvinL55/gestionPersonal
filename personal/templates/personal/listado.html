@@ -4,15 +4,15 @@
 
 {% block content %}
 
-<div class="container mx-auto px-2 py-2 max-w-5xl">
+<div class="container mx-auto px-2 py-2 max-w-7xl">
   <!-- Encabezado con título centrado -->
   <div class="flex items-center justify-center mb-6">
-    <h1 class="text-2xl font-bold text-center">Listado del Personal</h1>
+    <h1 class="text-xl sm:text-2xl font-bold text-center">Listado del Personal</h1>
   </div>
 
   <!-- Visualización de mensajes con estilo Tailwind -->
   {% if messages %}
-  <div class="mb-2">
+  <div class="mb-4">
     {% for message in messages %} {% if message.tags == 'success' %}
     <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
       <span class="block sm:inline">{{ message }}</span>
@@ -31,7 +31,7 @@
 
   <!-- Filtros de búsqueda -->
   <div class="mb-6 bg-white p-4 rounded-lg shadow-sm">
-    <div class="grid grid-cols-1 md:grid-cols-5 gap-4 relative">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 relative">
       <div class="relative">
         <label class="block text-sm font-medium text-gray-700 mb-1">Código</label>
         <input type="text" id="filterCodigo" class="block w-full p-2 text-sm text-gray-900 border border-gray-300 rounded focus:ring-blue-500 focus:border-blue-500" placeholder="Filtrar por código..." />
@@ -40,15 +40,15 @@
         <label class="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
         <input type="text" id="filterNombre" class="block w-full p-2 text-sm text-gray-900 border border-gray-300 rounded focus:ring-blue-500 focus:border-blue-500" placeholder="Filtrar por nombre..." />
       </div>
-      <div class="relative">
+      <div class="relative hidden sm:block">
         <label class="block text-sm font-medium text-gray-700 mb-1">Ubicación</label>
         <input type="text" id="filterUbicacion" class="block w-full p-2 text-sm text-gray-900 border border-gray-300 rounded focus:ring-blue-500 focus:border-blue-500" placeholder="Filtrar por ubicación..." />
       </div>
-      <div class="relative">
+      <div class="relative hidden sm:block">
         <label class="block text-sm font-medium text-gray-700 mb-1">G - GRUPO</label>
         <input type="text" id="filterGrupo" class="block w-full p-2 text-sm text-gray-900 border border-gray-300 rounded focus:ring-blue-500 focus:border-blue-500" placeholder="Filtrar por grupo..." />
       </div>
-      <div class="relative">
+      <div class="relative hidden sm:block">
         <label class="block text-sm font-medium text-gray-700 mb-1">Categorías</label>
         <input type="text" id="filterCategorias" class="block w-full p-2 text-sm text-gray-900 border border-gray-300 rounded focus:ring-blue-500 focus:border-blue-500" placeholder="Filtrar por categorías..." />
       </div>
@@ -62,35 +62,40 @@
     </div>
   </div>
 
-  <div class="overflow-x-auto">
-    <table id="personalTable" class="min-w-full bg-white shadow-sm rounded text-sm">
-      <thead class="bg-gray-100 text-gray-700">
-        <tr>
-          <th class="py-1.5 px-3 text-left font-medium">N°</th>
-          <th class="py-1.5 px-3 text-left font-medium">Código</th>
-          <th class="py-1.5 px-3 text-left font-medium">Nombre</th>
-          <th class="py-1.5 px-3 text-left font-medium">Ubicación</th>
-          <th class="py-1.5 px-3 text-left font-medium">G - GRUPO</th>
-          <th class="py-1.5 px-3 text-left font-medium">Categorías</th>
-        </tr>
-      </thead>
-      <tbody class="text-gray-600">
-        {% for persona in personal %}
-        <tr class="border-b hover:bg-gray-50">
-          <td class="py-1.5 px-3">{{ persona.numero }}</td>
-          <td class="py-1.5 px-3">{{ persona.codigo }}</td>
-          <td class="py-1.5 px-3">{{ persona.nombre }}</td>
-          <td class="py-1.5 px-3">{{ persona.ubicacion }}</td>
-          <td class="py-1.5 px-3">{{ persona.grupo }}</td>
-          <td class="py-1.5 px-3">{{ persona.categorias }}</td>
-        </tr>
-        {% empty %}
-        <tr id="noRecordsRow">
-          <td colspan="6" class="py-1.5 px-3 text-center">No hay registros</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+  <!-- Tabla responsiva -->
+  <div class="overflow-x-auto -mx-4 sm:mx-0">
+    <div class="inline-block min-w-full align-middle">
+      <div class="overflow-hidden shadow-sm ring-1 ring-black ring-opacity-5 rounded-lg">
+        <table id="personalTable" class="min-w-full divide-y divide-gray-300">
+          <thead class="bg-gray-50">
+            <tr>
+              <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">N°</th>
+              <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Código</th>
+              <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Nombre</th>
+              <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 hidden sm:table-cell">Ubicación</th>
+              <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 hidden sm:table-cell">G - GRUPO</th>
+              <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 hidden sm:table-cell">Categorías</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200 bg-white">
+            {% for persona in personal %}
+            <tr class="hover:bg-gray-50">
+              <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">{{ persona.numero }}</td>
+              <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ persona.codigo }}</td>
+              <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ persona.nombre }}</td>
+              <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 hidden sm:table-cell">{{ persona.ubicacion }}</td>
+              <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 hidden sm:table-cell">{{ persona.grupo }}</td>
+              <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 hidden sm:table-cell">{{ persona.categorias }}</td>
+            </tr>
+            {% empty %}
+            <tr id="noRecordsRow">
+              <td colspan="6" class="px-3 py-4 text-sm text-gray-500 text-center">No hay registros</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 </div>
 

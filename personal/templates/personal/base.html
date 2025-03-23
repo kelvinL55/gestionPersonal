@@ -17,34 +17,64 @@
 <body class="bg-gray-100 text-gray-800 min-h-screen flex flex-col">
   <!-- Encabezado -->
   <header class="bg-gray-900 text-white">
-    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
-      <!-- Sección Izquierda (Logo + Inicio) -->
-      <div class="flex items-center space-x-4">
-        <!-- LOGO: Actualiza la ruta de tu imagen -->
-        <img src="{% static 'img/logo.png' %}" alt="Logo" class="h-100 w-100 object-contain" />
-        <a class="hover:underline" href="{% url 'personal:home' %}"> Home </a>
+    <div class="container mx-auto px-4 py-4">
+      <!-- Contenedor principal del header -->
+      <div class="flex items-center justify-between">
+        <!-- Sección Izquierda (Logo + Inicio) -->
+        <div class="flex items-center space-x-4">
+          <img src="{% static 'img/logo.png' %}" alt="Logo" class="h-12 w-auto object-contain" />
+          <a class="hover:underline hidden sm:block" href="{% url 'personal:home' %}"> Home </a>
+        </div>
+
+        <!-- Botón de menú móvil -->
+        <button id="mobile-menu-button" class="sm:hidden p-2 rounded-md hover:bg-gray-800 focus:outline-none">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+        <!-- Sección Derecha (Menú) -->
+        <nav id="main-nav" class="hidden sm:flex items-center space-x-4">
+          {% if user.is_authenticated %}
+          <a class="hover:underline" href="{% url 'personal:personal_list' %}">
+            Gestion Personal
+          </a>
+          <a class="hover:underline" href="{% url 'personal:listado' %}"> Listado </a>
+          {% endif %}
+
+          {% if user.is_authenticated %}
+          <span class="text-yellow-400">Hola, {{ user.username }}</span>
+          <form method="post" action="{% url 'usuarios:logout' %}" class="inline">
+            {% csrf_token %}
+            <button type="submit" class="hover:underline text-yellow-400 bg-transparent border-0 cursor-pointer">Cerrar Sesión</button>
+          </form>
+          {% else %}
+          <a class="hover:underline text-yellow-400" href="{% url 'usuarios:login' %}">Iniciar Sesión</a>
+          {% endif %}
+        </nav>
       </div>
 
-      <!-- Sección Derecha (Menú) -->
-      <nav class="flex items-center space-x-4">
-        {% if user.is_authenticated %}
-        <a class="hover:underline" href="{% url 'personal:personal_list' %}">
-          Gestion Personal
-        </a>
-        <a class="hover:underline" href="{% url 'personal:listado' %}"> Listado </a>
-        {% endif %}
+      <!-- Menú móvil -->
+      <div id="mobile-menu" class="hidden sm:hidden mt-4 pb-4">
+        <div class="flex flex-col space-y-4">
+          {% if user.is_authenticated %}
+          <a class="hover:underline" href="{% url 'personal:personal_list' %}">
+            Gestion Personal
+          </a>
+          <a class="hover:underline" href="{% url 'personal:listado' %}"> Listado </a>
+          {% endif %}
 
-        <!-- Opciones de autenticación -->
-        {% if user.is_authenticated %}
-        <span class="text-yellow-400">Hola, {{ user.username }}</span>
-        <form method="post" action="{% url 'usuarios:logout' %}" class="inline">
-          {% csrf_token %}
-          <button type="submit" class="hover:underline text-yellow-400 bg-transparent border-0 cursor-pointer">Cerrar Sesión</button>
-        </form>
-        {% else %}
-        <a class="hover:underline text-yellow-400" href="{% url 'usuarios:login' %}">Iniciar Sesión</a>
-        {% endif %}
-      </nav>
+          {% if user.is_authenticated %}
+          <span class="text-yellow-400">Hola, {{ user.username }}</span>
+          <form method="post" action="{% url 'usuarios:logout' %}" class="inline">
+            {% csrf_token %}
+            <button type="submit" class="hover:underline text-yellow-400 bg-transparent border-0 cursor-pointer">Cerrar Sesión</button>
+          </form>
+          {% else %}
+          <a class="hover:underline text-yellow-400" href="{% url 'usuarios:login' %}">Iniciar Sesión</a>
+          {% endif %}
+        </div>
+      </div>
     </div>
   </header>
 
@@ -61,5 +91,17 @@
       <p>&copy; 2025 Grupo Superior</p>
     </div>
   </footer>
+
+  <!-- Script para el menú móvil -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      mobileMenuButton.addEventListener('click', function () {
+        mobileMenu.classList.toggle('hidden');
+      });
+    });
+  </script>
 </body>
 </html>
