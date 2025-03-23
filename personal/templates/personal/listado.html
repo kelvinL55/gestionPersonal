@@ -7,22 +7,22 @@
 <div class="container mx-auto px-2 py-2 max-w-7xl">
   <!-- Encabezado con título centrado -->
   <div class="flex items-center justify-center mb-6">
-    <h1 class="text-xl sm:text-2xl font-bold text-center">Listado del Personal</h1>
+    <h1 class="text-xl sm:text-2xl font-bold text-center text-gray-900 dark:text-white">Listado del Personal</h1>
   </div>
 
   <!-- Visualización de mensajes con estilo Tailwind -->
   {% if messages %}
   <div class="mb-4">
     {% for message in messages %} {% if message.tags == 'success' %}
-    <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
+    <div class="bg-green-100 dark:bg-green-900 border border-green-400 dark:border-green-700 text-green-700 dark:text-green-100 px-4 py-3 rounded relative" role="alert">
       <span class="block sm:inline">{{ message }}</span>
     </div>
     {% elif message.tags == 'error' %}
-    <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+    <div class="bg-red-100 dark:bg-red-900 border border-red-400 dark:border-red-700 text-red-700 dark:text-red-100 px-4 py-3 rounded relative" role="alert">
       <span class="block sm:inline">{{ message }}</span>
     </div>
     {% else %}
-    <div class="bg-blue-100 border border-blue-400 text-blue-700 px-4 py-3 rounded relative" role="alert">
+    <div class="bg-blue-100 dark:bg-blue-900 border border-blue-400 dark:border-blue-700 text-blue-700 dark:text-blue-100 px-4 py-3 rounded relative" role="alert">
       <span class="block sm:inline">{{ message }}</span>
     </div>
     {% endif %} {% endfor %}
@@ -30,30 +30,30 @@
   {% endif %}
 
   <!-- Filtros de búsqueda -->
-  <div class="mb-6 bg-white p-4 rounded-lg shadow-sm">
+  <div class="mb-6 bg-white dark:bg-dark-card p-4 rounded-lg shadow-sm">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 relative">
       <div class="relative">
-        <label class="block text-sm font-medium text-gray-700 mb-1">Código</label>
-        <input type="text" id="filterCodigo" class="block w-full p-2 text-sm text-gray-900 border border-gray-300 rounded focus:ring-blue-500 focus:border-blue-500" placeholder="Filtrar por código..." />
+        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Código</label>
+        <input type="text" id="filterCodigo" class="block w-full p-2 text-sm text-gray-900 dark:text-white bg-white dark:bg-dark-bg border border-gray-300 dark:border-dark-border rounded focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-400 dark:focus:border-blue-400" placeholder="Filtrar por código..." />
       </div>
       <div class="relative">
-        <label class="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
-        <input type="text" id="filterNombre" class="block w-full p-2 text-sm text-gray-900 border border-gray-300 rounded focus:ring-blue-500 focus:border-blue-500" placeholder="Filtrar por nombre..." />
+        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Nombre</label>
+        <input type="text" id="filterNombre" class="block w-full p-2 text-sm text-gray-900 dark:text-white bg-white dark:bg-dark-bg border border-gray-300 dark:border-dark-border rounded focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-400 dark:focus:border-blue-400" placeholder="Filtrar por nombre..." />
       </div>
       <div class="relative hidden sm:block">
-        <label class="block text-sm font-medium text-gray-700 mb-1">Ubicación</label>
-        <input type="text" id="filterUbicacion" class="block w-full p-2 text-sm text-gray-900 border border-gray-300 rounded focus:ring-blue-500 focus:border-blue-500" placeholder="Filtrar por ubicación..." />
+        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Ubicación</label>
+        <input type="text" id="filterUbicacion" class="block w-full p-2 text-sm text-gray-900 dark:text-white bg-white dark:bg-dark-bg border border-gray-300 dark:border-dark-border rounded focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-400 dark:focus:border-blue-400" placeholder="Filtrar por ubicación..." />
       </div>
       <div class="relative hidden sm:block">
-        <label class="block text-sm font-medium text-gray-700 mb-1">G - GRUPO</label>
-        <input type="text" id="filterGrupo" class="block w-full p-2 text-sm text-gray-900 border border-gray-300 rounded focus:ring-blue-500 focus:border-blue-500" placeholder="Filtrar por grupo..." />
+        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">G - GRUPO</label>
+        <input type="text" id="filterGrupo" class="block w-full p-2 text-sm text-gray-900 dark:text-white bg-white dark:bg-dark-bg border border-gray-300 dark:border-dark-border rounded focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-400 dark:focus:border-blue-400" placeholder="Filtrar por grupo..." />
       </div>
       <div class="relative hidden sm:block">
-        <label class="block text-sm font-medium text-gray-700 mb-1">Categorías</label>
-        <input type="text" id="filterCategorias" class="block w-full p-2 text-sm text-gray-900 border border-gray-300 rounded focus:ring-blue-500 focus:border-blue-500" placeholder="Filtrar por categorías..." />
+        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Categorías</label>
+        <input type="text" id="filterCategorias" class="block w-full p-2 text-sm text-gray-900 dark:text-white bg-white dark:bg-dark-bg border border-gray-300 dark:border-dark-border rounded focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-400 dark:focus:border-blue-400" placeholder="Filtrar por categorías..." />
       </div>
       <div class="absolute right-0 top-1 -translate-y-1/2">
-        <button id="clearFilters" class="w-10 h-10 text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 rounded border border-gray-300 hover:bg-gray-50 flex items-center justify-center" title="Limpiar filtros">
+        <button id="clearFilters" class="w-10 h-10 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 dark:focus:ring-offset-dark-bg rounded border border-gray-300 dark:border-dark-border hover:bg-gray-50 dark:hover:bg-dark-hover flex items-center justify-center" title="Limpiar filtros">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg>
@@ -65,31 +65,31 @@
   <!-- Tabla responsiva -->
   <div class="overflow-x-auto -mx-4 sm:mx-0">
     <div class="inline-block min-w-full align-middle">
-      <div class="overflow-hidden shadow-sm ring-1 ring-black ring-opacity-5 rounded-lg">
-        <table id="personalTable" class="min-w-full divide-y divide-gray-300">
-          <thead class="bg-gray-50">
+      <div class="overflow-hidden shadow-sm ring-1 ring-black ring-opacity-5 dark:ring-white dark:ring-opacity-10 rounded-lg">
+        <table id="personalTable" class="min-w-full divide-y divide-gray-300 dark:divide-dark-border">
+          <thead class="bg-gray-50 dark:bg-dark-card">
             <tr>
-              <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">N°</th>
-              <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Código</th>
-              <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Nombre</th>
-              <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 hidden sm:table-cell">Ubicación</th>
-              <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 hidden sm:table-cell">G - GRUPO</th>
-              <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 hidden sm:table-cell">Categorías</th>
+              <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 dark:text-white sm:pl-6">N°</th>
+              <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 dark:text-white">Código</th>
+              <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 dark:text-white">Nombre</th>
+              <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 dark:text-white hidden sm:table-cell">Ubicación</th>
+              <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 dark:text-white hidden sm:table-cell">G - GRUPO</th>
+              <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 dark:text-white hidden sm:table-cell">Categorías</th>
             </tr>
           </thead>
-          <tbody class="divide-y divide-gray-200 bg-white">
+          <tbody class="divide-y divide-gray-200 dark:divide-dark-border bg-white dark:bg-dark-card">
             {% for persona in personal %}
-            <tr class="hover:bg-gray-50">
-              <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">{{ persona.numero }}</td>
-              <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ persona.codigo }}</td>
-              <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ persona.nombre }}</td>
-              <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 hidden sm:table-cell">{{ persona.ubicacion }}</td>
-              <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 hidden sm:table-cell">{{ persona.grupo }}</td>
-              <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 hidden sm:table-cell">{{ persona.categorias }}</td>
+            <tr class="hover:bg-gray-50 dark:hover:bg-dark-hover">
+              <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 dark:text-white sm:pl-6">{{ persona.numero }}</td>
+              <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 dark:text-gray-300">{{ persona.codigo }}</td>
+              <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 dark:text-gray-300">{{ persona.nombre }}</td>
+              <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 dark:text-gray-300 hidden sm:table-cell">{{ persona.ubicacion }}</td>
+              <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 dark:text-gray-300 hidden sm:table-cell">{{ persona.grupo }}</td>
+              <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 dark:text-gray-300 hidden sm:table-cell">{{ persona.categorias }}</td>
             </tr>
             {% empty %}
             <tr id="noRecordsRow">
-              <td colspan="6" class="px-3 py-4 text-sm text-gray-500 text-center">No hay registros</td>
+              <td colspan="6" class="px-3 py-4 text-sm text-gray-500 dark:text-gray-400 text-center">No hay registros</td>
             </tr>
             {% endfor %}
           </tbody>
@@ -100,7 +100,7 @@
 </div>
 
 <!-- Botón de volver arriba -->
-<button id="btnVolverArriba" class="fixed bottom-8 right-8 bg-gray-800 text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 hover:bg-gray-700 focus:outline-none" aria-label="Volver arriba">
+<button id="btnVolverArriba" class="fixed bottom-8 right-8 bg-gray-800 dark:bg-dark-card text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 hover:bg-gray-700 dark:hover:bg-dark-hover focus:outline-none" aria-label="Volver arriba">
   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
   </svg>
