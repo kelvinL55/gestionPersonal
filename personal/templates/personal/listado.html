@@ -94,6 +94,13 @@
   </div>
 </div>
 
+<!-- Botón de volver arriba -->
+<button id="btnVolverArriba" class="fixed bottom-8 right-8 bg-gray-800 text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 hover:bg-gray-700 focus:outline-none" aria-label="Volver arriba">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+  </svg>
+</button>
+
 <!-- Script para implementar los filtros en la tabla -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -163,6 +170,24 @@
         input.value = "";
       });
       filterTable();
+    });
+
+    // Funcionalidad del botón volver arriba
+    const btnVolverArriba = document.getElementById('btnVolverArriba');
+
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 300) {
+        btnVolverArriba.classList.remove('opacity-0');
+      } else {
+        btnVolverArriba.classList.add('opacity-0');
+      }
+    });
+
+    btnVolverArriba.addEventListener('click', function () {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     });
   });
 </script>

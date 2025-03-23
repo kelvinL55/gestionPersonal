@@ -3,16 +3,124 @@
 {% block title %}Formulario de Personal{% endblock %}
 
 {% block content %}
+<div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-2xl w-full space-y-8 bg-white p-8 rounded-lg shadow-md">
+    <!-- Encabezado del formulario -->
+    <div class="text-center">
+      <h1 class="text-2xl font-bold text-gray-900 mb-6">Formulario de Personal</h1>
+    </div>
 
-<h1 class="text-2xl font-bold mb-4">Formulario de Personal</h1>
-<form method="post" class="bg-white p-4 rounded shadow">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">
-    Guardar
-  </button>
-  <a href="{% url 'personal:personal_list' %}" class="ml-2 bg-gray-300 hover:bg-gray-400 text-gray-700 px-4 py-2 rounded">
-    Cancelar
-  </a>
-</form>
+    <!-- Formulario -->
+    <form method="post" class="space-y-6">
+      {% csrf_token %}
+
+      <!-- Campo Código -->
+      <div class="rounded-md -space-y-px">
+        <div class="mb-4">
+          <label for="{{ form.codigo.id_for_label }}" class="block text-sm font-medium text-gray-700 mb-1">
+            Código
+          </label>
+          <div class="mt-1">
+            {{ form.codigo.as_widget|default_if_none:"" }}
+          </div>
+          {% if form.codigo.errors %}
+          <p class="text-red-500 text-xs mt-1">{{ form.codigo.errors.0 }}</p>
+          {% endif %}
+        </div>
+
+        <!-- Campo Nombre -->
+        <div class="mb-4">
+          <label for="{{ form.nombre.id_for_label }}" class="block text-sm font-medium text-gray-700 mb-1">
+            Nombre
+          </label>
+          <div class="mt-1">
+            {{ form.nombre.as_widget|default_if_none:"" }}
+          </div>
+          {% if form.nombre.errors %}
+          <p class="text-red-500 text-xs mt-1">{{ form.nombre.errors.0 }}</p>
+          {% endif %}
+        </div>
+
+        <!-- Campo Ubicación -->
+        <div class="mb-4">
+          <label for="{{ form.ubicacion.id_for_label }}" class="block text-sm font-medium text-gray-700 mb-1">
+            Ubicación
+          </label>
+          <div class="mt-1">
+            {{ form.ubicacion.as_widget|default_if_none:"" }}
+          </div>
+          {% if form.ubicacion.errors %}
+          <p class="text-red-500 text-xs mt-1">{{ form.ubicacion.errors.0 }}</p>
+          {% endif %}
+        </div>
+
+        <!-- Campo Grupo -->
+        <div class="mb-4">
+          <label for="{{ form.grupo.id_for_label }}" class="block text-sm font-medium text-gray-700 mb-1">
+            G - GRUPO
+          </label>
+          <div class="mt-1">
+            {{ form.grupo.as_widget|default_if_none:"" }}
+          </div>
+          {% if form.grupo.errors %}
+          <p class="text-red-500 text-xs mt-1">{{ form.grupo.errors.0 }}</p>
+          {% endif %}
+        </div>
+
+        <!-- Campo Categorías -->
+        <div class="mb-6">
+          <label for="{{ form.categorias.id_for_label }}" class="block text-sm font-medium text-gray-700 mb-1">
+            Categorías
+          </label>
+          <div class="mt-1">
+            {{ form.categorias.as_widget|default_if_none:"" }}
+          </div>
+          {% if form.categorias.errors %}
+          <p class="text-red-500 text-xs mt-1">{{ form.categorias.errors.0 }}</p>
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- Botones -->
+      <div class="flex items-center justify-center space-x-4">
+        <button type="submit" class="w-32 py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200">
+          Guardar
+        </button>
+        <a href="{% url 'personal:personal_list' %}" class="w-32 py-2 px-4 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 transition-colors duration-200 text-center">
+          Cancelar
+        </a>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Script para aplicar estilos a los campos del formulario -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Aplicar estilos a todos los campos de entrada
+    const inputs = document.querySelectorAll('input, select, textarea');
+    inputs.forEach(input => {
+      input.classList.add(
+        'appearance-none',
+        'rounded',
+        'relative',
+        'block',
+        'w-full',
+        'px-3',
+        'py-2',
+        'border',
+        'border-gray-300',
+        'placeholder-gray-500',
+        'text-gray-900',
+        'focus:outline-none',
+        'focus:ring-blue-500',
+        'focus:border-blue-500',
+        'focus:z-10',
+        'sm:text-sm'
+      );
+      input.style.maxWidth = '100%';
+      input.style.boxSizing = 'border-box';
+    });
+  });
+</script>
 {% endblock %}
