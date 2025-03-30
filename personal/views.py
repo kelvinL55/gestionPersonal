@@ -20,7 +20,7 @@ def personal_list(request):
         HttpResponse: Renderiza la plantilla con la lista de personal
     """
     personal = Personal.objects.all()
-    return render(request, 'personal/personal_list.html', {'personal': personal})
+    return render(request, 'personal/tabla.html', {'personal': personal})
 
 @login_required(login_url='usuarios:login')
 def personal_create(request):
@@ -41,7 +41,7 @@ def personal_create(request):
             return redirect('personal:personal_list')
     else:
         form = PersonalForm()
-    return render(request, 'personal/personal_form.html', {'form': form})
+    return render(request, 'personal/formulario.html', {'form': form})
 
 @login_required(login_url='usuarios:login')
 def personal_update(request, pk):
@@ -64,7 +64,7 @@ def personal_update(request, pk):
             return redirect('personal:personal_list')
     else:
         form = PersonalForm(instance=persona)
-    return render(request, 'personal/personal_form.html', {'form': form})
+    return render(request, 'personal/formulario.html', {'form': form})
 
 @login_required(login_url='usuarios:login')
 def personal_delete(request, pk):
@@ -77,13 +77,13 @@ def personal_delete(request, pk):
         pk: Clave primaria del registro a eliminar
         
     Returns:
-        HttpResponse: Renderiza confirmación o redirecciona a lista
+        HttpResponse: Redirecciona a lista después de eliminar
     """
     persona = get_object_or_404(Personal, pk=pk)
     if request.method == 'POST':
         persona.delete()
         return redirect('personal:personal_list')
-    return render(request, 'personal/personal_confirm_delete.html', {'personal': persona})
+    return redirect('personal:personal_list')
 
 @login_required(login_url='usuarios:login')
 def import_excel(request):
@@ -178,7 +178,7 @@ def home(request):
     Returns:
         HttpResponse: Renderiza la plantilla home.html
     """
-    return render(request, 'personal/home.html')
+    return render(request, 'personal/inicio.html')
 
 @login_required(login_url='usuarios:login')
 def listado(request):
@@ -193,7 +193,7 @@ def listado(request):
         HttpResponse: Renderiza la plantilla con el listado
     """
     personal = Personal.objects.all()
-    return render(request, 'personal/listado.html', {'personal': personal})
+    return render(request, 'personal/vista_alterna.html', {'personal': personal})
 
 @login_required(login_url='usuarios:login')
 def personal_delete_all(request):
@@ -211,4 +211,4 @@ def personal_delete_all(request):
         Personal.objects.all().delete()
         messages.success(request, 'Se han eliminado todos los registros correctamente')
         return redirect('personal:personal_list')
-    return render(request, 'personal/personal_delete_all.html')
+    return render(request, 'personal/eliminar_todo.html')

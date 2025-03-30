@@ -3,20 +3,23 @@
 {% block title %}Formulario de Personal{% endblock %}
 
 {% block content %}
-<div class="min-h-screen flex items-start justify-center pt-24 px-4 sm:px-6 lg:px-8">
-  <div class="max-w-2xl w-full space-y-8 bg-white dark:bg-dark-card p-8 rounded-lg shadow-md">
+
+<!-- Formulario para crear y editar registros -->
+
+<div class="min-h-screen flex items-start justify-center pt-8 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-2xl w-full space-y-6 bg-white dark:bg-dark-card p-8 rounded-lg shadow-md">
     <!-- Encabezado del formulario -->
     <div class="text-center">
-      <h1 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Formulario de Personal</h1>
+      <h1 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Formulario de Personal</h1>
     </div>
 
     <!-- Formulario -->
-    <form method="post" class="space-y-6">
+    <form method="post" class="space-y-4">
       {% csrf_token %}
 
       <!-- Campo Código -->
-      <div class="rounded-md -space-y-px">
-        <div class="mb-4">
+      <div class="rounded-md">
+        <div class="mb-3">
           <label for="{{ form.codigo.id_for_label }}" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
             Código
           </label>
@@ -29,7 +32,7 @@
         </div>
 
         <!-- Campo Nombre -->
-        <div class="mb-4">
+        <div class="mb-3">
           <label for="{{ form.nombre.id_for_label }}" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
             Nombre
           </label>
@@ -42,7 +45,7 @@
         </div>
 
         <!-- Campo Ubicación -->
-        <div class="mb-4">
+        <div class="mb-3">
           <label for="{{ form.ubicacion.id_for_label }}" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
             Ubicación
           </label>
@@ -55,7 +58,7 @@
         </div>
 
         <!-- Campo Grupo -->
-        <div class="mb-4">
+        <div class="mb-3">
           <label for="{{ form.grupo.id_for_label }}" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
             G - GRUPO
           </label>
@@ -68,7 +71,7 @@
         </div>
 
         <!-- Campo Categorías -->
-        <div class="mb-6">
+        <div class="mb-4">
           <label for="{{ form.categorias.id_for_label }}" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
             Categorías
           </label>
@@ -82,7 +85,7 @@
       </div>
 
       <!-- Botones -->
-      <div class="flex items-center justify-center space-x-4">
+      <div class="flex items-center justify-center space-x-4 pt-2">
         <button type="submit" class="w-32 py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:focus:ring-offset-dark-bg transition-colors duration-200">
           Guardar
         </button>

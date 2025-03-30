@@ -4,6 +4,8 @@
 
 {% block content %}
 
+<!-- Vista alterna para mostrar el listado de personal -->
+
 <div class="container mx-auto px-2 py-2 max-w-7xl">
   <!-- Encabezado con título centrado -->
   <div class="flex items-center justify-center mb-6">
@@ -31,7 +33,7 @@
 
   <!-- Filtros de búsqueda -->
   <div class="mb-6 bg-white dark:bg-dark-card p-4 rounded-lg shadow-sm">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 relative">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 relative">
       <div class="relative">
         <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Código</label>
         <input type="text" id="filterCodigo" class="block w-full p-2 text-sm text-gray-900 dark:text-white bg-white dark:bg-dark-bg border border-gray-300 dark:border-dark-border rounded focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-400 dark:focus:border-blue-400" placeholder="Filtrar por código..." />
@@ -40,25 +42,27 @@
         <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Nombre</label>
         <input type="text" id="filterNombre" class="block w-full p-2 text-sm text-gray-900 dark:text-white bg-white dark:bg-dark-bg border border-gray-300 dark:border-dark-border rounded focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-400 dark:focus:border-blue-400" placeholder="Filtrar por nombre..." />
       </div>
-      <div class="relative hidden sm:block">
+      <div class="relative">
         <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Ubicación</label>
         <input type="text" id="filterUbicacion" class="block w-full p-2 text-sm text-gray-900 dark:text-white bg-white dark:bg-dark-bg border border-gray-300 dark:border-dark-border rounded focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-400 dark:focus:border-blue-400" placeholder="Filtrar por ubicación..." />
       </div>
-      <div class="relative hidden sm:block">
+      <div class="relative">
         <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">G - GRUPO</label>
         <input type="text" id="filterGrupo" class="block w-full p-2 text-sm text-gray-900 dark:text-white bg-white dark:bg-dark-bg border border-gray-300 dark:border-dark-border rounded focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-400 dark:focus:border-blue-400" placeholder="Filtrar por grupo..." />
       </div>
-      <div class="relative hidden sm:block">
+      <div class="relative">
         <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Categorías</label>
         <input type="text" id="filterCategorias" class="block w-full p-2 text-sm text-gray-900 dark:text-white bg-white dark:bg-dark-bg border border-gray-300 dark:border-dark-border rounded focus:ring-blue-500 focus:border-blue-500 dark:focus:ring-blue-400 dark:focus:border-blue-400" placeholder="Filtrar por categorías..." />
       </div>
-      <div class="absolute right-0 top-1 -translate-y-1/2">
-        <button id="clearFilters" class="w-10 h-10 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 dark:focus:ring-offset-dark-bg rounded border border-gray-300 dark:border-dark-border hover:bg-gray-50 dark:hover:bg-dark-hover flex items-center justify-center" title="Limpiar filtros">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
-          </svg>
-        </button>
-      </div>
+    </div>
+    <!-- Botón limpiar filtros movido abajo de los campos en móvil -->
+    <div class="mt-4 flex justify-end">
+      <button id="clearFilters" class="inline-flex items-center px-4 py-2 text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 dark:focus:ring-offset-dark-bg rounded border border-gray-300 dark:border-dark-border hover:bg-gray-50 dark:hover:bg-dark-hover" title="Limpiar filtros">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+        </svg>
+        Limpiar filtros
+      </button>
     </div>
   </div>
 
@@ -69,7 +73,7 @@
         <table id="personalTable" class="min-w-full divide-y divide-gray-300 dark:divide-dark-border">
           <thead class="bg-gray-50 dark:bg-dark-card">
             <tr>
-              <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 dark:text-white sm:pl-6">N°</th>
+              <th scope="col" class="hidden sm:table-cell py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 dark:text-white sm:pl-6">N°</th>
               <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 dark:text-white">Código</th>
               <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 dark:text-white">Nombre</th>
               <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900 dark:text-white hidden sm:table-cell">Ubicación</th>
@@ -80,7 +84,7 @@
           <tbody class="divide-y divide-gray-200 dark:divide-dark-border bg-white dark:bg-dark-card">
             {% for persona in personal %}
             <tr class="hover:bg-gray-50 dark:hover:bg-dark-hover">
-              <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 dark:text-white sm:pl-6">{{ persona.numero }}</td>
+              <td class="hidden sm:table-cell whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 dark:text-white sm:pl-6">{{ persona.numero }}</td>
               <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 dark:text-gray-300">{{ persona.codigo }}</td>
               <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 dark:text-gray-300">{{ persona.nombre }}</td>
               <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 dark:text-gray-300 hidden sm:table-cell">{{ persona.ubicacion }}</td>
@@ -100,7 +104,7 @@
 </div>
 
 <!-- Botón de volver arriba -->
-<button id="btnVolverArriba" class="fixed bottom-8 right-8 bg-gray-800 dark:bg-dark-card text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 hover:bg-gray-700 dark:hover:bg-dark-hover focus:outline-none" aria-label="Volver arriba">
+<button id="btnVolverArriba" class="fixed bottom-8 right-8 bg-gray-800 dark:bg-gray-600 text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 hover:bg-gray-700 dark:hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 dark:focus:ring-offset-dark-bg" aria-label="Volver arriba">
   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
   </svg>
