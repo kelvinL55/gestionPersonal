@@ -4,14 +4,29 @@ from .forms import PersonalForm
 import pandas as pd
 from django.contrib import messages
 from django.urls import reverse
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required, user_passes_test
 
+# Función de comprobación para verificar si el usuario es staff o superusuario
+# Esta función se usará como decorador para restringir el acceso a ciertas vistas.
+def es_gestor(user):
+    """
+    Comprueba si el usuario tiene permisos de gestor (staff o superusuario).
+
+    Args:
+        user: El objeto de usuario de Django.
+
+    Returns:
+        bool: True si el usuario es staff o superusuario, False en caso contrario.
+    """
+    return user.is_staff or user.is_superuser
 
 @login_required(login_url='usuarios:login')
+# Redirigir a 'personal:listado' si el usuario no es gestor
+@user_passes_test(es_gestor, login_url='personal:listado')
 def personal_list(request):
     """
     Vista para listar todos los registros de personal.
-    Requiere autenticación.
+    Requiere autenticación y permisos de gestor.
     
     Args:
         request: Objeto HttpRequest
@@ -23,10 +38,12 @@ def personal_list(request):
     return render(request, 'personal/tabla.html', {'personal': personal})
 
 @login_required(login_url='usuarios:login')
+# Redirigir a 'personal:listado' si no es gestor
+@user_passes_test(es_gestor, login_url='personal:listado')
 def personal_create(request):
     """
     Vista para crear un nuevo registro de personal.
-    Requiere autenticación.
+    Requiere autenticación y permisos de gestor.
     
     Args:
         request: Objeto HttpRequest
@@ -44,10 +61,12 @@ def personal_create(request):
     return render(request, 'personal/formulario.html', {'form': form})
 
 @login_required(login_url='usuarios:login')
+# Redirigir a 'personal:listado' si no es gestor
+@user_passes_test(es_gestor, login_url='personal:listado')
 def personal_update(request, pk):
     """
     Vista para actualizar un registro de personal existente.
-    Requiere autenticación.
+    Requiere autenticación y permisos de gestor.
     
     Args:
         request: Objeto HttpRequest
@@ -67,10 +86,12 @@ def personal_update(request, pk):
     return render(request, 'personal/formulario.html', {'form': form})
 
 @login_required(login_url='usuarios:login')
+# Redirigir a 'personal:listado' si no es gestor
+@user_passes_test(es_gestor, login_url='personal:listado')
 def personal_delete(request, pk):
     """
     Vista para eliminar un registro de personal.
-    Requiere autenticación.
+    Requiere autenticación y permisos de gestor.
     
     Args:
         request: Objeto HttpRequest
@@ -86,10 +107,12 @@ def personal_delete(request, pk):
     return redirect('personal:personal_list')
 
 @login_required(login_url='usuarios:login')
+# Redirigir a 'personal:listado' si no es gestor
+@user_passes_test(es_gestor, login_url='personal:listado')
 def import_excel(request):
     """
     Vista para importar datos desde un archivo Excel.
-    Requiere autenticación.
+    Requiere autenticación y permisos de gestor.
     
     Args:
         request: Objeto HttpRequest
@@ -181,10 +204,13 @@ def home(request):
     return render(request, 'personal/inicio.html')
 
 @login_required(login_url='usuarios:login')
+# Eliminar el decorador user_passes_test de aquí, 
+# ya que esta vista debe ser accesible para user001.
+# @user_passes_test(es_gestor, login_url='personal:home') 
 def listado(request):
     """
     Vista para mostrar un listado alternativo de personal.
-    Requiere autenticación.
+    Requiere autenticación (pero no permisos de gestor).
     
     Args:
         request: Objeto HttpRequest
@@ -196,10 +222,12 @@ def listado(request):
     return render(request, 'personal/vista_alterna.html', {'personal': personal})
 
 @login_required(login_url='usuarios:login')
+# Redirigir a 'personal:listado' si no es gestor
+@user_passes_test(es_gestor, login_url='personal:listado')
 def personal_delete_all(request):
     """
     Vista para eliminar todos los registros de personal.
-    Requiere autenticación.
+    Requiere autenticación y permisos de gestor.
     
     Args:
         request: Objeto HttpRequest
@@ -211,4 +239,7 @@ def personal_delete_all(request):
         Personal.objects.all().delete()
         messages.success(request, 'Se han eliminado todos los registros correctamente')
         return redirect('personal:personal_list')
-    return render(request, 'personal/eliminar_todo.html')
+    # Si no es POST, redirigir a la lista de gestión (solo accesible por gestores)
+    # o a 'personal:listado' si se prefiere como fallback general. 
+    # Optamos por personal_list ya que la acción se origina desde ahí.
+    return redirect('personal:personal_list')

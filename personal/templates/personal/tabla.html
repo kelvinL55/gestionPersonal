@@ -15,12 +15,12 @@
         </svg>
         Agregar Nuevo
       </a>
-      <a href="{% url 'personal:personal_delete_all' %}" class="border border-red-500 dark:border-red-400 hover:bg-red-50 dark:hover:bg-red-900/30 text-red-500 dark:text-red-400 px-3 py-1 rounded flex items-center text-xs">
+      <button type="button" onclick="openDeleteAllModal()" class="border border-red-500 dark:border-red-400 hover:bg-red-50 dark:hover:bg-red-900/30 text-red-500 dark:text-red-400 px-3 py-1 rounded flex items-center text-xs">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
         </svg>
         Eliminar Todo
-      </a>
+      </button>
     </div>
 
     <!-- Título centrado -->
@@ -170,6 +170,33 @@
   </div>
 </div>
 
+<!-- Modal de confirmación de eliminación total -->
+<div id="deleteAllModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+  <div class="bg-white dark:bg-dark-card rounded-lg shadow-xl max-w-md w-full mx-4">
+    <div class="p-6">
+      <div class="text-center">
+        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Confirmar Eliminación Total</h3>
+        <div class="bg-red-100 dark:bg-red-900/30 border border-red-200 dark:border-red-800 rounded-lg p-4 mb-6">
+          <p class="text-red-700 dark:text-red-300 text-lg">
+            ¿Está seguro que desea eliminar <strong class="font-medium text-red-800 dark:text-red-200">todos los registros</strong>?
+            <br>
+            <span class="text-sm mt-2 block">Esta acción no se puede deshacer.</span>
+          </p>
+        </div>
+      </div>
+      <form id="deleteAllForm" method="post" action="{% url 'personal:personal_delete_all' %}" class="flex items-center justify-center space-x-4">
+        {% csrf_token %}
+        <button type="submit" class="px-6 py-2 bg-red-500 hover:bg-red-600 dark:bg-red-600 dark:hover:bg-red-700 text-white font-medium rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 dark:focus:ring-offset-dark-bg">
+          Sí, eliminar todo
+        </button>
+        <button type="button" onclick="closeDeleteAllModal()" class="px-6 py-2 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-200 font-medium rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 dark:focus:ring-offset-dark-bg">
+          Cancelar
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
 <!-- Script para mostrar el nombre del archivo seleccionado e implementar la búsqueda en la tabla -->
 <script>
   // Mostrar el nombre del archivo seleccionado
@@ -263,6 +290,42 @@
       closeDeleteModal();
     }
   });
+
+  // Funciones para el modal de eliminación total
+  /**
+   * Muestra el modal de confirmación para eliminar todos los registros.
+   * Añade la clase 'flex' y elimina la clase 'hidden' para hacerlo visible.
+   */
+  function openDeleteAllModal() {
+    const modal = document.getElementById('deleteAllModal');
+    if (modal) {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+  }
+
+  /**
+   * Oculta el modal de confirmación para eliminar todos los registros.
+   * Añade la clase 'hidden' y elimina la clase 'flex'.
+   */
+  function closeDeleteAllModal() {
+    const modal = document.getElementById('deleteAllModal');
+    if (modal) {
+      modal.classList.remove('flex');
+      modal.classList.add('hidden');
+    }
+  }
+
+  // Cerrar modal de eliminación total al hacer clic fuera de él
+  const deleteAllModalElement = document.getElementById('deleteAllModal');
+  if (deleteAllModalElement) {
+    deleteAllModalElement.addEventListener('click', function (e) {
+      // Asegurarse de que el clic fue directamente sobre el fondo del modal (el div exterior)
+      if (e.target === this) {
+        closeDeleteAllModal();
+      }
+    });
+  }
 </script>
 
 {% endblock %}

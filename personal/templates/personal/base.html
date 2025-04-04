@@ -58,8 +58,9 @@
         <div class="flex items-center justify-between">
           <!-- Sección Izquierda (Logo + Inicio) -->
           <div class="flex items-center space-x-4">
-            <img src="{% static 'img/logo.png' %}" alt="Logo" class="h-12 w-auto object-contain" />
-            <a class="hover:underline hidden sm:block" href="{% url 'personal:home' %}"> Home </a>
+            <a href="{% url 'personal:home' %}">
+              <img src="{% static 'img/logo.png' %}" alt="Logo" class="h-12 w-auto object-contain" />
+            </a>
           </div>
 
           <!-- Botón de menú móvil -->
@@ -85,15 +86,19 @@
 
             <!-- Menú de navegación -->
             <nav id="main-nav" class="hidden sm:flex items-center space-x-4">
-              {% if user.is_authenticated %}
+              {# Mostrar "Gestion Personal" solo a usuarios staff o superusuarios #}
+              {% if user.is_authenticated and user.is_staff or user.is_superuser %}
               <a class="hover:underline" href="{% url 'personal:personal_list' %}">
                 Gestion Personal
               </a>
+              {% endif %}
+              {# Mostrar "Listado" a todos los usuarios autenticados #}
+              {% if user.is_authenticated %}
               <a class="hover:underline" href="{% url 'personal:listado' %}"> Listado </a>
               {% endif %}
 
               {% if user.is_authenticated %}
-              <span class="text-yellow-400">Hola, {{ user.username }}</span>
+              <span class="text-yellow-400">Hola, {{ user.username|capfirst }}</span>
               <form method="post" action="{% url 'usuarios:logout' %}" class="inline">
                 {% csrf_token %}
                 <button type="submit" class="hover:underline text-yellow-400 bg-transparent border-0 cursor-pointer">Cerrar Sesión</button>
@@ -108,15 +113,19 @@
         <!-- Menú móvil -->
         <div id="mobile-menu" class="hidden sm:hidden mt-4 pb-4">
           <div class="flex flex-col space-y-4">
-            {% if user.is_authenticated %}
+            {# Mostrar "Gestion Personal" solo a usuarios staff o superusuarios #}
+            {% if user.is_authenticated and user.is_staff or user.is_superuser %}
             <a class="hover:underline" href="{% url 'personal:personal_list' %}">
               Gestion Personal
             </a>
+            {% endif %}
+            {# Mostrar "Listado" a todos los usuarios autenticados #}
+            {% if user.is_authenticated %}
             <a class="hover:underline" href="{% url 'personal:listado' %}"> Listado </a>
             {% endif %}
 
             {% if user.is_authenticated %}
-            <span class="text-yellow-400">Hola, {{ user.username }}</span>
+            <span class="text-yellow-400">Hola, {{ user.username|capfirst }}</span>
             <form method="post" action="{% url 'usuarios:logout' %}" class="inline">
               {% csrf_token %}
               <button type="submit" class="hover:underline text-yellow-400 bg-transparent border-0 cursor-pointer">Cerrar Sesión</button>
