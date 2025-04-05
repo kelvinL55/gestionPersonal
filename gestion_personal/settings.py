@@ -122,6 +122,9 @@ STATIC_URL = 'static/'
 # Archivos estáticos (CSS, imágenes, JS)
 STATIC_URL = '/static/'
 
+# Directorio donde se recopilarán todos los archivos estáticos
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 # Asegurar que Django busque archivos en cada app
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'personal/static'),
