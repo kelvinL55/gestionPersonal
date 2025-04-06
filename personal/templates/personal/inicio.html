@@ -1,117 +1,144 @@
-{% extends 'personal/base.html' %}
+<!DOCTYPE html>
 {% load static %}
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bienvenido</title>
+  <!-- Tailwind CSS (opción con CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Configuración del modo oscuro
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            dark: {
+              bg: '#1a1a1a',
+              card: '#2d2d2d',
+              border: '#404040',
+              text: '#e5e5e5',
+              hover: '#3d3d3d'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-image: url('{% static "img/background.webp" %}');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      position: relative;
+    }
 
-{% block title %}Bienvenido{% endblock %}
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
 
-{% block extra_css %}
-<!-- Página de inicio -->
+    .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      padding-top: 10px;
+      text-align: center;
+    }
 
-<style>
-  body {
-    background-image: url('{% static "img/background.webp" %}');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    position: relative;
-  }
+    .welcome-text {
+      font-size: 4rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
 
-  .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: -1;
-  }
+    .subtitle {
+      font-size: 3.5rem;
+      margin-top: 50px;
+    }
 
-  .content {
-    position: relative;
-    z-index: 1;
-    color: white;
-    padding-top: 10px;
-    text-align: center;
-  }
+    .subtitle2 {
+      font-size: 2rem;
+      margin-top: 20px;
+    }
 
-  .welcome-text {
-    font-size: 4rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
+    .glass-effect {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
 
-  .subtitle {
-    font-size: 3.5rem;
-    margin-top: 50px;
-  }
+    .input-glass {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: white;
+    }
 
-  .subtitle2 {
-    font-size: 2rem;
-    margin-top: 20px;
-  }
+    .input-glass::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
 
-  .glass-effect {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-  }
+    .login-button {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
 
-  .input-glass {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: white;
-  }
+    .enter-button {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 1.2rem 3rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: white;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      display: inline-block;
+      margin-top: 11rem;
+      margin-bottom: 2rem;
+    }
 
-  .input-glass::placeholder {
-    color: rgba(255, 255, 255, 0.7);
-  }
+    .enter-button:hover {
+      transform: scale(1.05) translateY(-3px);
+      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+      border-color: rgba(255, 255, 255, 0.3);
+      color: white;
+      text-decoration: none;
+    }
 
-  .login-button {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  }
+    .enter-button:active {
+      transform: scale(0.98);
+    }
+  </style>
+</head>
 
-  .enter-button {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    padding: 1.2rem 3rem;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: white;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    display: inline-block;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
+<body>
+  <div class="overlay"></div>
+  <div class="content">
+    <h1 class="welcome-text">Bienvenido a la Gestión de Personal</h1>
+    <h2 class="subtitle">Grupo Superior</h2>
+    <p class="mt-4 subtitle2">
+      Sistema integral para la gestión eficiente de recursos humanos
+    </p>
 
-  .enter-button:hover {
-    transform: scale(1.05) translateY(-3px);
-    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
-    border-color: rgba(255, 255, 255, 0.3);
-    color: white;
-    text-decoration: none;
-  }
-
-  .enter-button:active {
-    transform: scale(0.98);
-  }
-</style>
-{% endblock %}
-
-{% block content %}
-<div class="overlay"></div>
-<div class="content">
-  <h1 class="welcome-text">Bienvenido a la Gestión de Personal</h1>
-  <h2 class="subtitle">Grupo Superior</h2>
-  <p class="mt-4 subtitle2">
-    Sistema integral para la gestión eficiente de recursos humanos
-  </p>
-
-  <a href="{% url 'usuarios:login' %}" class="enter-button">
-    INGRESAR
-  </a>
-</div>
-{% endblock %}
+    {% if user.is_authenticated and user.is_staff %}
+    <a href="{% url 'personal:personal_list' %}" class="enter-button">
+      INGRESAR
+    </a>
+    {% else %}
+    <a href="{% url 'usuarios:login' %}" class="enter-button">
+      INGRESAR
+    </a>
+    {% endif %}
+  </div>
+</body>
+</html>
