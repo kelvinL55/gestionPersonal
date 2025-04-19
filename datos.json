@@ -1,0 +1,8754 @@
+[
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$870000$5l4VB0PVGnq65hQyuFGXqx$0ANXlV6C6Z+edQDpZaQhGyHJTGGwREtj4wek0Bp9clI=",
+    "last_login": "2025-04-19T02:50:39.937Z",
+    "is_superuser": true,
+    "username": "kelvin",
+    "first_name": "",
+    "last_name": "",
+    "email": "kaloaiza1@utpl.edu.ec",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-03-20T01:01:29.573Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$870000$OPMKfnJYFrmMH9jFkJO0PU$73GrDwHy9SHxAWyCunRPcugHo/oDxZjSwOLqA3xPv7o=",
+    "last_login": "2025-04-13T01:28:53.750Z",
+    "is_superuser": false,
+    "username": "user001",
+    "first_name": "",
+    "last_name": "",
+    "email": "user001@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-04-04T01:08:14Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "1kdfhlu0r3lmc08adqhz5dvvmlujyj4f",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlms_6akzxks765NAsiW8qkQd4dIKaB9M_NeIuVtHdO2lDlNLC5CidPvhpkepe2A77nduqTe1nlCuSvyoIscOpfn9XD_Dsa8jN_aOM9eM7mKQGDBMmmIwB5NiWAjFEOBA6BFZVAFZT1W7Z2u0VV9JvH-ANmzN3w:1u3izf:_XcXsCFt39Dp6SvKnFW-YtIBM796-BpZ5Sj5s0tLRZU",
+    "expire_date": "2025-04-26T22:06:31.729Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "3qm050vbfh9zq467swoewbqo8xuhoaa2",
+  "fields": {
+    "session_data": ".eJxVjDEOwjAMRe-SGUUkchzDyM4ZIid2SQGlUtNOiLtDpQ6w_vfef5nE61LT2nVOo5izcebwu2UuD20bkDu322TL1JZ5zHZT7E67vU6iz8vu_h1U7vVbUyxEQuowqgJ68UwZWT1G50T1OKAH9SEEDoUKwgkw50EyEJAvzrw_5TA35w:1u1S1E:A60KKu8WhDuzKvZhiWFE9FuMmM13OrcsiFqbdP6H7bM",
+    "expire_date": "2025-04-20T15:34:44.604Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "6f6zxp28wnam41h6mcyl20eelp1kt7oj",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlms_6akzxks765NAsiW8qkQd4dIKaB9M_NeIuVtHdO2lDlNLC5CidPvhpkepe2A77nduqTe1nlCuSvyoIscOpfn9XD_Dsa8jN_aOM9eM7mKQGDBMmmIwB5NiWAjFEOBA6BFZVAFZT1W7Z2u0VV9JvH-ANmzN3w:1u1S6q:CLaG8scPLMWN0yyyFkhtsBTDiTxcTUZGWatzmc5bdhw",
+    "expire_date": "2025-04-20T15:40:32.506Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "c1id16a0nnk5emwksy3o788wi67hktpa",
+  "fields": {
+    "session_data": ".eJxVjDEOwjAMRe-SGUUkchzDyM4ZIid2SQGlUtNOiLtDpQ6w_vfef5nE61LT2nVOo5izcebwu2UuD20bkDu322TL1JZ5zHZT7E67vU6iz8vu_h1U7vVbUyxEQuowqgJ68UwZWT1G50T1OKAH9SEEDoUKwgkw50EyEJAvzrw_5TA35w:1twVFY:lwphTG0k_e6W6iGMHoAA1dbh6l-w71RwxtZun4ZxM_k",
+    "expire_date": "2025-04-07T00:01:04.136Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ccutojsrsuqlxnl5m805ad7k907wvue5",
+  "fields": {
+    "session_data": ".eJxVjDEOwjAMRe-SGUUkchzDyM4ZIid2SQGlUtNOiLtDpQ6w_vfef5nE61LT2nVOo5izcebwu2UuD20bkDu322TL1JZ5zHZT7E67vU6iz8vu_h1U7vVbUyxEQuowqgJ68UwZWT1G50T1OKAH9SEEDoUKwgkw50EyEJAvzrw_5TA35w:1u3kWK:U0cN1Ys-egt06ZduWp2Bn-6xESgWNNInifYCl6oh_ec",
+    "expire_date": "2025-04-26T23:44:20.453Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "f5dcntit0rf6k31k3r1qf54rtu04dcv8",
+  "fields": {
+    "session_data": ".eJxVjDEOwjAMRe-SGUUkchzDyM4ZIid2SQGlUtNOiLtDpQ6w_vfef5nE61LT2nVOo5izcebwu2UuD20bkDu322TL1JZ5zHZT7E67vU6iz8vu_h1U7vVbUyxEQuowqgJ68UwZWT1G50T1OKAH9SEEDoUKwgkw50EyEJAvzrw_5TA35w:1u5yHv:XdGjlzDacR9tikALAWmqlpW4YHE1cjujl_fmMvFIxyQ",
+    "expire_date": "2025-05-03T02:50:39.963Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "yvvd7b4816n1at11b8md09rrnr5r69dn",
+  "fields": {
+    "session_data": ".eJxVjDEOwjAMRe-SGUUkchzDyM4ZIid2SQGlUtNOiLtDpQ6w_vfef5nE61LT2nVOo5izcebwu2UuD20bkDu322TL1JZ5zHZT7E67vU6iz8vu_h1U7vVbUyxEQuowqgJ68UwZWT1G50T1OKAH9SEEDoUKwgkw50EyEJAvzrw_5TA35w:1u0smr:5K7ILGxIlWfCn0PginmXUwuv-ygaHuvwQNlH-Lo3_7I",
+    "expire_date": "2025-04-19T01:57:33.124Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "yygbjd18kcxgd6syw0cbvkwrdsmlipbu",
+  "fields": {
+    "session_data": ".eJxVjDEOwjAMRe-SGUUkchzDyM4ZIid2SQGlUtNOiLtDpQ6w_vfef5nE61LT2nVOo5izcebwu2UuD20bkDu322TL1JZ5zHZT7E67vU6iz8vu_h1U7vVbUyxEQuowqgJ68UwZWT1G50T1OKAH9SEEDoUKwgkw50EyEJAvzrw_5TA35w:1tvnlu:JjReOSUBiJZz1U6xoTG4y3CjhfQp1xjdhbiVACe353w",
+    "expire_date": "2025-04-05T01:35:34.077Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "zm7wkaye9rim4vj6vyjdyl1p10bj7908",
+  "fields": {
+    "session_data": ".eJxVjDEOwjAMRe-SGUUkchzDyM4ZIid2SQGlUtNOiLtDpQ6w_vfef5nE61LT2nVOo5izcebwu2UuD20bkDu322TL1JZ5zHZT7E67vU6iz8vu_h1U7vVbUyxEQuowqgJ68UwZWT1G50T1OKAH9SEEDoUKwgkw50EyEJAvzrw_5TA35w:1u3mWq:pPuDkxH5yU-F01Lrvd9LlAFbjuOu0WlxpqposHa7LVk",
+    "expire_date": "2025-04-27T01:53:00.953Z"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3603,
+  "fields": {
+    "numero": 1,
+    "codigo": "100001",
+    "nombre": "user 001",
+    "ubicacion": "Admin",
+    "grupo": "Admin",
+    "categorias": "Admin"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3604,
+  "fields": {
+    "numero": 2,
+    "codigo": "100002",
+    "nombre": "user 002",
+    "ubicacion": "Admin",
+    "grupo": "Admin",
+    "categorias": "Admin"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3605,
+  "fields": {
+    "numero": 3,
+    "codigo": "100003",
+    "nombre": "user 003",
+    "ubicacion": "Administrativo",
+    "grupo": "Admin",
+    "categorias": "Admin"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3606,
+  "fields": {
+    "numero": 4,
+    "codigo": "100004",
+    "nombre": "user 004",
+    "ubicacion": "Admin",
+    "grupo": "Admin",
+    "categorias": "Admin"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3607,
+  "fields": {
+    "numero": 5,
+    "codigo": "100005",
+    "nombre": "user 005",
+    "ubicacion": "Admin",
+    "grupo": "Admin",
+    "categorias": "Admin"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3608,
+  "fields": {
+    "numero": 6,
+    "codigo": "100006",
+    "nombre": "user 006",
+    "ubicacion": "Admin",
+    "grupo": "Admin",
+    "categorias": "Admin"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3609,
+  "fields": {
+    "numero": 7,
+    "codigo": "100007",
+    "nombre": "user 007",
+    "ubicacion": "Amasado Indirecto",
+    "grupo": "Amasado & Horno",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3610,
+  "fields": {
+    "numero": 8,
+    "codigo": "100008",
+    "nombre": "user 008",
+    "ubicacion": "Amasado Indirecto",
+    "grupo": "Amasado & Horno",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3611,
+  "fields": {
+    "numero": 9,
+    "codigo": "100009",
+    "nombre": "user 009",
+    "ubicacion": "Amasado Indirecto",
+    "grupo": "Amasado & Horno",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3612,
+  "fields": {
+    "numero": 10,
+    "codigo": "100010",
+    "nombre": "user 010",
+    "ubicacion": "Amasado Indirecto",
+    "grupo": "Amasado & Horno",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3613,
+  "fields": {
+    "numero": 11,
+    "codigo": "100011",
+    "nombre": "user 011",
+    "ubicacion": "Amasado Indirecto",
+    "grupo": "Amasado & Horno",
+    "categorias": "MOI | DIA"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3614,
+  "fields": {
+    "numero": 12,
+    "codigo": "100012",
+    "nombre": "user 012",
+    "ubicacion": "Amasado Indirecto",
+    "grupo": "Amasado & Horno",
+    "categorias": "MOI | DIA"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3615,
+  "fields": {
+    "numero": 13,
+    "codigo": "100013",
+    "nombre": "user 013",
+    "ubicacion": "Amasado Indirecto Admi",
+    "grupo": "Amasado & Horno",
+    "categorias": "MOI | DIA"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3616,
+  "fields": {
+    "numero": 14,
+    "codigo": "100014",
+    "nombre": "user 014",
+    "ubicacion": "Amasado Indirecto Admi",
+    "grupo": "Amasado & Horno",
+    "categorias": "MOI | TARDE"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3617,
+  "fields": {
+    "numero": 15,
+    "codigo": "100015",
+    "nombre": "user 015",
+    "ubicacion": "Grupo 1",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3618,
+  "fields": {
+    "numero": 16,
+    "codigo": "100016",
+    "nombre": "user 016",
+    "ubicacion": "Grupo 1",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3619,
+  "fields": {
+    "numero": 17,
+    "codigo": "100017",
+    "nombre": "user 017",
+    "ubicacion": "Grupo 1",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3620,
+  "fields": {
+    "numero": 18,
+    "codigo": "100018",
+    "nombre": "user 018",
+    "ubicacion": "Grupo 1",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3621,
+  "fields": {
+    "numero": 19,
+    "codigo": "100019",
+    "nombre": "user 019",
+    "ubicacion": "Grupo 1",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3622,
+  "fields": {
+    "numero": 20,
+    "codigo": "100020",
+    "nombre": "user 020",
+    "ubicacion": "Grupo 1",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3623,
+  "fields": {
+    "numero": 21,
+    "codigo": "100021",
+    "nombre": "user 021",
+    "ubicacion": "Grupo 1",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3624,
+  "fields": {
+    "numero": 22,
+    "codigo": "100022",
+    "nombre": "user 022",
+    "ubicacion": "Grupo 1",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3625,
+  "fields": {
+    "numero": 23,
+    "codigo": "100023",
+    "nombre": "user 023",
+    "ubicacion": "Grupo 1",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3626,
+  "fields": {
+    "numero": 24,
+    "codigo": "100024",
+    "nombre": "user 024",
+    "ubicacion": "Grupo 1",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3627,
+  "fields": {
+    "numero": 25,
+    "codigo": "100025",
+    "nombre": "user 025",
+    "ubicacion": "Grupo 1",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3628,
+  "fields": {
+    "numero": 26,
+    "codigo": "100026",
+    "nombre": "user 026",
+    "ubicacion": "Grupo 1",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3629,
+  "fields": {
+    "numero": 27,
+    "codigo": "100027",
+    "nombre": "user 027",
+    "ubicacion": "Grupo 1",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3630,
+  "fields": {
+    "numero": 28,
+    "codigo": "100028",
+    "nombre": "user 028",
+    "ubicacion": "Grupo 1",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3631,
+  "fields": {
+    "numero": 29,
+    "codigo": "100029",
+    "nombre": "user 029",
+    "ubicacion": "Grupo 1",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3632,
+  "fields": {
+    "numero": 30,
+    "codigo": "100030",
+    "nombre": "user 030",
+    "ubicacion": "Grupo 1",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3633,
+  "fields": {
+    "numero": 31,
+    "codigo": "100031",
+    "nombre": "user 031",
+    "ubicacion": "Grupo 1",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3634,
+  "fields": {
+    "numero": 32,
+    "codigo": "100032",
+    "nombre": "user 032",
+    "ubicacion": "Grupo 1",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3635,
+  "fields": {
+    "numero": 33,
+    "codigo": "100033",
+    "nombre": "user 033",
+    "ubicacion": "Grupo 1",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3636,
+  "fields": {
+    "numero": 34,
+    "codigo": "100034",
+    "nombre": "user 034",
+    "ubicacion": "Grupo 1",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3637,
+  "fields": {
+    "numero": 35,
+    "codigo": "100035",
+    "nombre": "user 035",
+    "ubicacion": "Grupo 1",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3638,
+  "fields": {
+    "numero": 36,
+    "codigo": "100036",
+    "nombre": "user 036",
+    "ubicacion": "Grupo 2",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3639,
+  "fields": {
+    "numero": 37,
+    "codigo": "100037",
+    "nombre": "user 037",
+    "ubicacion": "Grupo 2",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3640,
+  "fields": {
+    "numero": 38,
+    "codigo": "100038",
+    "nombre": "user 038",
+    "ubicacion": "Grupo 2",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3641,
+  "fields": {
+    "numero": 39,
+    "codigo": "100039",
+    "nombre": "user 039",
+    "ubicacion": "Grupo 2",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3642,
+  "fields": {
+    "numero": 40,
+    "codigo": "100040",
+    "nombre": "user 040",
+    "ubicacion": "Grupo 2",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3643,
+  "fields": {
+    "numero": 41,
+    "codigo": "100041",
+    "nombre": "user 041",
+    "ubicacion": "Grupo 2",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3644,
+  "fields": {
+    "numero": 42,
+    "codigo": "100042",
+    "nombre": "user 042",
+    "ubicacion": "Grupo 2",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3645,
+  "fields": {
+    "numero": 43,
+    "codigo": "100043",
+    "nombre": "user 043",
+    "ubicacion": "Grupo 2",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3646,
+  "fields": {
+    "numero": 44,
+    "codigo": "100044",
+    "nombre": "user 044",
+    "ubicacion": "Grupo 2",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3647,
+  "fields": {
+    "numero": 45,
+    "codigo": "100045",
+    "nombre": "user 045",
+    "ubicacion": "Grupo 2",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3648,
+  "fields": {
+    "numero": 46,
+    "codigo": "100046",
+    "nombre": "user 046",
+    "ubicacion": "Grupo 2",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3649,
+  "fields": {
+    "numero": 47,
+    "codigo": "100047",
+    "nombre": "user 047",
+    "ubicacion": "Grupo 2",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3650,
+  "fields": {
+    "numero": 48,
+    "codigo": "100048",
+    "nombre": "user 048",
+    "ubicacion": "Grupo 2",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3651,
+  "fields": {
+    "numero": 49,
+    "codigo": "100049",
+    "nombre": "user 049",
+    "ubicacion": "Grupo 2",
+    "grupo": "Amasado & Horno",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3652,
+  "fields": {
+    "numero": 50,
+    "codigo": "100050",
+    "nombre": "user 050",
+    "ubicacion": "Grupo 2",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3653,
+  "fields": {
+    "numero": 51,
+    "codigo": "100051",
+    "nombre": "user 051",
+    "ubicacion": "Grupo 2",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3654,
+  "fields": {
+    "numero": 52,
+    "codigo": "100052",
+    "nombre": "user 052",
+    "ubicacion": "Grupo 2",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3655,
+  "fields": {
+    "numero": 53,
+    "codigo": "100053",
+    "nombre": "user 053",
+    "ubicacion": "Grupo 2",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3656,
+  "fields": {
+    "numero": 54,
+    "codigo": "100054",
+    "nombre": "user 054",
+    "ubicacion": "Grupo 2",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3657,
+  "fields": {
+    "numero": 55,
+    "codigo": "100055",
+    "nombre": "user 055",
+    "ubicacion": "Grupo 2",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3658,
+  "fields": {
+    "numero": 56,
+    "codigo": "100056",
+    "nombre": "user 056",
+    "ubicacion": "Grupo 2",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3659,
+  "fields": {
+    "numero": 57,
+    "codigo": "100057",
+    "nombre": "user 057",
+    "ubicacion": "Grupo 2",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3660,
+  "fields": {
+    "numero": 58,
+    "codigo": "100058",
+    "nombre": "user 058",
+    "ubicacion": "Grupo 2",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3661,
+  "fields": {
+    "numero": 59,
+    "codigo": "100059",
+    "nombre": "user 059",
+    "ubicacion": "Grupo 3",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3662,
+  "fields": {
+    "numero": 60,
+    "codigo": "100060",
+    "nombre": "user 060",
+    "ubicacion": "Grupo 3",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3663,
+  "fields": {
+    "numero": 61,
+    "codigo": "100061",
+    "nombre": "user 061",
+    "ubicacion": "Grupo 3",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3664,
+  "fields": {
+    "numero": 62,
+    "codigo": "100062",
+    "nombre": "user 062",
+    "ubicacion": "Grupo 3",
+    "grupo": "Amasado & Horno",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3665,
+  "fields": {
+    "numero": 63,
+    "codigo": "100063",
+    "nombre": "user 063",
+    "ubicacion": "Grupo 3",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3666,
+  "fields": {
+    "numero": 64,
+    "codigo": "100064",
+    "nombre": "user 064",
+    "ubicacion": "Grupo 3",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3667,
+  "fields": {
+    "numero": 65,
+    "codigo": "100065",
+    "nombre": "user 065",
+    "ubicacion": "Grupo 3",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3668,
+  "fields": {
+    "numero": 66,
+    "codigo": "100066",
+    "nombre": "user 066",
+    "ubicacion": "Grupo 3",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3669,
+  "fields": {
+    "numero": 67,
+    "codigo": "100067",
+    "nombre": "user 067",
+    "ubicacion": "Grupo 3",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3670,
+  "fields": {
+    "numero": 68,
+    "codigo": "100068",
+    "nombre": "user 068",
+    "ubicacion": "Grupo 3",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3671,
+  "fields": {
+    "numero": 69,
+    "codigo": "100069",
+    "nombre": "user 069",
+    "ubicacion": "Grupo 3",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3672,
+  "fields": {
+    "numero": 70,
+    "codigo": "100070",
+    "nombre": "user 070",
+    "ubicacion": "Grupo 3",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3673,
+  "fields": {
+    "numero": 71,
+    "codigo": "100071",
+    "nombre": "user 071",
+    "ubicacion": "Grupo 3",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3674,
+  "fields": {
+    "numero": 72,
+    "codigo": "100072",
+    "nombre": "user 072",
+    "ubicacion": "Grupo 3",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3675,
+  "fields": {
+    "numero": 73,
+    "codigo": "100073",
+    "nombre": "user 073",
+    "ubicacion": "Grupo 3",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3676,
+  "fields": {
+    "numero": 74,
+    "codigo": "100074",
+    "nombre": "user 074",
+    "ubicacion": "Grupo 3",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3677,
+  "fields": {
+    "numero": 75,
+    "codigo": "100075",
+    "nombre": "user 075",
+    "ubicacion": "Grupo 3",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3678,
+  "fields": {
+    "numero": 76,
+    "codigo": "100076",
+    "nombre": "user 076",
+    "ubicacion": "Grupo 3",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3679,
+  "fields": {
+    "numero": 77,
+    "codigo": "100077",
+    "nombre": "user 077",
+    "ubicacion": "Grupo 3",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3680,
+  "fields": {
+    "numero": 78,
+    "codigo": "100078",
+    "nombre": "user 078",
+    "ubicacion": "Grupo 3",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3681,
+  "fields": {
+    "numero": 79,
+    "codigo": "100079",
+    "nombre": "user 079",
+    "ubicacion": "Grupo 3",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3682,
+  "fields": {
+    "numero": 80,
+    "codigo": "100080",
+    "nombre": "user 080",
+    "ubicacion": "Grupo 3",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3683,
+  "fields": {
+    "numero": 81,
+    "codigo": "100081",
+    "nombre": "user 081",
+    "ubicacion": "Grupo 3",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3684,
+  "fields": {
+    "numero": 82,
+    "codigo": "100082",
+    "nombre": "user 082",
+    "ubicacion": "Grupo 4",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3685,
+  "fields": {
+    "numero": 83,
+    "codigo": "100083",
+    "nombre": "user 083",
+    "ubicacion": "Grupo 4",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3686,
+  "fields": {
+    "numero": 84,
+    "codigo": "100084",
+    "nombre": "user 084",
+    "ubicacion": "Grupo 4",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3687,
+  "fields": {
+    "numero": 85,
+    "codigo": "100085",
+    "nombre": "user 085",
+    "ubicacion": "Grupo 4",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3688,
+  "fields": {
+    "numero": 86,
+    "codigo": "100086",
+    "nombre": "user 086",
+    "ubicacion": "Grupo 4",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3689,
+  "fields": {
+    "numero": 87,
+    "codigo": "100087",
+    "nombre": "user 087",
+    "ubicacion": "Grupo 4",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3690,
+  "fields": {
+    "numero": 88,
+    "codigo": "100088",
+    "nombre": "user 088",
+    "ubicacion": "Grupo 4",
+    "grupo": "Amasado & Horno",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3691,
+  "fields": {
+    "numero": 89,
+    "codigo": "100089",
+    "nombre": "user 089",
+    "ubicacion": "Grupo 4",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3692,
+  "fields": {
+    "numero": 90,
+    "codigo": "100090",
+    "nombre": "user 090",
+    "ubicacion": "Grupo 4",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3693,
+  "fields": {
+    "numero": 91,
+    "codigo": "100091",
+    "nombre": "user 091",
+    "ubicacion": "Grupo 4",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3694,
+  "fields": {
+    "numero": 92,
+    "codigo": "100092",
+    "nombre": "user 092",
+    "ubicacion": "Grupo 4",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3695,
+  "fields": {
+    "numero": 93,
+    "codigo": "100093",
+    "nombre": "user 093",
+    "ubicacion": "Grupo 4",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3696,
+  "fields": {
+    "numero": 94,
+    "codigo": "100094",
+    "nombre": "user 094",
+    "ubicacion": "Grupo 4",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3697,
+  "fields": {
+    "numero": 95,
+    "codigo": "100095",
+    "nombre": "user 095",
+    "ubicacion": "Grupo 4",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3698,
+  "fields": {
+    "numero": 96,
+    "codigo": "100096",
+    "nombre": "user 096",
+    "ubicacion": "Grupo 4",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3699,
+  "fields": {
+    "numero": 97,
+    "codigo": "100097",
+    "nombre": "user 097",
+    "ubicacion": "Grupo 4",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3700,
+  "fields": {
+    "numero": 98,
+    "codigo": "100098",
+    "nombre": "user 098",
+    "ubicacion": "Grupo 4",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3701,
+  "fields": {
+    "numero": 99,
+    "codigo": "100099",
+    "nombre": "user 099",
+    "ubicacion": "Grupo 4",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3702,
+  "fields": {
+    "numero": 100,
+    "codigo": "100100",
+    "nombre": "user 100",
+    "ubicacion": "Grupo 4",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3703,
+  "fields": {
+    "numero": 101,
+    "codigo": "100101",
+    "nombre": "user 101",
+    "ubicacion": "Grupo 4",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3704,
+  "fields": {
+    "numero": 102,
+    "codigo": "100102",
+    "nombre": "user 102",
+    "ubicacion": "Grupo 4",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3705,
+  "fields": {
+    "numero": 103,
+    "codigo": "100103",
+    "nombre": "user 103",
+    "ubicacion": "Grupo 4",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3706,
+  "fields": {
+    "numero": 104,
+    "codigo": "100104",
+    "nombre": "user 104",
+    "ubicacion": "Grupo 4",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3707,
+  "fields": {
+    "numero": 105,
+    "codigo": "100105",
+    "nombre": "user 105",
+    "ubicacion": "Maria 1",
+    "grupo": "Amasado & Horno",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3708,
+  "fields": {
+    "numero": 106,
+    "codigo": "100106",
+    "nombre": "user 106",
+    "ubicacion": "Alphapack 1",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3709,
+  "fields": {
+    "numero": 107,
+    "codigo": "100107",
+    "nombre": "user 107",
+    "ubicacion": "Alphapack 2",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3710,
+  "fields": {
+    "numero": 108,
+    "codigo": "100108",
+    "nombre": "user 108",
+    "ubicacion": "Alphapack 2",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3711,
+  "fields": {
+    "numero": 109,
+    "codigo": "100109",
+    "nombre": "user 109",
+    "ubicacion": "Alphapack 4",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3712,
+  "fields": {
+    "numero": 110,
+    "codigo": "100110",
+    "nombre": "user 110",
+    "ubicacion": "Alphapack 4",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3713,
+  "fields": {
+    "numero": 111,
+    "codigo": "100111",
+    "nombre": "user 111",
+    "ubicacion": "Cir Nuevos 1",
+    "grupo": "Empaque",
+    "categorias": "NUEVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3714,
+  "fields": {
+    "numero": 112,
+    "codigo": "100112",
+    "nombre": "user 112",
+    "ubicacion": "Cir Nuevos 1",
+    "grupo": "Empaque",
+    "categorias": "NUEVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3715,
+  "fields": {
+    "numero": 113,
+    "codigo": "100113",
+    "nombre": "user 113",
+    "ubicacion": "Cir Nuevos 1",
+    "grupo": "Empaque",
+    "categorias": "NUEVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3716,
+  "fields": {
+    "numero": 114,
+    "codigo": "100114",
+    "nombre": "user 114",
+    "ubicacion": "Cir Nuevos 4",
+    "grupo": "Empaque",
+    "categorias": "NUEVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3717,
+  "fields": {
+    "numero": 115,
+    "codigo": "100115",
+    "nombre": "user 115",
+    "ubicacion": "Cir Nuevos 4",
+    "grupo": "Empaque",
+    "categorias": "NUEVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3718,
+  "fields": {
+    "numero": 116,
+    "codigo": "100116",
+    "nombre": "user 116",
+    "ubicacion": "Cir Nuevos 4",
+    "grupo": "Empaque",
+    "categorias": "NUEVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3719,
+  "fields": {
+    "numero": 117,
+    "codigo": "100117",
+    "nombre": "user 117",
+    "ubicacion": "Cir Nuevos 4",
+    "grupo": "Empaque",
+    "categorias": "NUEVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3720,
+  "fields": {
+    "numero": 118,
+    "codigo": "100118",
+    "nombre": "user 118",
+    "ubicacion": "Circus 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3721,
+  "fields": {
+    "numero": 119,
+    "codigo": "100119",
+    "nombre": "user 119",
+    "ubicacion": "Circus 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3722,
+  "fields": {
+    "numero": 120,
+    "codigo": "100120",
+    "nombre": "user 120",
+    "ubicacion": "Circus 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3723,
+  "fields": {
+    "numero": 121,
+    "codigo": "100121",
+    "nombre": "user 121",
+    "ubicacion": "Circus 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3724,
+  "fields": {
+    "numero": 122,
+    "codigo": "100122",
+    "nombre": "user 122",
+    "ubicacion": "Circus 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3725,
+  "fields": {
+    "numero": 123,
+    "codigo": "100123",
+    "nombre": "user 123",
+    "ubicacion": "Circus 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3726,
+  "fields": {
+    "numero": 124,
+    "codigo": "100124",
+    "nombre": "user 124",
+    "ubicacion": "Circus 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3727,
+  "fields": {
+    "numero": 125,
+    "codigo": "100125",
+    "nombre": "user 125",
+    "ubicacion": "Circus 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3728,
+  "fields": {
+    "numero": 126,
+    "codigo": "100126",
+    "nombre": "user 126",
+    "ubicacion": "Circus 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3729,
+  "fields": {
+    "numero": 127,
+    "codigo": "100127",
+    "nombre": "user 127",
+    "ubicacion": "Circus 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3730,
+  "fields": {
+    "numero": 128,
+    "codigo": "100128",
+    "nombre": "user 128",
+    "ubicacion": "Circus 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3731,
+  "fields": {
+    "numero": 129,
+    "codigo": "100129",
+    "nombre": "user 129",
+    "ubicacion": "Circus 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3732,
+  "fields": {
+    "numero": 130,
+    "codigo": "100130",
+    "nombre": "user 130",
+    "ubicacion": "Circus 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3733,
+  "fields": {
+    "numero": 131,
+    "codigo": "100131",
+    "nombre": "user 131",
+    "ubicacion": "Circus 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3734,
+  "fields": {
+    "numero": 132,
+    "codigo": "100132",
+    "nombre": "user 132",
+    "ubicacion": "Circus 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3735,
+  "fields": {
+    "numero": 133,
+    "codigo": "100133",
+    "nombre": "user 133",
+    "ubicacion": "Circus 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3736,
+  "fields": {
+    "numero": 134,
+    "codigo": "100134",
+    "nombre": "user 134",
+    "ubicacion": "Circus 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3737,
+  "fields": {
+    "numero": 135,
+    "codigo": "100135",
+    "nombre": "user 135",
+    "ubicacion": "Circus 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3738,
+  "fields": {
+    "numero": 136,
+    "codigo": "100136",
+    "nombre": "user 136",
+    "ubicacion": "Circus 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3739,
+  "fields": {
+    "numero": 137,
+    "codigo": "100137",
+    "nombre": "user 137",
+    "ubicacion": "Circus 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3740,
+  "fields": {
+    "numero": 138,
+    "codigo": "100138",
+    "nombre": "user 138",
+    "ubicacion": "Circus 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3741,
+  "fields": {
+    "numero": 139,
+    "codigo": "100139",
+    "nombre": "user 139",
+    "ubicacion": "Circus 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3742,
+  "fields": {
+    "numero": 140,
+    "codigo": "100140",
+    "nombre": "user 140",
+    "ubicacion": "Circus 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3743,
+  "fields": {
+    "numero": 141,
+    "codigo": "100141",
+    "nombre": "user 141",
+    "ubicacion": "Circus 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3744,
+  "fields": {
+    "numero": 142,
+    "codigo": "100142",
+    "nombre": "user 142",
+    "ubicacion": "Circus 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3745,
+  "fields": {
+    "numero": 143,
+    "codigo": "100143",
+    "nombre": "user 143",
+    "ubicacion": "Circus 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3746,
+  "fields": {
+    "numero": 144,
+    "codigo": "100144",
+    "nombre": "user 144",
+    "ubicacion": "Circus 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3747,
+  "fields": {
+    "numero": 145,
+    "codigo": "100145",
+    "nombre": "user 145",
+    "ubicacion": "Circus 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3748,
+  "fields": {
+    "numero": 146,
+    "codigo": "100146",
+    "nombre": "user 146",
+    "ubicacion": "Circus 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3749,
+  "fields": {
+    "numero": 147,
+    "codigo": "100147",
+    "nombre": "user 147",
+    "ubicacion": "Circus 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3750,
+  "fields": {
+    "numero": 148,
+    "codigo": "100148",
+    "nombre": "user 148",
+    "ubicacion": "Circus 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3751,
+  "fields": {
+    "numero": 149,
+    "codigo": "100149",
+    "nombre": "user 149",
+    "ubicacion": "Circus 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3752,
+  "fields": {
+    "numero": 150,
+    "codigo": "100150",
+    "nombre": "user 150",
+    "ubicacion": "Circus 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3753,
+  "fields": {
+    "numero": 151,
+    "codigo": "100151",
+    "nombre": "user 151",
+    "ubicacion": "Circus 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3754,
+  "fields": {
+    "numero": 152,
+    "codigo": "100152",
+    "nombre": "user 152",
+    "ubicacion": "Circus 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3755,
+  "fields": {
+    "numero": 153,
+    "codigo": "100153",
+    "nombre": "user 153",
+    "ubicacion": "Circus 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3756,
+  "fields": {
+    "numero": 154,
+    "codigo": "100154",
+    "nombre": "user 154",
+    "ubicacion": "Circus 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3757,
+  "fields": {
+    "numero": 155,
+    "codigo": "100155",
+    "nombre": "user 155",
+    "ubicacion": "Circus 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3758,
+  "fields": {
+    "numero": 156,
+    "codigo": "100156",
+    "nombre": "user 156",
+    "ubicacion": "Circus 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3759,
+  "fields": {
+    "numero": 157,
+    "codigo": "100157",
+    "nombre": "user 157",
+    "ubicacion": "Circus 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3760,
+  "fields": {
+    "numero": 158,
+    "codigo": "100158",
+    "nombre": "user 158",
+    "ubicacion": "Circus 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3761,
+  "fields": {
+    "numero": 159,
+    "codigo": "100159",
+    "nombre": "user 159",
+    "ubicacion": "Circus 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3762,
+  "fields": {
+    "numero": 160,
+    "codigo": "100160",
+    "nombre": "user 160",
+    "ubicacion": "Circus 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3763,
+  "fields": {
+    "numero": 161,
+    "codigo": "100161",
+    "nombre": "user 161",
+    "ubicacion": "Circus 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3764,
+  "fields": {
+    "numero": 162,
+    "codigo": "100162",
+    "nombre": "user 162",
+    "ubicacion": "Circus 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3765,
+  "fields": {
+    "numero": 163,
+    "codigo": "100163",
+    "nombre": "user 163",
+    "ubicacion": "Circus 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3766,
+  "fields": {
+    "numero": 164,
+    "codigo": "100164",
+    "nombre": "user 164",
+    "ubicacion": "Circus 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3767,
+  "fields": {
+    "numero": 165,
+    "codigo": "100165",
+    "nombre": "user 165",
+    "ubicacion": "Circus 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3768,
+  "fields": {
+    "numero": 166,
+    "codigo": "100166",
+    "nombre": "user 166",
+    "ubicacion": "Circus 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3769,
+  "fields": {
+    "numero": 167,
+    "codigo": "100167",
+    "nombre": "user 167",
+    "ubicacion": "Circus 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3770,
+  "fields": {
+    "numero": 168,
+    "codigo": "100168",
+    "nombre": "user 168",
+    "ubicacion": "Circus 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3771,
+  "fields": {
+    "numero": 169,
+    "codigo": "100169",
+    "nombre": "user 169",
+    "ubicacion": "Circus 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3772,
+  "fields": {
+    "numero": 170,
+    "codigo": "100170",
+    "nombre": "user 170",
+    "ubicacion": "Circus 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3773,
+  "fields": {
+    "numero": 171,
+    "codigo": "100171",
+    "nombre": "user 171",
+    "ubicacion": "Circus 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3774,
+  "fields": {
+    "numero": 172,
+    "codigo": "100172",
+    "nombre": "user 172",
+    "ubicacion": "Circus 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3775,
+  "fields": {
+    "numero": 173,
+    "codigo": "100173",
+    "nombre": "user 173",
+    "ubicacion": "Circus 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3776,
+  "fields": {
+    "numero": 174,
+    "codigo": "100174",
+    "nombre": "user 174",
+    "ubicacion": "Circus 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3777,
+  "fields": {
+    "numero": 175,
+    "codigo": "100175",
+    "nombre": "user 175",
+    "ubicacion": "Circus 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3778,
+  "fields": {
+    "numero": 176,
+    "codigo": "100176",
+    "nombre": "user 176",
+    "ubicacion": "Circus 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3779,
+  "fields": {
+    "numero": 177,
+    "codigo": "100177",
+    "nombre": "user 177",
+    "ubicacion": "Circus 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3780,
+  "fields": {
+    "numero": 178,
+    "codigo": "100178",
+    "nombre": "user 178",
+    "ubicacion": "Circus 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3781,
+  "fields": {
+    "numero": 179,
+    "codigo": "100179",
+    "nombre": "user 179",
+    "ubicacion": "Circus 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3782,
+  "fields": {
+    "numero": 180,
+    "codigo": "100180",
+    "nombre": "user 180",
+    "ubicacion": "Circus 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3783,
+  "fields": {
+    "numero": 181,
+    "codigo": "100181",
+    "nombre": "user 181",
+    "ubicacion": "Circus 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3784,
+  "fields": {
+    "numero": 182,
+    "codigo": "100182",
+    "nombre": "user 182",
+    "ubicacion": "Circus 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3785,
+  "fields": {
+    "numero": 183,
+    "codigo": "100183",
+    "nombre": "user 183",
+    "ubicacion": "Circus 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3786,
+  "fields": {
+    "numero": 184,
+    "codigo": "100184",
+    "nombre": "user 184",
+    "ubicacion": "Circus 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3787,
+  "fields": {
+    "numero": 185,
+    "codigo": "100185",
+    "nombre": "user 185",
+    "ubicacion": "Circus 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3788,
+  "fields": {
+    "numero": 186,
+    "codigo": "100186",
+    "nombre": "user 186",
+    "ubicacion": "Circus 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3789,
+  "fields": {
+    "numero": 187,
+    "codigo": "100187",
+    "nombre": "user 187",
+    "ubicacion": "Circus 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3790,
+  "fields": {
+    "numero": 188,
+    "codigo": "100188",
+    "nombre": "user 188",
+    "ubicacion": "Circus 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3791,
+  "fields": {
+    "numero": 189,
+    "codigo": "100189",
+    "nombre": "user 189",
+    "ubicacion": "Circus 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3792,
+  "fields": {
+    "numero": 190,
+    "codigo": "100190",
+    "nombre": "user 190",
+    "ubicacion": "Circus 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3793,
+  "fields": {
+    "numero": 191,
+    "codigo": "100191",
+    "nombre": "user 191",
+    "ubicacion": "Circus 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3794,
+  "fields": {
+    "numero": 192,
+    "codigo": "100192",
+    "nombre": "user 192",
+    "ubicacion": "Circus 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3795,
+  "fields": {
+    "numero": 193,
+    "codigo": "100193",
+    "nombre": "user 193",
+    "ubicacion": "Circus 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3796,
+  "fields": {
+    "numero": 194,
+    "codigo": "100194",
+    "nombre": "user 194",
+    "ubicacion": "Circus 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3797,
+  "fields": {
+    "numero": 195,
+    "codigo": "100195",
+    "nombre": "user 195",
+    "ubicacion": "Circus 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3798,
+  "fields": {
+    "numero": 196,
+    "codigo": "100196",
+    "nombre": "user 196",
+    "ubicacion": "Circus 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3799,
+  "fields": {
+    "numero": 197,
+    "codigo": "100197",
+    "nombre": "user 197",
+    "ubicacion": "Circus 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3800,
+  "fields": {
+    "numero": 198,
+    "codigo": "100198",
+    "nombre": "user 198",
+    "ubicacion": "Circus 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3801,
+  "fields": {
+    "numero": 199,
+    "codigo": "100199",
+    "nombre": "user 199",
+    "ubicacion": "Circus 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3802,
+  "fields": {
+    "numero": 200,
+    "codigo": "100200",
+    "nombre": "user 200",
+    "ubicacion": "Circus 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3803,
+  "fields": {
+    "numero": 201,
+    "codigo": "100201",
+    "nombre": "user 201",
+    "ubicacion": "DoyPack",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3804,
+  "fields": {
+    "numero": 202,
+    "codigo": "100202",
+    "nombre": "user 202",
+    "ubicacion": "DoyPack",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3805,
+  "fields": {
+    "numero": 203,
+    "codigo": "100203",
+    "nombre": "user 203",
+    "ubicacion": "DoyPack",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3806,
+  "fields": {
+    "numero": 204,
+    "codigo": "100204",
+    "nombre": "user 204",
+    "ubicacion": "DoyPack",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3807,
+  "fields": {
+    "numero": 205,
+    "codigo": "100205",
+    "nombre": "user 205",
+    "ubicacion": "DoyPack",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3808,
+  "fields": {
+    "numero": 206,
+    "codigo": "100206",
+    "nombre": "user 206",
+    "ubicacion": "DoyPack",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3809,
+  "fields": {
+    "numero": 207,
+    "codigo": "100207",
+    "nombre": "user 207",
+    "ubicacion": "DoyPack",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3810,
+  "fields": {
+    "numero": 208,
+    "codigo": "100208",
+    "nombre": "user 208",
+    "ubicacion": "DoyPack",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3811,
+  "fields": {
+    "numero": 209,
+    "codigo": "100209",
+    "nombre": "user 209",
+    "ubicacion": "Envamec 1",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3812,
+  "fields": {
+    "numero": 210,
+    "codigo": "100210",
+    "nombre": "user 210",
+    "ubicacion": "Envamec 1",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3813,
+  "fields": {
+    "numero": 211,
+    "codigo": "100211",
+    "nombre": "user 211",
+    "ubicacion": "Envamec 2",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3814,
+  "fields": {
+    "numero": 212,
+    "codigo": "100212",
+    "nombre": "user 212",
+    "ubicacion": "Envamec 3",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3815,
+  "fields": {
+    "numero": 213,
+    "codigo": "100213",
+    "nombre": "user 213",
+    "ubicacion": "Envamec 4",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3816,
+  "fields": {
+    "numero": 214,
+    "codigo": "100214",
+    "nombre": "user 214",
+    "ubicacion": "GALAPESCA & BAÑADOS 1",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3817,
+  "fields": {
+    "numero": 215,
+    "codigo": "100215",
+    "nombre": "user 215",
+    "ubicacion": "GALAPESCA & BAÑADOS 1",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3818,
+  "fields": {
+    "numero": 216,
+    "codigo": "100216",
+    "nombre": "user 216",
+    "ubicacion": "GALAPESCA & BAÑADOS 1",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3819,
+  "fields": {
+    "numero": 217,
+    "codigo": "100217",
+    "nombre": "user 217",
+    "ubicacion": "GALAPESCA & BAÑADOS 1",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3820,
+  "fields": {
+    "numero": 218,
+    "codigo": "100218",
+    "nombre": "user 218",
+    "ubicacion": "GALAPESCA & BAÑADOS 1",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3821,
+  "fields": {
+    "numero": 219,
+    "codigo": "100219",
+    "nombre": "user 219",
+    "ubicacion": "GALAPESCA & BAÑADOS 1",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3822,
+  "fields": {
+    "numero": 220,
+    "codigo": "100220",
+    "nombre": "user 220",
+    "ubicacion": "GALAPESCA & BAÑADOS 1",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3823,
+  "fields": {
+    "numero": 221,
+    "codigo": "100221",
+    "nombre": "user 221",
+    "ubicacion": "GALAPESCA & BAÑADOS 1",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3824,
+  "fields": {
+    "numero": 222,
+    "codigo": "100222",
+    "nombre": "user 222",
+    "ubicacion": "GALAPESCA & BAÑADOS 1",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3825,
+  "fields": {
+    "numero": 223,
+    "codigo": "100223",
+    "nombre": "user 223",
+    "ubicacion": "GALAPESCA & BAÑADOS 2",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3826,
+  "fields": {
+    "numero": 224,
+    "codigo": "100224",
+    "nombre": "user 224",
+    "ubicacion": "GALAPESCA & BAÑADOS 2",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3827,
+  "fields": {
+    "numero": 225,
+    "codigo": "100225",
+    "nombre": "user 225",
+    "ubicacion": "GALAPESCA & BAÑADOS 2",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3828,
+  "fields": {
+    "numero": 226,
+    "codigo": "100226",
+    "nombre": "user 226",
+    "ubicacion": "GALAPESCA & BAÑADOS 2",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3829,
+  "fields": {
+    "numero": 227,
+    "codigo": "100227",
+    "nombre": "user 227",
+    "ubicacion": "GALAPESCA & BAÑADOS 2",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3830,
+  "fields": {
+    "numero": 228,
+    "codigo": "100228",
+    "nombre": "user 228",
+    "ubicacion": "GALAPESCA & BAÑADOS 3",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3831,
+  "fields": {
+    "numero": 229,
+    "codigo": "100229",
+    "nombre": "user 229",
+    "ubicacion": "GALAPESCA & BAÑADOS 3",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3832,
+  "fields": {
+    "numero": 230,
+    "codigo": "100230",
+    "nombre": "user 230",
+    "ubicacion": "GALAPESCA & BAÑADOS 3",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3833,
+  "fields": {
+    "numero": 231,
+    "codigo": "100231",
+    "nombre": "user 231",
+    "ubicacion": "GALAPESCA & BAÑADOS 3",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3834,
+  "fields": {
+    "numero": 232,
+    "codigo": "100232",
+    "nombre": "user 232",
+    "ubicacion": "GALAPESCA & BAÑADOS 3",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3835,
+  "fields": {
+    "numero": 233,
+    "codigo": "100233",
+    "nombre": "user 233",
+    "ubicacion": "GALAPESCA & BAÑADOS 3",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3836,
+  "fields": {
+    "numero": 234,
+    "codigo": "100234",
+    "nombre": "user 234",
+    "ubicacion": "GALAPESCA & BAÑADOS 4",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3837,
+  "fields": {
+    "numero": 235,
+    "codigo": "100235",
+    "nombre": "user 235",
+    "ubicacion": "GALAPESCA & BAÑADOS 4",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3838,
+  "fields": {
+    "numero": 236,
+    "codigo": "100236",
+    "nombre": "user 236",
+    "ubicacion": "GALAPESCA & BAÑADOS 4",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3839,
+  "fields": {
+    "numero": 237,
+    "codigo": "100237",
+    "nombre": "user 237",
+    "ubicacion": "GALAPESCA & BAÑADOS 4",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3840,
+  "fields": {
+    "numero": 238,
+    "codigo": "100238",
+    "nombre": "user 238",
+    "ubicacion": "GALAPESCA & BAÑADOS 4",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3841,
+  "fields": {
+    "numero": 239,
+    "codigo": "100239",
+    "nombre": "user 239",
+    "ubicacion": "GALAPESCA & BAÑADOS 4",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3842,
+  "fields": {
+    "numero": 240,
+    "codigo": "100240",
+    "nombre": "user 240",
+    "ubicacion": "GALAPESCA & BAÑADOS 4",
+    "grupo": "Empaque",
+    "categorias": "Cracker/Bañados"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3843,
+  "fields": {
+    "numero": 241,
+    "codigo": "100241",
+    "nombre": "user 241",
+    "ubicacion": "Krispiz 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3844,
+  "fields": {
+    "numero": 242,
+    "codigo": "100242",
+    "nombre": "user 242",
+    "ubicacion": "Krispiz 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3845,
+  "fields": {
+    "numero": 243,
+    "codigo": "100243",
+    "nombre": "user 243",
+    "ubicacion": "Krispiz 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3846,
+  "fields": {
+    "numero": 244,
+    "codigo": "100244",
+    "nombre": "user 244",
+    "ubicacion": "Krispiz 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3847,
+  "fields": {
+    "numero": 245,
+    "codigo": "100245",
+    "nombre": "user 245",
+    "ubicacion": "Krispiz 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3848,
+  "fields": {
+    "numero": 246,
+    "codigo": "100246",
+    "nombre": "user 246",
+    "ubicacion": "Krispiz 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3849,
+  "fields": {
+    "numero": 247,
+    "codigo": "100247",
+    "nombre": "user 247",
+    "ubicacion": "Krispiz 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3850,
+  "fields": {
+    "numero": 248,
+    "codigo": "100248",
+    "nombre": "user 248",
+    "ubicacion": "Krispiz 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3851,
+  "fields": {
+    "numero": 249,
+    "codigo": "100249",
+    "nombre": "user 249",
+    "ubicacion": "Krispiz 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3852,
+  "fields": {
+    "numero": 250,
+    "codigo": "100250",
+    "nombre": "user 250",
+    "ubicacion": "Krispiz 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3853,
+  "fields": {
+    "numero": 251,
+    "codigo": "100251",
+    "nombre": "user 251",
+    "ubicacion": "Krispiz 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3854,
+  "fields": {
+    "numero": 252,
+    "codigo": "100252",
+    "nombre": "user 252",
+    "ubicacion": "Krispiz 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3855,
+  "fields": {
+    "numero": 253,
+    "codigo": "100253",
+    "nombre": "user 253",
+    "ubicacion": "Krispiz 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3856,
+  "fields": {
+    "numero": 254,
+    "codigo": "100254",
+    "nombre": "user 254",
+    "ubicacion": "Krispiz 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3857,
+  "fields": {
+    "numero": 255,
+    "codigo": "100255",
+    "nombre": "user 255",
+    "ubicacion": "Krispiz 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3858,
+  "fields": {
+    "numero": 256,
+    "codigo": "100256",
+    "nombre": "user 256",
+    "ubicacion": "Krispiz 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3859,
+  "fields": {
+    "numero": 257,
+    "codigo": "100257",
+    "nombre": "user 257",
+    "ubicacion": "Krispiz 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3860,
+  "fields": {
+    "numero": 258,
+    "codigo": "100258",
+    "nombre": "user 258",
+    "ubicacion": "Krispiz 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3861,
+  "fields": {
+    "numero": 259,
+    "codigo": "100259",
+    "nombre": "user 259",
+    "ubicacion": "Krispiz 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3862,
+  "fields": {
+    "numero": 260,
+    "codigo": "100260",
+    "nombre": "user 260",
+    "ubicacion": "Krispiz 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3863,
+  "fields": {
+    "numero": 261,
+    "codigo": "100261",
+    "nombre": "user 261",
+    "ubicacion": "Krispiz 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3864,
+  "fields": {
+    "numero": 262,
+    "codigo": "100262",
+    "nombre": "user 262",
+    "ubicacion": "Krispiz 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3865,
+  "fields": {
+    "numero": 263,
+    "codigo": "100263",
+    "nombre": "user 263",
+    "ubicacion": "Krispiz 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3866,
+  "fields": {
+    "numero": 264,
+    "codigo": "100264",
+    "nombre": "user 264",
+    "ubicacion": "Krispiz 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3867,
+  "fields": {
+    "numero": 265,
+    "codigo": "100265",
+    "nombre": "user 265",
+    "ubicacion": "Krispiz 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3868,
+  "fields": {
+    "numero": 266,
+    "codigo": "100266",
+    "nombre": "user 266",
+    "ubicacion": "Krispiz 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3869,
+  "fields": {
+    "numero": 267,
+    "codigo": "100267",
+    "nombre": "user 267",
+    "ubicacion": "Krispiz 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3870,
+  "fields": {
+    "numero": 268,
+    "codigo": "100268",
+    "nombre": "user 268",
+    "ubicacion": "Krispiz 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3871,
+  "fields": {
+    "numero": 269,
+    "codigo": "100269",
+    "nombre": "user 269",
+    "ubicacion": "Krispiz 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3872,
+  "fields": {
+    "numero": 270,
+    "codigo": "100270",
+    "nombre": "user 270",
+    "ubicacion": "Krispiz 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3873,
+  "fields": {
+    "numero": 271,
+    "codigo": "100271",
+    "nombre": "user 271",
+    "ubicacion": "Krispiz 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3874,
+  "fields": {
+    "numero": 272,
+    "codigo": "100272",
+    "nombre": "user 272",
+    "ubicacion": "Krispiz 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3875,
+  "fields": {
+    "numero": 273,
+    "codigo": "100273",
+    "nombre": "user 273",
+    "ubicacion": "Krispiz 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3876,
+  "fields": {
+    "numero": 274,
+    "codigo": "100274",
+    "nombre": "user 274",
+    "ubicacion": "Krispiz 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3877,
+  "fields": {
+    "numero": 275,
+    "codigo": "100275",
+    "nombre": "user 275",
+    "ubicacion": "Krispiz 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3878,
+  "fields": {
+    "numero": 276,
+    "codigo": "100276",
+    "nombre": "user 276",
+    "ubicacion": "Krispiz 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3879,
+  "fields": {
+    "numero": 277,
+    "codigo": "100277",
+    "nombre": "user 277",
+    "ubicacion": "Krispiz 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3880,
+  "fields": {
+    "numero": 278,
+    "codigo": "100278",
+    "nombre": "user 278",
+    "ubicacion": "Krispiz 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3881,
+  "fields": {
+    "numero": 279,
+    "codigo": "100279",
+    "nombre": "user 279",
+    "ubicacion": "Krispiz 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3882,
+  "fields": {
+    "numero": 280,
+    "codigo": "100280",
+    "nombre": "user 280",
+    "ubicacion": "Krispiz 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3883,
+  "fields": {
+    "numero": 281,
+    "codigo": "100281",
+    "nombre": "user 281",
+    "ubicacion": "Krispiz 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3884,
+  "fields": {
+    "numero": 282,
+    "codigo": "100282",
+    "nombre": "user 282",
+    "ubicacion": "Krispiz 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3885,
+  "fields": {
+    "numero": 283,
+    "codigo": "100283",
+    "nombre": "user 283",
+    "ubicacion": "Krispiz 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3886,
+  "fields": {
+    "numero": 284,
+    "codigo": "100284",
+    "nombre": "user 284",
+    "ubicacion": "Krispiz 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3887,
+  "fields": {
+    "numero": 285,
+    "codigo": "100285",
+    "nombre": "user 285",
+    "ubicacion": "Krispiz 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3888,
+  "fields": {
+    "numero": 286,
+    "codigo": "100286",
+    "nombre": "user 286",
+    "ubicacion": "Krispiz 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3889,
+  "fields": {
+    "numero": 287,
+    "codigo": "100287",
+    "nombre": "user 287",
+    "ubicacion": "Krispiz 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3890,
+  "fields": {
+    "numero": 288,
+    "codigo": "100288",
+    "nombre": "user 288",
+    "ubicacion": "Krispiz 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3891,
+  "fields": {
+    "numero": 289,
+    "codigo": "100289",
+    "nombre": "user 289",
+    "ubicacion": "Krispiz 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3892,
+  "fields": {
+    "numero": 290,
+    "codigo": "100290",
+    "nombre": "user 290",
+    "ubicacion": "Krispiz 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3893,
+  "fields": {
+    "numero": 291,
+    "codigo": "100291",
+    "nombre": "user 291",
+    "ubicacion": "Krispiz 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3894,
+  "fields": {
+    "numero": 292,
+    "codigo": "100292",
+    "nombre": "user 292",
+    "ubicacion": "Krispiz 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3895,
+  "fields": {
+    "numero": 293,
+    "codigo": "100293",
+    "nombre": "user 293",
+    "ubicacion": "Krispiz 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3896,
+  "fields": {
+    "numero": 294,
+    "codigo": "100294",
+    "nombre": "user 294",
+    "ubicacion": "Krispiz 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3897,
+  "fields": {
+    "numero": 295,
+    "codigo": "100295",
+    "nombre": "user 295",
+    "ubicacion": "Krispiz 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3898,
+  "fields": {
+    "numero": 296,
+    "codigo": "100296",
+    "nombre": "user 296",
+    "ubicacion": "Krispiz 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3899,
+  "fields": {
+    "numero": 297,
+    "codigo": "100297",
+    "nombre": "user 297",
+    "ubicacion": "Krispiz 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3900,
+  "fields": {
+    "numero": 298,
+    "codigo": "100298",
+    "nombre": "user 298",
+    "ubicacion": "Krispiz 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3901,
+  "fields": {
+    "numero": 299,
+    "codigo": "100299",
+    "nombre": "user 299",
+    "ubicacion": "LACTANCIA 1",
+    "grupo": "Empaque",
+    "categorias": "Lactancia"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3902,
+  "fields": {
+    "numero": 300,
+    "codigo": "100300",
+    "nombre": "user 300",
+    "ubicacion": "LACTANCIA 1",
+    "grupo": "Empaque",
+    "categorias": "Lactancia"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3903,
+  "fields": {
+    "numero": 301,
+    "codigo": "100301",
+    "nombre": "user 301",
+    "ubicacion": "LACTANCIA 1",
+    "grupo": "Empaque",
+    "categorias": "Lactancia"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3904,
+  "fields": {
+    "numero": 302,
+    "codigo": "100302",
+    "nombre": "user 302",
+    "ubicacion": "LACTANCIA 1",
+    "grupo": "Empaque",
+    "categorias": "Lactancia"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3905,
+  "fields": {
+    "numero": 303,
+    "codigo": "100303",
+    "nombre": "user 303",
+    "ubicacion": "LACTANCIA 2",
+    "grupo": "Empaque",
+    "categorias": "Lactancia"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3906,
+  "fields": {
+    "numero": 304,
+    "codigo": "100304",
+    "nombre": "user 304",
+    "ubicacion": "LACTANCIA 2",
+    "grupo": "Empaque",
+    "categorias": "Lactancia"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3907,
+  "fields": {
+    "numero": 305,
+    "codigo": "100305",
+    "nombre": "user 305",
+    "ubicacion": "LACTANCIA 2",
+    "grupo": "Empaque",
+    "categorias": "Lactancia"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3908,
+  "fields": {
+    "numero": 306,
+    "codigo": "100306",
+    "nombre": "user 306",
+    "ubicacion": "LACTANCIA 2",
+    "grupo": "Empaque",
+    "categorias": "Lactancia"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3909,
+  "fields": {
+    "numero": 307,
+    "codigo": "100307",
+    "nombre": "user 307",
+    "ubicacion": "LACTANCIA 3",
+    "grupo": "Empaque",
+    "categorias": "Lactancia"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3910,
+  "fields": {
+    "numero": 308,
+    "codigo": "100308",
+    "nombre": "user 308",
+    "ubicacion": "LACTANCIA 3",
+    "grupo": "Empaque",
+    "categorias": "Lactancia"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3911,
+  "fields": {
+    "numero": 309,
+    "codigo": "100309",
+    "nombre": "user 309",
+    "ubicacion": "LACTANCIA 3",
+    "grupo": "Empaque",
+    "categorias": "Lactancia"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3912,
+  "fields": {
+    "numero": 310,
+    "codigo": "100310",
+    "nombre": "user 310",
+    "ubicacion": "LACTANCIA 3",
+    "grupo": "Empaque",
+    "categorias": "Lactancia"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3913,
+  "fields": {
+    "numero": 311,
+    "codigo": "100311",
+    "nombre": "user 311",
+    "ubicacion": "Maria 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3914,
+  "fields": {
+    "numero": 312,
+    "codigo": "100312",
+    "nombre": "user 312",
+    "ubicacion": "Maria 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3915,
+  "fields": {
+    "numero": 313,
+    "codigo": "100313",
+    "nombre": "user 313",
+    "ubicacion": "Maria 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3916,
+  "fields": {
+    "numero": 314,
+    "codigo": "100314",
+    "nombre": "user 314",
+    "ubicacion": "Maria 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3917,
+  "fields": {
+    "numero": 315,
+    "codigo": "100315",
+    "nombre": "user 315",
+    "ubicacion": "Maria 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3918,
+  "fields": {
+    "numero": 316,
+    "codigo": "100316",
+    "nombre": "user 316",
+    "ubicacion": "Maria 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3919,
+  "fields": {
+    "numero": 317,
+    "codigo": "100317",
+    "nombre": "user 317",
+    "ubicacion": "Maria 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3920,
+  "fields": {
+    "numero": 318,
+    "codigo": "100318",
+    "nombre": "user 318",
+    "ubicacion": "Maria 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3921,
+  "fields": {
+    "numero": 319,
+    "codigo": "100319",
+    "nombre": "user 319",
+    "ubicacion": "Maria 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3922,
+  "fields": {
+    "numero": 320,
+    "codigo": "100320",
+    "nombre": "user 320",
+    "ubicacion": "Maria 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3923,
+  "fields": {
+    "numero": 321,
+    "codigo": "100321",
+    "nombre": "user 321",
+    "ubicacion": "Maria 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3924,
+  "fields": {
+    "numero": 322,
+    "codigo": "100322",
+    "nombre": "user 322",
+    "ubicacion": "Maria 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3925,
+  "fields": {
+    "numero": 323,
+    "codigo": "100323",
+    "nombre": "user 323",
+    "ubicacion": "Maria 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3926,
+  "fields": {
+    "numero": 324,
+    "codigo": "100324",
+    "nombre": "user 324",
+    "ubicacion": "Maria 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3927,
+  "fields": {
+    "numero": 325,
+    "codigo": "100325",
+    "nombre": "user 325",
+    "ubicacion": "Maria 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3928,
+  "fields": {
+    "numero": 326,
+    "codigo": "100326",
+    "nombre": "user 326",
+    "ubicacion": "Maria 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3929,
+  "fields": {
+    "numero": 327,
+    "codigo": "100327",
+    "nombre": "user 327",
+    "ubicacion": "Maria 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3930,
+  "fields": {
+    "numero": 328,
+    "codigo": "100328",
+    "nombre": "user 328",
+    "ubicacion": "Maria 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3931,
+  "fields": {
+    "numero": 329,
+    "codigo": "100329",
+    "nombre": "user 329",
+    "ubicacion": "Maria 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3932,
+  "fields": {
+    "numero": 330,
+    "codigo": "100330",
+    "nombre": "user 330",
+    "ubicacion": "Maria 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3933,
+  "fields": {
+    "numero": 331,
+    "codigo": "100331",
+    "nombre": "user 331",
+    "ubicacion": "Maria 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3934,
+  "fields": {
+    "numero": 332,
+    "codigo": "100332",
+    "nombre": "user 332",
+    "ubicacion": "Maria 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3935,
+  "fields": {
+    "numero": 333,
+    "codigo": "100333",
+    "nombre": "user 333",
+    "ubicacion": "Maria 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3936,
+  "fields": {
+    "numero": 334,
+    "codigo": "100334",
+    "nombre": "user 334",
+    "ubicacion": "Maria 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3937,
+  "fields": {
+    "numero": 335,
+    "codigo": "100335",
+    "nombre": "user 335",
+    "ubicacion": "Maria 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3938,
+  "fields": {
+    "numero": 336,
+    "codigo": "100336",
+    "nombre": "user 336",
+    "ubicacion": "Maria 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3939,
+  "fields": {
+    "numero": 337,
+    "codigo": "100337",
+    "nombre": "user 337",
+    "ubicacion": "Maria 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3940,
+  "fields": {
+    "numero": 338,
+    "codigo": "100338",
+    "nombre": "user 338",
+    "ubicacion": "Maria 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3941,
+  "fields": {
+    "numero": 339,
+    "codigo": "100339",
+    "nombre": "user 339",
+    "ubicacion": "Maria 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3942,
+  "fields": {
+    "numero": 340,
+    "codigo": "100340",
+    "nombre": "user 340",
+    "ubicacion": "Maria 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3943,
+  "fields": {
+    "numero": 341,
+    "codigo": "100341",
+    "nombre": "user 341",
+    "ubicacion": "Maria 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3944,
+  "fields": {
+    "numero": 342,
+    "codigo": "100342",
+    "nombre": "user 342",
+    "ubicacion": "Maria 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3945,
+  "fields": {
+    "numero": 343,
+    "codigo": "100343",
+    "nombre": "user 343",
+    "ubicacion": "Maria 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3946,
+  "fields": {
+    "numero": 344,
+    "codigo": "100344",
+    "nombre": "user 344",
+    "ubicacion": "Maria 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3947,
+  "fields": {
+    "numero": 345,
+    "codigo": "100345",
+    "nombre": "user 345",
+    "ubicacion": "Maria 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3948,
+  "fields": {
+    "numero": 346,
+    "codigo": "100346",
+    "nombre": "user 346",
+    "ubicacion": "Maria 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3949,
+  "fields": {
+    "numero": 347,
+    "codigo": "100347",
+    "nombre": "user 347",
+    "ubicacion": "Maria 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3950,
+  "fields": {
+    "numero": 348,
+    "codigo": "100348",
+    "nombre": "user 348",
+    "ubicacion": "Maria 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3951,
+  "fields": {
+    "numero": 349,
+    "codigo": "100349",
+    "nombre": "user 349",
+    "ubicacion": "Maria 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3952,
+  "fields": {
+    "numero": 350,
+    "codigo": "100350",
+    "nombre": "user 350",
+    "ubicacion": "Maria 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3953,
+  "fields": {
+    "numero": 351,
+    "codigo": "100351",
+    "nombre": "user 351",
+    "ubicacion": "Maria 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3954,
+  "fields": {
+    "numero": 352,
+    "codigo": "100352",
+    "nombre": "user 352",
+    "ubicacion": "Maria 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3955,
+  "fields": {
+    "numero": 353,
+    "codigo": "100353",
+    "nombre": "user 353",
+    "ubicacion": "Maria 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3956,
+  "fields": {
+    "numero": 354,
+    "codigo": "100354",
+    "nombre": "user 354",
+    "ubicacion": "Maria 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3957,
+  "fields": {
+    "numero": 355,
+    "codigo": "100355",
+    "nombre": "user 355",
+    "ubicacion": "Maria 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3958,
+  "fields": {
+    "numero": 356,
+    "codigo": "100356",
+    "nombre": "user 356",
+    "ubicacion": "Maria 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3959,
+  "fields": {
+    "numero": 357,
+    "codigo": "100357",
+    "nombre": "user 357",
+    "ubicacion": "Maria 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3960,
+  "fields": {
+    "numero": 358,
+    "codigo": "100358",
+    "nombre": "user 358",
+    "ubicacion": "Maria 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3961,
+  "fields": {
+    "numero": 359,
+    "codigo": "100359",
+    "nombre": "user 359",
+    "ubicacion": "Maria 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3962,
+  "fields": {
+    "numero": 360,
+    "codigo": "100360",
+    "nombre": "user 360",
+    "ubicacion": "Maria 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3963,
+  "fields": {
+    "numero": 361,
+    "codigo": "100361",
+    "nombre": "user 361",
+    "ubicacion": "Maria 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3964,
+  "fields": {
+    "numero": 362,
+    "codigo": "100362",
+    "nombre": "user 362",
+    "ubicacion": "Maria 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3965,
+  "fields": {
+    "numero": 363,
+    "codigo": "100363",
+    "nombre": "user 363",
+    "ubicacion": "Maria 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3966,
+  "fields": {
+    "numero": 364,
+    "codigo": "100364",
+    "nombre": "user 364",
+    "ubicacion": "Maria 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3967,
+  "fields": {
+    "numero": 365,
+    "codigo": "100365",
+    "nombre": "user 365",
+    "ubicacion": "Maria 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3968,
+  "fields": {
+    "numero": 366,
+    "codigo": "100366",
+    "nombre": "user 366",
+    "ubicacion": "Maria 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3969,
+  "fields": {
+    "numero": 367,
+    "codigo": "100367",
+    "nombre": "user 367",
+    "ubicacion": "Maria 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3970,
+  "fields": {
+    "numero": 368,
+    "codigo": "100368",
+    "nombre": "user 368",
+    "ubicacion": "Maria 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3971,
+  "fields": {
+    "numero": 369,
+    "codigo": "100369",
+    "nombre": "user 369",
+    "ubicacion": "Maria 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3972,
+  "fields": {
+    "numero": 370,
+    "codigo": "100370",
+    "nombre": "user 370",
+    "ubicacion": "Maria 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3973,
+  "fields": {
+    "numero": 371,
+    "codigo": "100371",
+    "nombre": "user 371",
+    "ubicacion": "Maria 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3974,
+  "fields": {
+    "numero": 372,
+    "codigo": "100372",
+    "nombre": "user 372",
+    "ubicacion": "Maria 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3975,
+  "fields": {
+    "numero": 373,
+    "codigo": "100373",
+    "nombre": "user 373",
+    "ubicacion": "Maria 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3976,
+  "fields": {
+    "numero": 374,
+    "codigo": "100374",
+    "nombre": "user 374",
+    "ubicacion": "Maria 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3977,
+  "fields": {
+    "numero": 375,
+    "codigo": "100375",
+    "nombre": "user 375",
+    "ubicacion": "Maria 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3978,
+  "fields": {
+    "numero": 376,
+    "codigo": "100376",
+    "nombre": "user 376",
+    "ubicacion": "Maria 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3979,
+  "fields": {
+    "numero": 377,
+    "codigo": "100377",
+    "nombre": "user 377",
+    "ubicacion": "Maria 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3980,
+  "fields": {
+    "numero": 378,
+    "codigo": "100378",
+    "nombre": "user 378",
+    "ubicacion": "Maria 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3981,
+  "fields": {
+    "numero": 379,
+    "codigo": "100379",
+    "nombre": "user 379",
+    "ubicacion": "Maria 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3982,
+  "fields": {
+    "numero": 380,
+    "codigo": "100380",
+    "nombre": "user 380",
+    "ubicacion": "Maria 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3983,
+  "fields": {
+    "numero": 381,
+    "codigo": "100381",
+    "nombre": "user 381",
+    "ubicacion": "Maria 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3984,
+  "fields": {
+    "numero": 382,
+    "codigo": "100382",
+    "nombre": "user 382",
+    "ubicacion": "Maria 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3985,
+  "fields": {
+    "numero": 383,
+    "codigo": "100383",
+    "nombre": "user 383",
+    "ubicacion": "Maria 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3986,
+  "fields": {
+    "numero": 384,
+    "codigo": "100384",
+    "nombre": "user 384",
+    "ubicacion": "Maria 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3987,
+  "fields": {
+    "numero": 385,
+    "codigo": "100385",
+    "nombre": "user 385",
+    "ubicacion": "Maria 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3988,
+  "fields": {
+    "numero": 386,
+    "codigo": "100386",
+    "nombre": "user 386",
+    "ubicacion": "Maria 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3989,
+  "fields": {
+    "numero": 387,
+    "codigo": "100387",
+    "nombre": "user 387",
+    "ubicacion": "Maria 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3990,
+  "fields": {
+    "numero": 388,
+    "codigo": "100388",
+    "nombre": "user 388",
+    "ubicacion": "Maria 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3991,
+  "fields": {
+    "numero": 389,
+    "codigo": "100389",
+    "nombre": "user 389",
+    "ubicacion": "Maria 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3992,
+  "fields": {
+    "numero": 390,
+    "codigo": "100390",
+    "nombre": "user 390",
+    "ubicacion": "Maria 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3993,
+  "fields": {
+    "numero": 391,
+    "codigo": "100391",
+    "nombre": "user 391",
+    "ubicacion": "Maria 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3994,
+  "fields": {
+    "numero": 392,
+    "codigo": "100392",
+    "nombre": "user 392",
+    "ubicacion": "Maria 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3995,
+  "fields": {
+    "numero": 393,
+    "codigo": "100393",
+    "nombre": "user 393",
+    "ubicacion": "Maria 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"C\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3996,
+  "fields": {
+    "numero": 394,
+    "codigo": "100394",
+    "nombre": "user 394",
+    "ubicacion": "Martini 1",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3997,
+  "fields": {
+    "numero": 395,
+    "codigo": "100395",
+    "nombre": "user 395",
+    "ubicacion": "Martini 1",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3998,
+  "fields": {
+    "numero": 396,
+    "codigo": "100396",
+    "nombre": "user 396",
+    "ubicacion": "Martini 1",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 3999,
+  "fields": {
+    "numero": 397,
+    "codigo": "100397",
+    "nombre": "user 397",
+    "ubicacion": "Martini 2",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4000,
+  "fields": {
+    "numero": 398,
+    "codigo": "100398",
+    "nombre": "user 398",
+    "ubicacion": "Martini 2",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4001,
+  "fields": {
+    "numero": 399,
+    "codigo": "100399",
+    "nombre": "user 399",
+    "ubicacion": "Martini 2",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4002,
+  "fields": {
+    "numero": 400,
+    "codigo": "100400",
+    "nombre": "user 400",
+    "ubicacion": "Martini 3",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4003,
+  "fields": {
+    "numero": 401,
+    "codigo": "100401",
+    "nombre": "user 401",
+    "ubicacion": "Martini 3",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4004,
+  "fields": {
+    "numero": 402,
+    "codigo": "100402",
+    "nombre": "user 402",
+    "ubicacion": "Martini 3",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4005,
+  "fields": {
+    "numero": 403,
+    "codigo": "100403",
+    "nombre": "user 403",
+    "ubicacion": "Martini 3",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4006,
+  "fields": {
+    "numero": 404,
+    "codigo": "100404",
+    "nombre": "user 404",
+    "ubicacion": "Martini 4",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4007,
+  "fields": {
+    "numero": 405,
+    "codigo": "100405",
+    "nombre": "user 405",
+    "ubicacion": "Martini 4",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4008,
+  "fields": {
+    "numero": 406,
+    "codigo": "100406",
+    "nombre": "user 406",
+    "ubicacion": "Martini 4",
+    "grupo": "Empaque",
+    "categorias": "Verticales"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4009,
+  "fields": {
+    "numero": 407,
+    "codigo": "100407",
+    "nombre": "user 407",
+    "ubicacion": "Nuevos 2",
+    "grupo": "Empaque",
+    "categorias": "Nuevos 2"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4010,
+  "fields": {
+    "numero": 408,
+    "codigo": "100408",
+    "nombre": "user 408",
+    "ubicacion": "Nuevos 2",
+    "grupo": "Empaque",
+    "categorias": "Nuevos 2"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4011,
+  "fields": {
+    "numero": 409,
+    "codigo": "100409",
+    "nombre": "user 409",
+    "ubicacion": "Nuevos 2",
+    "grupo": "Empaque",
+    "categorias": "Nuevos 2"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4012,
+  "fields": {
+    "numero": 410,
+    "codigo": "100410",
+    "nombre": "user 410",
+    "ubicacion": "Nuevos 3",
+    "grupo": "Empaque",
+    "categorias": "Nuevos 3"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4013,
+  "fields": {
+    "numero": 411,
+    "codigo": "100411",
+    "nombre": "user 411",
+    "ubicacion": "Nuevos 3",
+    "grupo": "Empaque",
+    "categorias": "Nuevos 3"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4014,
+  "fields": {
+    "numero": 412,
+    "codigo": "100412",
+    "nombre": "user 412",
+    "ubicacion": "Nuevos 3",
+    "grupo": "Empaque",
+    "categorias": "Nuevos 3"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4015,
+  "fields": {
+    "numero": 413,
+    "codigo": "100413",
+    "nombre": "user 413",
+    "ubicacion": "Sal Nuevos 1",
+    "grupo": "Empaque",
+    "categorias": "NUEVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4016,
+  "fields": {
+    "numero": 414,
+    "codigo": "100414",
+    "nombre": "user 414",
+    "ubicacion": "Sal Nuevos 1",
+    "grupo": "Empaque",
+    "categorias": "NUEVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4017,
+  "fields": {
+    "numero": 415,
+    "codigo": "100415",
+    "nombre": "user 415",
+    "ubicacion": "Sal Nuevos 1",
+    "grupo": "Empaque",
+    "categorias": "NUEVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4018,
+  "fields": {
+    "numero": 416,
+    "codigo": "100416",
+    "nombre": "user 416",
+    "ubicacion": "Sal Nuevos 1",
+    "grupo": "Empaque",
+    "categorias": "NUEVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4019,
+  "fields": {
+    "numero": 417,
+    "codigo": "100417",
+    "nombre": "user 417",
+    "ubicacion": "Sal Nuevos 4",
+    "grupo": "Empaque",
+    "categorias": "NUEVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4020,
+  "fields": {
+    "numero": 418,
+    "codigo": "100418",
+    "nombre": "user 418",
+    "ubicacion": "Sal Nuevos 4",
+    "grupo": "Empaque",
+    "categorias": "NUEVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4021,
+  "fields": {
+    "numero": 419,
+    "codigo": "100419",
+    "nombre": "user 419",
+    "ubicacion": "Sal Nuevos 4",
+    "grupo": "Empaque",
+    "categorias": "NUEVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4022,
+  "fields": {
+    "numero": 420,
+    "codigo": "100420",
+    "nombre": "user 420",
+    "ubicacion": "Salticas 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4023,
+  "fields": {
+    "numero": 421,
+    "codigo": "100421",
+    "nombre": "user 421",
+    "ubicacion": "Salticas 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4024,
+  "fields": {
+    "numero": 422,
+    "codigo": "100422",
+    "nombre": "user 422",
+    "ubicacion": "Salticas 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4025,
+  "fields": {
+    "numero": 423,
+    "codigo": "100423",
+    "nombre": "user 423",
+    "ubicacion": "Salticas 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4026,
+  "fields": {
+    "numero": 424,
+    "codigo": "100424",
+    "nombre": "user 424",
+    "ubicacion": "Salticas 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4027,
+  "fields": {
+    "numero": 425,
+    "codigo": "100425",
+    "nombre": "user 425",
+    "ubicacion": "Salticas 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4028,
+  "fields": {
+    "numero": 426,
+    "codigo": "100426",
+    "nombre": "user 426",
+    "ubicacion": "Salticas 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4029,
+  "fields": {
+    "numero": 427,
+    "codigo": "100427",
+    "nombre": "user 427",
+    "ubicacion": "Salticas 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4030,
+  "fields": {
+    "numero": 428,
+    "codigo": "100428",
+    "nombre": "user 428",
+    "ubicacion": "Salticas 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4031,
+  "fields": {
+    "numero": 429,
+    "codigo": "100429",
+    "nombre": "user 429",
+    "ubicacion": "Salticas 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4032,
+  "fields": {
+    "numero": 430,
+    "codigo": "100430",
+    "nombre": "user 430",
+    "ubicacion": "Salticas 1",
+    "grupo": "Empaque",
+    "categorias": "Nuevos 3"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4033,
+  "fields": {
+    "numero": 431,
+    "codigo": "100431",
+    "nombre": "user 431",
+    "ubicacion": "Salticas 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4034,
+  "fields": {
+    "numero": 432,
+    "codigo": "100432",
+    "nombre": "user 432",
+    "ubicacion": "Salticas 1",
+    "grupo": "Empaque",
+    "categorias": "Nuevos 3"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4035,
+  "fields": {
+    "numero": 433,
+    "codigo": "100433",
+    "nombre": "user 433",
+    "ubicacion": "Salticas 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4036,
+  "fields": {
+    "numero": 434,
+    "codigo": "100434",
+    "nombre": "user 434",
+    "ubicacion": "Salticas 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4037,
+  "fields": {
+    "numero": 435,
+    "codigo": "100435",
+    "nombre": "user 435",
+    "ubicacion": "Salticas 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4038,
+  "fields": {
+    "numero": 436,
+    "codigo": "100436",
+    "nombre": "user 436",
+    "ubicacion": "Salticas 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4039,
+  "fields": {
+    "numero": 437,
+    "codigo": "100437",
+    "nombre": "user 437",
+    "ubicacion": "Salticas 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4040,
+  "fields": {
+    "numero": 438,
+    "codigo": "100438",
+    "nombre": "user 438",
+    "ubicacion": "Salticas 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4041,
+  "fields": {
+    "numero": 439,
+    "codigo": "100439",
+    "nombre": "user 439",
+    "ubicacion": "Salticas 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4042,
+  "fields": {
+    "numero": 440,
+    "codigo": "100440",
+    "nombre": "user 440",
+    "ubicacion": "Salticas 1",
+    "grupo": "Empaque",
+    "categorias": "Nuevos 2"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4043,
+  "fields": {
+    "numero": 441,
+    "codigo": "100441",
+    "nombre": "user 441",
+    "ubicacion": "Salticas 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4044,
+  "fields": {
+    "numero": 442,
+    "codigo": "100442",
+    "nombre": "user 442",
+    "ubicacion": "Salticas 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4045,
+  "fields": {
+    "numero": 443,
+    "codigo": "100443",
+    "nombre": "user 443",
+    "ubicacion": "Salticas 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4046,
+  "fields": {
+    "numero": 444,
+    "codigo": "100444",
+    "nombre": "user 444",
+    "ubicacion": "Salticas 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4047,
+  "fields": {
+    "numero": 445,
+    "codigo": "100445",
+    "nombre": "user 445",
+    "ubicacion": "Salticas 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4048,
+  "fields": {
+    "numero": 446,
+    "codigo": "100446",
+    "nombre": "user 446",
+    "ubicacion": "Salticas 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4049,
+  "fields": {
+    "numero": 447,
+    "codigo": "100447",
+    "nombre": "user 447",
+    "ubicacion": "Salticas 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4050,
+  "fields": {
+    "numero": 448,
+    "codigo": "100448",
+    "nombre": "user 448",
+    "ubicacion": "Salticas 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4051,
+  "fields": {
+    "numero": 449,
+    "codigo": "100449",
+    "nombre": "user 449",
+    "ubicacion": "Salticas 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4052,
+  "fields": {
+    "numero": 450,
+    "codigo": "100450",
+    "nombre": "user 450",
+    "ubicacion": "Salticas 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4053,
+  "fields": {
+    "numero": 451,
+    "codigo": "100451",
+    "nombre": "user 451",
+    "ubicacion": "Salticas 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4054,
+  "fields": {
+    "numero": 452,
+    "codigo": "100452",
+    "nombre": "user 452",
+    "ubicacion": "Salticas 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4055,
+  "fields": {
+    "numero": 453,
+    "codigo": "100453",
+    "nombre": "user 453",
+    "ubicacion": "Salticas 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4056,
+  "fields": {
+    "numero": 454,
+    "codigo": "100454",
+    "nombre": "user 454",
+    "ubicacion": "Salticas 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4057,
+  "fields": {
+    "numero": 455,
+    "codigo": "100455",
+    "nombre": "user 455",
+    "ubicacion": "Salticas 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4058,
+  "fields": {
+    "numero": 456,
+    "codigo": "100456",
+    "nombre": "user 456",
+    "ubicacion": "Salticas 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4059,
+  "fields": {
+    "numero": 457,
+    "codigo": "100457",
+    "nombre": "user 457",
+    "ubicacion": "Salticas 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4060,
+  "fields": {
+    "numero": 458,
+    "codigo": "100458",
+    "nombre": "user 458",
+    "ubicacion": "Salticas 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4061,
+  "fields": {
+    "numero": 459,
+    "codigo": "100459",
+    "nombre": "user 459",
+    "ubicacion": "Salticas 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4062,
+  "fields": {
+    "numero": 460,
+    "codigo": "100460",
+    "nombre": "user 460",
+    "ubicacion": "Salticas 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4063,
+  "fields": {
+    "numero": 461,
+    "codigo": "100461",
+    "nombre": "user 461",
+    "ubicacion": "Salticas 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4064,
+  "fields": {
+    "numero": 462,
+    "codigo": "100462",
+    "nombre": "user 462",
+    "ubicacion": "Salticas 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4065,
+  "fields": {
+    "numero": 463,
+    "codigo": "100463",
+    "nombre": "user 463",
+    "ubicacion": "Salticas 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4066,
+  "fields": {
+    "numero": 464,
+    "codigo": "100464",
+    "nombre": "user 464",
+    "ubicacion": "Salticas 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4067,
+  "fields": {
+    "numero": 465,
+    "codigo": "100465",
+    "nombre": "user 465",
+    "ubicacion": "Salticas 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4068,
+  "fields": {
+    "numero": 466,
+    "codigo": "100466",
+    "nombre": "user 466",
+    "ubicacion": "Salticas 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4069,
+  "fields": {
+    "numero": 467,
+    "codigo": "100467",
+    "nombre": "user 467",
+    "ubicacion": "Salticas 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4070,
+  "fields": {
+    "numero": 468,
+    "codigo": "100468",
+    "nombre": "user 468",
+    "ubicacion": "Salticas 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4071,
+  "fields": {
+    "numero": 469,
+    "codigo": "100469",
+    "nombre": "user 469",
+    "ubicacion": "Salticas 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4072,
+  "fields": {
+    "numero": 470,
+    "codigo": "100470",
+    "nombre": "user 470",
+    "ubicacion": "Salticas 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4073,
+  "fields": {
+    "numero": 471,
+    "codigo": "100471",
+    "nombre": "user 471",
+    "ubicacion": "Salticas 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4074,
+  "fields": {
+    "numero": 472,
+    "codigo": "100472",
+    "nombre": "user 472",
+    "ubicacion": "Salticas 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4075,
+  "fields": {
+    "numero": 473,
+    "codigo": "100473",
+    "nombre": "user 473",
+    "ubicacion": "Salticas 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4076,
+  "fields": {
+    "numero": 474,
+    "codigo": "100474",
+    "nombre": "user 474",
+    "ubicacion": "Salticas 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4077,
+  "fields": {
+    "numero": 475,
+    "codigo": "100475",
+    "nombre": "user 475",
+    "ubicacion": "Salticas 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4078,
+  "fields": {
+    "numero": 476,
+    "codigo": "100476",
+    "nombre": "user 476",
+    "ubicacion": "Salticas 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4079,
+  "fields": {
+    "numero": 477,
+    "codigo": "100477",
+    "nombre": "user 477",
+    "ubicacion": "Salticas 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4080,
+  "fields": {
+    "numero": 478,
+    "codigo": "100478",
+    "nombre": "user 478",
+    "ubicacion": "Salticas 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4081,
+  "fields": {
+    "numero": 479,
+    "codigo": "100479",
+    "nombre": "user 479",
+    "ubicacion": "Salticas 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4082,
+  "fields": {
+    "numero": 480,
+    "codigo": "100480",
+    "nombre": "user 480",
+    "ubicacion": "Salticas 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4083,
+  "fields": {
+    "numero": 481,
+    "codigo": "100481",
+    "nombre": "user 481",
+    "ubicacion": "Salticas 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4084,
+  "fields": {
+    "numero": 482,
+    "codigo": "100482",
+    "nombre": "user 482",
+    "ubicacion": "Salticas 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4085,
+  "fields": {
+    "numero": 483,
+    "codigo": "100483",
+    "nombre": "user 483",
+    "ubicacion": "Salticas 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4086,
+  "fields": {
+    "numero": 484,
+    "codigo": "100484",
+    "nombre": "user 484",
+    "ubicacion": "Salticas 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4087,
+  "fields": {
+    "numero": 485,
+    "codigo": "100485",
+    "nombre": "user 485",
+    "ubicacion": "Salticas 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4088,
+  "fields": {
+    "numero": 486,
+    "codigo": "100486",
+    "nombre": "user 486",
+    "ubicacion": "Salticas 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4089,
+  "fields": {
+    "numero": 487,
+    "codigo": "100487",
+    "nombre": "user 487",
+    "ubicacion": "Salticas 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4090,
+  "fields": {
+    "numero": 488,
+    "codigo": "100488",
+    "nombre": "user 488",
+    "ubicacion": "Salticas 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4091,
+  "fields": {
+    "numero": 489,
+    "codigo": "100489",
+    "nombre": "user 489",
+    "ubicacion": "Salticas 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4092,
+  "fields": {
+    "numero": 490,
+    "codigo": "100490",
+    "nombre": "user 490",
+    "ubicacion": "Salticas 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4093,
+  "fields": {
+    "numero": 491,
+    "codigo": "100491",
+    "nombre": "user 491",
+    "ubicacion": "Salticas 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4094,
+  "fields": {
+    "numero": 492,
+    "codigo": "100492",
+    "nombre": "user 492",
+    "ubicacion": "Salticas 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4095,
+  "fields": {
+    "numero": 493,
+    "codigo": "100493",
+    "nombre": "user 493",
+    "ubicacion": "Salticas 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4096,
+  "fields": {
+    "numero": 494,
+    "codigo": "100494",
+    "nombre": "user 494",
+    "ubicacion": "Salticas 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4097,
+  "fields": {
+    "numero": 495,
+    "codigo": "100495",
+    "nombre": "user 495",
+    "ubicacion": "Salticas 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4098,
+  "fields": {
+    "numero": 496,
+    "codigo": "100496",
+    "nombre": "user 496",
+    "ubicacion": "Salticas 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4099,
+  "fields": {
+    "numero": 497,
+    "codigo": "100497",
+    "nombre": "user 497",
+    "ubicacion": "Salticas 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4100,
+  "fields": {
+    "numero": 498,
+    "codigo": "100498",
+    "nombre": "user 498",
+    "ubicacion": "Salticas 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4101,
+  "fields": {
+    "numero": 499,
+    "codigo": "100499",
+    "nombre": "user 499",
+    "ubicacion": "Salticas 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4102,
+  "fields": {
+    "numero": 500,
+    "codigo": "100500",
+    "nombre": "user 500",
+    "ubicacion": "Salticas 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4103,
+  "fields": {
+    "numero": 501,
+    "codigo": "100501",
+    "nombre": "user 501",
+    "ubicacion": "Salticas 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4104,
+  "fields": {
+    "numero": 502,
+    "codigo": "100502",
+    "nombre": "user 502",
+    "ubicacion": "Salticas 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4105,
+  "fields": {
+    "numero": 503,
+    "codigo": "100503",
+    "nombre": "user 503",
+    "ubicacion": "Salticas 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4106,
+  "fields": {
+    "numero": 504,
+    "codigo": "100504",
+    "nombre": "user 504",
+    "ubicacion": "Salticas 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4107,
+  "fields": {
+    "numero": 505,
+    "codigo": "100505",
+    "nombre": "user 505",
+    "ubicacion": "Salticas 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4108,
+  "fields": {
+    "numero": 506,
+    "codigo": "100506",
+    "nombre": "user 506",
+    "ubicacion": "Salticas 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4109,
+  "fields": {
+    "numero": 507,
+    "codigo": "100507",
+    "nombre": "user 507",
+    "ubicacion": "Salticas 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4110,
+  "fields": {
+    "numero": 508,
+    "codigo": "100508",
+    "nombre": "user 508",
+    "ubicacion": "Salticas 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4111,
+  "fields": {
+    "numero": 509,
+    "codigo": "100509",
+    "nombre": "user 509",
+    "ubicacion": "Salticas 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4112,
+  "fields": {
+    "numero": 510,
+    "codigo": "100510",
+    "nombre": "user 510",
+    "ubicacion": "Salticas 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4113,
+  "fields": {
+    "numero": 511,
+    "codigo": "100511",
+    "nombre": "user 511",
+    "ubicacion": "Salticas 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4114,
+  "fields": {
+    "numero": 512,
+    "codigo": "100512",
+    "nombre": "user 512",
+    "ubicacion": "Salticas 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4115,
+  "fields": {
+    "numero": 513,
+    "codigo": "100513",
+    "nombre": "user 513",
+    "ubicacion": "Salticas 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4116,
+  "fields": {
+    "numero": 514,
+    "codigo": "100514",
+    "nombre": "user 514",
+    "ubicacion": "Salticas 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4117,
+  "fields": {
+    "numero": 515,
+    "codigo": "100515",
+    "nombre": "user 515",
+    "ubicacion": "Salticas 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4118,
+  "fields": {
+    "numero": 516,
+    "codigo": "100516",
+    "nombre": "user 516",
+    "ubicacion": "Salticas 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4119,
+  "fields": {
+    "numero": 517,
+    "codigo": "100517",
+    "nombre": "user 517",
+    "ubicacion": "Salticas 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4120,
+  "fields": {
+    "numero": 518,
+    "codigo": "100518",
+    "nombre": "user 518",
+    "ubicacion": "Salticas 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4121,
+  "fields": {
+    "numero": 519,
+    "codigo": "100519",
+    "nombre": "user 519",
+    "ubicacion": "Siluet 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4122,
+  "fields": {
+    "numero": 520,
+    "codigo": "100520",
+    "nombre": "user 520",
+    "ubicacion": "Siluet 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4123,
+  "fields": {
+    "numero": 521,
+    "codigo": "100521",
+    "nombre": "user 521",
+    "ubicacion": "Siluet 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4124,
+  "fields": {
+    "numero": 522,
+    "codigo": "100522",
+    "nombre": "user 522",
+    "ubicacion": "Siluet 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4125,
+  "fields": {
+    "numero": 523,
+    "codigo": "100523",
+    "nombre": "user 523",
+    "ubicacion": "Siluet 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4126,
+  "fields": {
+    "numero": 524,
+    "codigo": "100524",
+    "nombre": "user 524",
+    "ubicacion": "Siluet 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4127,
+  "fields": {
+    "numero": 525,
+    "codigo": "100525",
+    "nombre": "user 525",
+    "ubicacion": "Siluet 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4128,
+  "fields": {
+    "numero": 526,
+    "codigo": "100526",
+    "nombre": "user 526",
+    "ubicacion": "Siluet 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4129,
+  "fields": {
+    "numero": 527,
+    "codigo": "100527",
+    "nombre": "user 527",
+    "ubicacion": "Siluet 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4130,
+  "fields": {
+    "numero": 528,
+    "codigo": "100528",
+    "nombre": "user 528",
+    "ubicacion": "Siluet 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4131,
+  "fields": {
+    "numero": 529,
+    "codigo": "100529",
+    "nombre": "user 529",
+    "ubicacion": "Siluet 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4132,
+  "fields": {
+    "numero": 530,
+    "codigo": "100530",
+    "nombre": "user 530",
+    "ubicacion": "Siluet 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4133,
+  "fields": {
+    "numero": 531,
+    "codigo": "100531",
+    "nombre": "user 531",
+    "ubicacion": "Siluet 1",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4134,
+  "fields": {
+    "numero": 532,
+    "codigo": "100532",
+    "nombre": "user 532",
+    "ubicacion": "Siluet 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4135,
+  "fields": {
+    "numero": 533,
+    "codigo": "100533",
+    "nombre": "user 533",
+    "ubicacion": "Siluet 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4136,
+  "fields": {
+    "numero": 534,
+    "codigo": "100534",
+    "nombre": "user 534",
+    "ubicacion": "Siluet 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4137,
+  "fields": {
+    "numero": 535,
+    "codigo": "100535",
+    "nombre": "user 535",
+    "ubicacion": "Siluet 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4138,
+  "fields": {
+    "numero": 536,
+    "codigo": "100536",
+    "nombre": "user 536",
+    "ubicacion": "Siluet 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4139,
+  "fields": {
+    "numero": 537,
+    "codigo": "100537",
+    "nombre": "user 537",
+    "ubicacion": "Siluet 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4140,
+  "fields": {
+    "numero": 538,
+    "codigo": "100538",
+    "nombre": "user 538",
+    "ubicacion": "Siluet 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4141,
+  "fields": {
+    "numero": 539,
+    "codigo": "100539",
+    "nombre": "user 539",
+    "ubicacion": "Siluet 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4142,
+  "fields": {
+    "numero": 540,
+    "codigo": "100540",
+    "nombre": "user 540",
+    "ubicacion": "Siluet 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4143,
+  "fields": {
+    "numero": 541,
+    "codigo": "100541",
+    "nombre": "user 541",
+    "ubicacion": "Siluet 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4144,
+  "fields": {
+    "numero": 542,
+    "codigo": "100542",
+    "nombre": "user 542",
+    "ubicacion": "Siluet 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4145,
+  "fields": {
+    "numero": 543,
+    "codigo": "100543",
+    "nombre": "user 543",
+    "ubicacion": "Siluet 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4146,
+  "fields": {
+    "numero": 544,
+    "codigo": "100544",
+    "nombre": "user 544",
+    "ubicacion": "Siluet 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4147,
+  "fields": {
+    "numero": 545,
+    "codigo": "100545",
+    "nombre": "user 545",
+    "ubicacion": "Siluet 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4148,
+  "fields": {
+    "numero": 546,
+    "codigo": "100546",
+    "nombre": "user 546",
+    "ubicacion": "Siluet 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4149,
+  "fields": {
+    "numero": 547,
+    "codigo": "100547",
+    "nombre": "user 547",
+    "ubicacion": "Siluet 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4150,
+  "fields": {
+    "numero": 548,
+    "codigo": "100548",
+    "nombre": "user 548",
+    "ubicacion": "Siluet 2",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4151,
+  "fields": {
+    "numero": 549,
+    "codigo": "100549",
+    "nombre": "user 549",
+    "ubicacion": "Siluet 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4152,
+  "fields": {
+    "numero": 550,
+    "codigo": "100550",
+    "nombre": "user 550",
+    "ubicacion": "Siluet 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4153,
+  "fields": {
+    "numero": 551,
+    "codigo": "100551",
+    "nombre": "user 551",
+    "ubicacion": "Siluet 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4154,
+  "fields": {
+    "numero": 552,
+    "codigo": "100552",
+    "nombre": "user 552",
+    "ubicacion": "Siluet 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4155,
+  "fields": {
+    "numero": 553,
+    "codigo": "100553",
+    "nombre": "user 553",
+    "ubicacion": "Siluet 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4156,
+  "fields": {
+    "numero": 554,
+    "codigo": "100554",
+    "nombre": "user 554",
+    "ubicacion": "Siluet 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4157,
+  "fields": {
+    "numero": 555,
+    "codigo": "100555",
+    "nombre": "user 555",
+    "ubicacion": "Siluet 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4158,
+  "fields": {
+    "numero": 556,
+    "codigo": "100556",
+    "nombre": "user 556",
+    "ubicacion": "Siluet 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4159,
+  "fields": {
+    "numero": 557,
+    "codigo": "100557",
+    "nombre": "user 557",
+    "ubicacion": "Siluet 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4160,
+  "fields": {
+    "numero": 558,
+    "codigo": "100558",
+    "nombre": "user 558",
+    "ubicacion": "Siluet 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4161,
+  "fields": {
+    "numero": 559,
+    "codigo": "100559",
+    "nombre": "user 559",
+    "ubicacion": "Siluet 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4162,
+  "fields": {
+    "numero": 560,
+    "codigo": "100560",
+    "nombre": "user 560",
+    "ubicacion": "Siluet 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4163,
+  "fields": {
+    "numero": 561,
+    "codigo": "100561",
+    "nombre": "user 561",
+    "ubicacion": "Siluet 3",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4164,
+  "fields": {
+    "numero": 562,
+    "codigo": "100562",
+    "nombre": "user 562",
+    "ubicacion": "Siluet 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4165,
+  "fields": {
+    "numero": 563,
+    "codigo": "100563",
+    "nombre": "user 563",
+    "ubicacion": "Siluet 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4166,
+  "fields": {
+    "numero": 564,
+    "codigo": "100564",
+    "nombre": "user 564",
+    "ubicacion": "Siluet 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4167,
+  "fields": {
+    "numero": 565,
+    "codigo": "100565",
+    "nombre": "user 565",
+    "ubicacion": "Siluet 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4168,
+  "fields": {
+    "numero": 566,
+    "codigo": "100566",
+    "nombre": "user 566",
+    "ubicacion": "Siluet 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4169,
+  "fields": {
+    "numero": 567,
+    "codigo": "100567",
+    "nombre": "user 567",
+    "ubicacion": "Siluet 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4170,
+  "fields": {
+    "numero": 568,
+    "codigo": "100568",
+    "nombre": "user 568",
+    "ubicacion": "Siluet 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4171,
+  "fields": {
+    "numero": 569,
+    "codigo": "100569",
+    "nombre": "user 569",
+    "ubicacion": "Siluet 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4172,
+  "fields": {
+    "numero": 570,
+    "codigo": "100570",
+    "nombre": "user 570",
+    "ubicacion": "Siluet 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4173,
+  "fields": {
+    "numero": 571,
+    "codigo": "100571",
+    "nombre": "user 571",
+    "ubicacion": "Siluet 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4174,
+  "fields": {
+    "numero": 572,
+    "codigo": "100572",
+    "nombre": "user 572",
+    "ubicacion": "Siluet 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4175,
+  "fields": {
+    "numero": 573,
+    "codigo": "100573",
+    "nombre": "user 573",
+    "ubicacion": "Siluet 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4176,
+  "fields": {
+    "numero": 574,
+    "codigo": "100574",
+    "nombre": "user 574",
+    "ubicacion": "Siluet 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4177,
+  "fields": {
+    "numero": 575,
+    "codigo": "100575",
+    "nombre": "user 575",
+    "ubicacion": "Siluet 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4178,
+  "fields": {
+    "numero": 576,
+    "codigo": "100576",
+    "nombre": "user 576",
+    "ubicacion": "Siluet 4",
+    "grupo": "Empaque",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4179,
+  "fields": {
+    "numero": 577,
+    "codigo": "100577",
+    "nombre": "user 577",
+    "ubicacion": "Circus 3",
+    "grupo": "Ex -Empleado",
+    "categorias": "Linea \"E\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4180,
+  "fields": {
+    "numero": 578,
+    "codigo": "100578",
+    "nombre": "user 578",
+    "ubicacion": "Krispiz 2",
+    "grupo": "Ex -Empleado",
+    "categorias": "Linea \"A\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4181,
+  "fields": {
+    "numero": 579,
+    "codigo": "100579",
+    "nombre": "user 579",
+    "ubicacion": "Maquinistas",
+    "grupo": "Ex -Empleado",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4182,
+  "fields": {
+    "numero": 580,
+    "codigo": "100580",
+    "nombre": "user 580",
+    "ubicacion": "S Nuevos 001",
+    "grupo": "Ex -Empleado",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4183,
+  "fields": {
+    "numero": 581,
+    "codigo": "100581",
+    "nombre": "user 581",
+    "ubicacion": "Salticas 1",
+    "grupo": "Ex -Empleado",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4184,
+  "fields": {
+    "numero": 582,
+    "codigo": "100582",
+    "nombre": "user 582",
+    "ubicacion": "Salticas 1",
+    "grupo": "Ex -Empleado",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4185,
+  "fields": {
+    "numero": 583,
+    "codigo": "100583",
+    "nombre": "user 583",
+    "ubicacion": "Salticas 1",
+    "grupo": "Ex -Empleado",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4186,
+  "fields": {
+    "numero": 584,
+    "codigo": "100584",
+    "nombre": "user 584",
+    "ubicacion": "Salticas 4",
+    "grupo": "Ex -Empleado",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4187,
+  "fields": {
+    "numero": 585,
+    "codigo": "100585",
+    "nombre": "user 585",
+    "ubicacion": "Salticas 4",
+    "grupo": "Ex -Empleado",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4188,
+  "fields": {
+    "numero": 586,
+    "codigo": "100586",
+    "nombre": "user 586",
+    "ubicacion": "Salticas 4",
+    "grupo": "Ex -Empleado",
+    "categorias": "Linea \"D\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4189,
+  "fields": {
+    "numero": 587,
+    "codigo": "100587",
+    "nombre": "user 587",
+    "ubicacion": "Siluet 3",
+    "grupo": "Ex -Empleado",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4190,
+  "fields": {
+    "numero": 588,
+    "codigo": "100588",
+    "nombre": "user 588",
+    "ubicacion": "Siluet 4",
+    "grupo": "Ex -Empleado",
+    "categorias": "Linea \"B\""
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4191,
+  "fields": {
+    "numero": 589,
+    "codigo": "100589",
+    "nombre": "user 589",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | DIA"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4192,
+  "fields": {
+    "numero": 590,
+    "codigo": "100590",
+    "nombre": "user 590",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4193,
+  "fields": {
+    "numero": 591,
+    "codigo": "100591",
+    "nombre": "user 591",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4194,
+  "fields": {
+    "numero": 592,
+    "codigo": "100592",
+    "nombre": "user 592",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4195,
+  "fields": {
+    "numero": 593,
+    "codigo": "100593",
+    "nombre": "user 593",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | DIA"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4196,
+  "fields": {
+    "numero": 594,
+    "codigo": "100594",
+    "nombre": "user 594",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | DIA"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4197,
+  "fields": {
+    "numero": 595,
+    "codigo": "100595",
+    "nombre": "user 595",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4198,
+  "fields": {
+    "numero": 596,
+    "codigo": "100596",
+    "nombre": "user 596",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4199,
+  "fields": {
+    "numero": 597,
+    "codigo": "100597",
+    "nombre": "user 597",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4200,
+  "fields": {
+    "numero": 598,
+    "codigo": "100598",
+    "nombre": "user 598",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | DIA"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4201,
+  "fields": {
+    "numero": 599,
+    "codigo": "100599",
+    "nombre": "user 599",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4202,
+  "fields": {
+    "numero": 600,
+    "codigo": "100600",
+    "nombre": "user 600",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | DIA"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4203,
+  "fields": {
+    "numero": 601,
+    "codigo": "100601",
+    "nombre": "user 601",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4204,
+  "fields": {
+    "numero": 602,
+    "codigo": "100602",
+    "nombre": "user 602",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | DIA"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4205,
+  "fields": {
+    "numero": 603,
+    "codigo": "100603",
+    "nombre": "user 603",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4206,
+  "fields": {
+    "numero": 604,
+    "codigo": "100604",
+    "nombre": "user 604",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | DIA"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4207,
+  "fields": {
+    "numero": 605,
+    "codigo": "100605",
+    "nombre": "user 605",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4208,
+  "fields": {
+    "numero": 606,
+    "codigo": "100606",
+    "nombre": "user 606",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4209,
+  "fields": {
+    "numero": 607,
+    "codigo": "100607",
+    "nombre": "user 607",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4210,
+  "fields": {
+    "numero": 608,
+    "codigo": "100608",
+    "nombre": "user 608",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4211,
+  "fields": {
+    "numero": 609,
+    "codigo": "100609",
+    "nombre": "user 609",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | DIA"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4212,
+  "fields": {
+    "numero": 610,
+    "codigo": "100610",
+    "nombre": "user 610",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | DIA"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4213,
+  "fields": {
+    "numero": 611,
+    "codigo": "100611",
+    "nombre": "user 611",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4214,
+  "fields": {
+    "numero": 612,
+    "codigo": "100612",
+    "nombre": "user 612",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4215,
+  "fields": {
+    "numero": 613,
+    "codigo": "100613",
+    "nombre": "user 613",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4216,
+  "fields": {
+    "numero": 614,
+    "codigo": "100614",
+    "nombre": "user 614",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4217,
+  "fields": {
+    "numero": 615,
+    "codigo": "100615",
+    "nombre": "user 615",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4218,
+  "fields": {
+    "numero": 616,
+    "codigo": "100616",
+    "nombre": "user 616",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4219,
+  "fields": {
+    "numero": 617,
+    "codigo": "100617",
+    "nombre": "user 617",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4220,
+  "fields": {
+    "numero": 618,
+    "codigo": "100618",
+    "nombre": "user 618",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | DIA"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4221,
+  "fields": {
+    "numero": 619,
+    "codigo": "100619",
+    "nombre": "user 619",
+    "ubicacion": "Indirectos",
+    "grupo": "Indirectos",
+    "categorias": "MOI | DIA"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4222,
+  "fields": {
+    "numero": 620,
+    "codigo": "100620",
+    "nombre": "user 620",
+    "ubicacion": "Apoyo Mezclas&Tawa",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4223,
+  "fields": {
+    "numero": 621,
+    "codigo": "100621",
+    "nombre": "user 621",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4224,
+  "fields": {
+    "numero": 622,
+    "codigo": "100622",
+    "nombre": "user 622",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4225,
+  "fields": {
+    "numero": 623,
+    "codigo": "100623",
+    "nombre": "user 623",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4226,
+  "fields": {
+    "numero": 624,
+    "codigo": "100624",
+    "nombre": "user 624",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4227,
+  "fields": {
+    "numero": 625,
+    "codigo": "100625",
+    "nombre": "user 625",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4228,
+  "fields": {
+    "numero": 626,
+    "codigo": "100626",
+    "nombre": "user 626",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Cremas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4229,
+  "fields": {
+    "numero": 627,
+    "codigo": "100627",
+    "nombre": "user 627",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4230,
+  "fields": {
+    "numero": 628,
+    "codigo": "100628",
+    "nombre": "user 628",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Cremas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4231,
+  "fields": {
+    "numero": 629,
+    "codigo": "100629",
+    "nombre": "user 629",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4232,
+  "fields": {
+    "numero": 630,
+    "codigo": "100630",
+    "nombre": "user 630",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4233,
+  "fields": {
+    "numero": 631,
+    "codigo": "100631",
+    "nombre": "user 631",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4234,
+  "fields": {
+    "numero": 632,
+    "codigo": "100632",
+    "nombre": "user 632",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4235,
+  "fields": {
+    "numero": 633,
+    "codigo": "100633",
+    "nombre": "user 633",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4236,
+  "fields": {
+    "numero": 634,
+    "codigo": "100634",
+    "nombre": "user 634",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4237,
+  "fields": {
+    "numero": 635,
+    "codigo": "100635",
+    "nombre": "user 635",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4238,
+  "fields": {
+    "numero": 636,
+    "codigo": "100636",
+    "nombre": "user 636",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Cremas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4239,
+  "fields": {
+    "numero": 637,
+    "codigo": "100637",
+    "nombre": "user 637",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4240,
+  "fields": {
+    "numero": 638,
+    "codigo": "100638",
+    "nombre": "user 638",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4241,
+  "fields": {
+    "numero": 639,
+    "codigo": "100639",
+    "nombre": "user 639",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4242,
+  "fields": {
+    "numero": 640,
+    "codigo": "100640",
+    "nombre": "user 640",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4243,
+  "fields": {
+    "numero": 641,
+    "codigo": "100641",
+    "nombre": "user 641",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4244,
+  "fields": {
+    "numero": 642,
+    "codigo": "100642",
+    "nombre": "user 642",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4245,
+  "fields": {
+    "numero": 643,
+    "codigo": "100643",
+    "nombre": "user 643",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4246,
+  "fields": {
+    "numero": 644,
+    "codigo": "100644",
+    "nombre": "user 644",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4247,
+  "fields": {
+    "numero": 645,
+    "codigo": "100645",
+    "nombre": "user 645",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Bañado"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4248,
+  "fields": {
+    "numero": 646,
+    "codigo": "100646",
+    "nombre": "user 646",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4249,
+  "fields": {
+    "numero": 647,
+    "codigo": "100647",
+    "nombre": "user 647",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4250,
+  "fields": {
+    "numero": 648,
+    "codigo": "100648",
+    "nombre": "user 648",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4251,
+  "fields": {
+    "numero": 649,
+    "codigo": "100649",
+    "nombre": "user 649",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4252,
+  "fields": {
+    "numero": 650,
+    "codigo": "100650",
+    "nombre": "user 650",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4253,
+  "fields": {
+    "numero": 651,
+    "codigo": "100651",
+    "nombre": "user 651",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4254,
+  "fields": {
+    "numero": 652,
+    "codigo": "100652",
+    "nombre": "user 652",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4255,
+  "fields": {
+    "numero": 653,
+    "codigo": "100653",
+    "nombre": "user 653",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4256,
+  "fields": {
+    "numero": 654,
+    "codigo": "100654",
+    "nombre": "user 654",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Bañado"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4257,
+  "fields": {
+    "numero": 655,
+    "codigo": "100655",
+    "nombre": "user 655",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4258,
+  "fields": {
+    "numero": 656,
+    "codigo": "100656",
+    "nombre": "user 656",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Encargado M"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4259,
+  "fields": {
+    "numero": 657,
+    "codigo": "100657",
+    "nombre": "user 657",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Cremas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4260,
+  "fields": {
+    "numero": 658,
+    "codigo": "100658",
+    "nombre": "user 658",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4261,
+  "fields": {
+    "numero": 659,
+    "codigo": "100659",
+    "nombre": "user 659",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4262,
+  "fields": {
+    "numero": 660,
+    "codigo": "100660",
+    "nombre": "user 660",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4263,
+  "fields": {
+    "numero": 661,
+    "codigo": "100661",
+    "nombre": "user 661",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4264,
+  "fields": {
+    "numero": 662,
+    "codigo": "100662",
+    "nombre": "user 662",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4265,
+  "fields": {
+    "numero": 663,
+    "codigo": "100663",
+    "nombre": "user 663",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Encargado M"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4266,
+  "fields": {
+    "numero": 664,
+    "codigo": "100664",
+    "nombre": "user 664",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Tecnico Maquinas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4267,
+  "fields": {
+    "numero": 665,
+    "codigo": "100665",
+    "nombre": "user 665",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4268,
+  "fields": {
+    "numero": 666,
+    "codigo": "100666",
+    "nombre": "user 666",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4269,
+  "fields": {
+    "numero": 667,
+    "codigo": "100667",
+    "nombre": "user 667",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4270,
+  "fields": {
+    "numero": 668,
+    "codigo": "100668",
+    "nombre": "user 668",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4271,
+  "fields": {
+    "numero": 669,
+    "codigo": "100669",
+    "nombre": "user 669",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4272,
+  "fields": {
+    "numero": 670,
+    "codigo": "100670",
+    "nombre": "user 670",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4273,
+  "fields": {
+    "numero": 671,
+    "codigo": "100671",
+    "nombre": "user 671",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4274,
+  "fields": {
+    "numero": 672,
+    "codigo": "100672",
+    "nombre": "user 672",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4275,
+  "fields": {
+    "numero": 673,
+    "codigo": "100673",
+    "nombre": "user 673",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Encargado M"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4276,
+  "fields": {
+    "numero": 674,
+    "codigo": "100674",
+    "nombre": "user 674",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Tecnico Maquinas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4277,
+  "fields": {
+    "numero": 675,
+    "codigo": "100675",
+    "nombre": "user 675",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Bañado"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4278,
+  "fields": {
+    "numero": 676,
+    "codigo": "100676",
+    "nombre": "user 676",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Bañado"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4279,
+  "fields": {
+    "numero": 677,
+    "codigo": "100677",
+    "nombre": "user 677",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Encargado M"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4280,
+  "fields": {
+    "numero": 678,
+    "codigo": "100678",
+    "nombre": "user 678",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4281,
+  "fields": {
+    "numero": 679,
+    "codigo": "100679",
+    "nombre": "user 679",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Cremas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4282,
+  "fields": {
+    "numero": 680,
+    "codigo": "100680",
+    "nombre": "user 680",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4283,
+  "fields": {
+    "numero": 681,
+    "codigo": "100681",
+    "nombre": "user 681",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4284,
+  "fields": {
+    "numero": 682,
+    "codigo": "100682",
+    "nombre": "user 682",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4285,
+  "fields": {
+    "numero": 683,
+    "codigo": "100683",
+    "nombre": "user 683",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4286,
+  "fields": {
+    "numero": 684,
+    "codigo": "100684",
+    "nombre": "user 684",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4287,
+  "fields": {
+    "numero": 685,
+    "codigo": "100685",
+    "nombre": "user 685",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4288,
+  "fields": {
+    "numero": 686,
+    "codigo": "100686",
+    "nombre": "user 686",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4289,
+  "fields": {
+    "numero": 687,
+    "codigo": "100687",
+    "nombre": "user 687",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4290,
+  "fields": {
+    "numero": 688,
+    "codigo": "100688",
+    "nombre": "user 688",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4291,
+  "fields": {
+    "numero": 689,
+    "codigo": "100689",
+    "nombre": "user 689",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4292,
+  "fields": {
+    "numero": 690,
+    "codigo": "100690",
+    "nombre": "user 690",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4293,
+  "fields": {
+    "numero": 691,
+    "codigo": "100691",
+    "nombre": "user 691",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4294,
+  "fields": {
+    "numero": 692,
+    "codigo": "100692",
+    "nombre": "user 692",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4295,
+  "fields": {
+    "numero": 693,
+    "codigo": "100693",
+    "nombre": "user 693",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4296,
+  "fields": {
+    "numero": 694,
+    "codigo": "100694",
+    "nombre": "user 694",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Cremas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4297,
+  "fields": {
+    "numero": 695,
+    "codigo": "100695",
+    "nombre": "user 695",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4298,
+  "fields": {
+    "numero": 696,
+    "codigo": "100696",
+    "nombre": "user 696",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Maquinistas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4299,
+  "fields": {
+    "numero": 697,
+    "codigo": "100697",
+    "nombre": "user 697",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Cremas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4300,
+  "fields": {
+    "numero": 698,
+    "codigo": "100698",
+    "nombre": "user 698",
+    "ubicacion": "Maquinistas",
+    "grupo": "Maquinistas",
+    "categorias": "Cremas"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4301,
+  "fields": {
+    "numero": 699,
+    "codigo": "100699",
+    "nombre": "user 699",
+    "ubicacion": "Apoyo Mezclas&Tawa",
+    "grupo": "MEZCLAS/TAWA",
+    "categorias": "Apoyo Mezclas&Tawa"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4302,
+  "fields": {
+    "numero": 700,
+    "codigo": "100700",
+    "nombre": "user 700",
+    "ubicacion": "Apoyo Mezclas&Tawa",
+    "grupo": "MEZCLAS/TAWA",
+    "categorias": "Apoyo Mezclas&Tawa"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4303,
+  "fields": {
+    "numero": 701,
+    "codigo": "100701",
+    "nombre": "user 701",
+    "ubicacion": "Apoyo Mezclas&Tawa",
+    "grupo": "MEZCLAS/TAWA",
+    "categorias": "Apoyo Mezclas&Tawa"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4304,
+  "fields": {
+    "numero": 702,
+    "codigo": "100702",
+    "nombre": "user 702",
+    "ubicacion": "Apoyo Mezclas&Tawa",
+    "grupo": "MEZCLAS/TAWA",
+    "categorias": "Apoyo Mezclas&Tawa"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4305,
+  "fields": {
+    "numero": 703,
+    "codigo": "100703",
+    "nombre": "user 703",
+    "ubicacion": "Apoyo Mezclas&Tawa",
+    "grupo": "MEZCLAS/TAWA",
+    "categorias": "Apoyo Mezclas&Tawa"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4306,
+  "fields": {
+    "numero": 704,
+    "codigo": "100704",
+    "nombre": "user 704",
+    "ubicacion": "Apoyo Mezclas&Tawa",
+    "grupo": "MEZCLAS/TAWA",
+    "categorias": "Apoyo Mezclas&Tawa"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4307,
+  "fields": {
+    "numero": 705,
+    "codigo": "100705",
+    "nombre": "user 705",
+    "ubicacion": "Apoyo Mezclas&Tawa",
+    "grupo": "MEZCLAS/TAWA",
+    "categorias": "Apoyo Mezclas&Tawa"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4308,
+  "fields": {
+    "numero": 706,
+    "codigo": "100706",
+    "nombre": "user 706",
+    "ubicacion": "Apoyo Mezclas&Tawa",
+    "grupo": "MEZCLAS/TAWA",
+    "categorias": "Apoyo Mezclas&Tawa"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4309,
+  "fields": {
+    "numero": 707,
+    "codigo": "100707",
+    "nombre": "user 707",
+    "ubicacion": "Apoyo Mezclas&Tawa",
+    "grupo": "MEZCLAS/TAWA",
+    "categorias": "Apoyo Mezclas&Tawa"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4310,
+  "fields": {
+    "numero": 708,
+    "codigo": "100708",
+    "nombre": "user 708",
+    "ubicacion": "Apoyo Mezclas&Tawa",
+    "grupo": "MEZCLAS/TAWA",
+    "categorias": "Apoyo Mezclas&Tawa"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4311,
+  "fields": {
+    "numero": 709,
+    "codigo": "100709",
+    "nombre": "user 709",
+    "ubicacion": "Apoyo Mezclas&Tawa",
+    "grupo": "MEZCLAS/TAWA",
+    "categorias": "Apoyo Mezclas&Tawa"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4312,
+  "fields": {
+    "numero": 710,
+    "codigo": "100710",
+    "nombre": "user 710",
+    "ubicacion": "Apoyo Mezclas&Tawa3",
+    "grupo": "MEZCLAS/TAWA",
+    "categorias": "Apoyo Mezclas&Tawa"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4313,
+  "fields": {
+    "numero": 711,
+    "codigo": "100711",
+    "nombre": "user 711",
+    "ubicacion": "Apoyo Mezclas&Tawa3",
+    "grupo": "MEZCLAS/TAWA",
+    "categorias": "Apoyo Mezclas&Tawa"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4314,
+  "fields": {
+    "numero": 712,
+    "codigo": "100712",
+    "nombre": "user 712",
+    "ubicacion": "Apoyo Mezclas&Tawa3",
+    "grupo": "MEZCLAS/TAWA",
+    "categorias": "Apoyo Mezclas&Tawa"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4315,
+  "fields": {
+    "numero": 713,
+    "codigo": "100713",
+    "nombre": "user 713",
+    "ubicacion": "Salticas 1",
+    "grupo": "Teams Leader",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4316,
+  "fields": {
+    "numero": 714,
+    "codigo": "100714",
+    "nombre": "user 714",
+    "ubicacion": "Salticas 2",
+    "grupo": "Teams Leader",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4317,
+  "fields": {
+    "numero": 715,
+    "codigo": "100715",
+    "nombre": "user 715",
+    "ubicacion": "Salticas 4",
+    "grupo": "Teams Leader",
+    "categorias": "MOI | ROTATIVOS"
+  }
+},
+{
+  "model": "personal.personal",
+  "pk": 4318,
+  "fields": {
+    "numero": 716,
+    "codigo": "5890",
+    "nombre": "Cuenca Lourdes",
+    "ubicacion": "Quito",
+    "grupo": "Amarillo",
+    "categorias": "Linea D"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-04-04T01:37:45.179Z",
+    "user": [
+      "user001"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "2",
+    "object_repr": "user001",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Staff status\", \"Superuser status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-04-05T00:19:04.479Z",
+    "user": [
+      "kelvin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "2",
+    "object_repr": "user001",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-04-05T00:21:03.511Z",
+    "user": [
+      "kelvin"
+    ],
+    "content_type": [
+      "auth",
+      "user"
+    ],
+    "object_id": "2",
+    "object_repr": "user001",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+  }
+}
+]
