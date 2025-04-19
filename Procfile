@@ -1,0 +1,1 @@
+web: gunicorn gestion_personal.wsgi --log-file - 
