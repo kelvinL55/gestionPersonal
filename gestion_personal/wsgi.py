@@ -1,15 +1,14 @@
 """
-WSGI config for gestion_personal project.
-/var/www/kelvinLo_pythonanywhere_com_wsgi.py
-It exposes the WSGI callable as a module-level variable named ``application``.
-
-For more information on this file, see
-https://docs.djangoproject.com/en/5.1/howto/deployment/wsgi/
+Configuración WSGI para el proyecto gestion_personal.
+Este archivo expone la aplicación WSGI como una variable de módulo llamada 'application'.
+Carga automáticamente las variables de entorno desde un archivo .env para facilitar la configuración en producción y desarrollo.
 """
-
 import os
-
 from django.core.wsgi import get_wsgi_application
+from dotenv import load_dotenv
+
+# Cargar variables de entorno desde .env
+load_dotenv()
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'gestion_personal.settings')
 
