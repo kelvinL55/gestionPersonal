@@ -83,18 +83,48 @@ WSGI_APPLICATION = 'gestion_personal.wsgi.application'
 # Configuración de base de datos flexible con SSL para producción
 DATABASE_URL = os.environ.get('DATABASE_URL')
 if DATABASE_URL:
-    # Configuración específica para Render con PostgreSQL
-    DATABASES = {
-        'default': dj_database_url.parse(
-            DATABASE_URL,
-            conn_max_age=600,
-            conn_health_checks=True,
-            ssl_require=False,  # Deshabilitar SSL requerido
-            options={
-                'sslmode': 'prefer',  # Preferir SSL pero no requerirlo
+    # Configuración específica para Render con PostgreSQL - SSL deshabilitado
+    try:
+        DATABASES = {
+            'default': dj_database_url.parse(
+                DATABASE_URL,
+                conn_max_age=600,
+                conn_health_checks=True,
+                ssl_require=False,  # Deshabilitar SSL requerido
+                options={
+                    'sslmode': 'disable',  # Deshabilitar SSL completamente
+                    'connect_timeout': 10,
+                }
+            )
+        }
+    except Exception as e:
+        # Fallback a configuración manual si dj_database_url falla
+        import re
+        match = re.match(r'postgresql://([^:]+):([^@]+)@([^:]+):(\d+)/(.+)', DATABASE_URL)
+        if match:
+            user, password, host, port, dbname = match.groups()
+            DATABASES = {
+                'default': {
+                    'ENGINE': 'django.db.backends.postgresql',
+                    'NAME': dbname,
+                    'USER': user,
+                    'PASSWORD': password,
+                    'HOST': host,
+                    'PORT': port,
+                    'OPTIONS': {
+                        'sslmode': 'disable',
+                        'connect_timeout': 10,
+                    },
+                }
             }
-        )
-    }
+        else:
+            # Si todo falla, usar SQLite
+            DATABASES = {
+                'default': {
+                    'ENGINE': 'django.db.backends.sqlite3',
+                    'NAME': BASE_DIR / 'db.sqlite3',
+                }
+            }
 else:
     DATABASES = {
         'default': {
