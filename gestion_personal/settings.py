@@ -83,12 +83,16 @@ WSGI_APPLICATION = 'gestion_personal.wsgi.application'
 # Configuración de base de datos flexible con SSL para producción
 DATABASE_URL = os.environ.get('DATABASE_URL')
 if DATABASE_URL:
+    # Configuración específica para Render con PostgreSQL
     DATABASES = {
         'default': dj_database_url.parse(
             DATABASE_URL,
             conn_max_age=600,
             conn_health_checks=True,
-            ssl_require=True
+            ssl_require=False,  # Deshabilitar SSL requerido
+            options={
+                'sslmode': 'prefer',  # Preferir SSL pero no requerirlo
+            }
         )
     }
 else:
